@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BURGER KING® Italia - Novità</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{'bk-brown':'#502314','bk-avana':'#F5EBDC','bk-orange':'#FF8732','bk-red':'#D62300','bk-dark':'#E8DFCF'},maxWidth:{'1600':'1600px'}}}};</script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="flex flex-col min-h-screen bg-bk-avana has-mobile-bar" data-page="novita">
+  <div id="bk-header"></div>
+  <main class="flex-grow container-news">
+    <div class="max-w-1600 mx-auto px-0 md:px-6 xl:px-12">
+      <section class="testata-promo mb-8 md:rounded-[25px]">
+        <h1 class="font-flamebold text-[5rem] leading-[4.9rem] text-bk-orange uppercase text-center">Novità</h1>
+        <p class="text-center text-[2rem] leading-[2.4rem] text-bk-avana mt-4 px-4">Scopri tutto ciò che succede nel mondo Burger King!</p>
+      </section>
+    </div>
+    <section class="main-news">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="main-news-card"><a href="qualita-bk.html" class="no-underline block"><div class="news-card"><div class="div-img-news aspect-video" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/news/1770_thumb_it.jpg?v=1781175501')"></div><div class="div-content-news"><div class="news-title text-[2rem]">Il sapore dell'estate in un burger!</div><p class="news-preview text-[1.5rem] mt-2 text-gray-600">Arriva a menù il panino che racchiude tutto il gusto dell'estate in un morso: il nuovo Italian Summer King.</p></div></div></a></article>
+        <article class="main-news-card"><a href="promo/big_king__bibita_small__snack_small/" class="no-underline block"><div class="news-card"><div class="div-img-news aspect-video" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/news/1769_thumb_it.png?v=1781190756')"></div><div class="div-content-news"><div class="news-title text-[2rem]">PROMOssi a pieni voti.</div><p class="news-preview text-[1.5rem] mt-2 text-gray-600">DA OGGI SI STUDIA IL RELAX. Nuovo programma didattico: amici, sole e cose buone.</p></div></div></a></article>
+        <article class="main-news-card"><a href="prodotti.html" class="no-underline block"><div class="news-card"><div class="div-img-news aspect-video" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/news/1766_thumb_it.jpg?v=1781260146')"></div><div class="div-content-news"><div class="news-title text-[2rem]">Catch the Baby Burgers</div><p class="news-preview text-[1.5rem] mt-2 text-gray-600">Un nuovo gioco dedicato ai nostri amati Baby Burgers ti aspetta in APP!</p></div></div></a></article>
+        <article class="main-news-card hidden-load"><a href="prodotti.html" class="no-underline block"><div class="news-card"><div class="div-img-news aspect-video" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/news/1762_thumb_it.png?v=1780491591')"></div><div class="div-content-news"><div class="news-title text-[2rem]">Mi è semblato di vedele una solplesa!</div><p class="news-preview text-[1.5rem] mt-2 text-gray-600">Da Burger King sono arrivate le nuove sorprese Looney Tunes, una in ogni KJM.</p></div></div></a></article>
+        <article class="main-news-card hidden-load"><a href="promo.html" class="no-underline block"><div class="news-card"><div class="div-img-news aspect-video" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/news/1761_thumb_it.png?v=1780048066')"></div><div class="div-content-news"><div class="news-title text-[2rem]">KING OF THE NIGHT</div><p class="news-preview text-[1.5rem] mt-2 text-gray-600">La fame viene di notte...</p></div></div></a></article>
+      </div>
+      <div class="text-center pt-12"><button id="load-more" class="btn-main-outline">Carica altri</button></div>
+    </section>
+    <div id="bk-app-banner"></div>
+  </main>
+  <div id="bk-footer"></div>
+  <div id="bk-mobile-bar"></div>
+  <script src="js/components.js"></script>
+  <script src="js/page-shell.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

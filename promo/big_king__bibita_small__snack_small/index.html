@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, shrink-to-fit=no">
+  <title>Burger King - Big King + Bibita Small + Snack Small</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { 'bk-brown':'#502314','bk-avana':'#F5EBDC','bk-orange':'#FF8732','bk-red':'#D62300' }, maxWidth: { '1600':'1600px' } } } };
+  </script>
+  <link rel="stylesheet" href="../../css/custom.css">
+</head>
+<body class="flex flex-col min-h-screen bg-bk-avana has-mobile-bar" data-page="promo">
+
+  <div id="bk-header"></div>
+
+  <main class="flex-grow">
+    <div class="container-news-dettaglio">
+
+      <div class="max-w-1600 mx-auto px-6 md:px-12 pt-6 pb-4">
+        <div class="breadcrumb text-[1.4rem] leading-[2.1rem]">
+          <a href="../../promo.html" class="breadcrumb-link inline-flex items-center text-bk-brown no-underline hover:text-bk-orange transition-colors font-flame-sans">
+            <img src="https://www.burgerking.it/assets/images/Arrow-left.svg?v=1709305347" alt="" class="breadcrumb-arrow" aria-hidden="true">
+            Torna alla lista
+          </a>
+        </div>
+      </div>
+
+      <div class="max-w-1600 mx-auto px-6 md:px-12">
+        <img src="https://www.burgerking.it/assets/img/console/appUser/news/1633_desktop_it.png?v=1772625009" alt="Big King + Bibita Small + Snack Small" class="promo-detail-img w-full hidden md:block">
+        <img src="https://www.burgerking.it/assets/img/console/appUser/news/1633_mobile_it.png?v=1772625020" alt="Big King + Bibita Small + Snack Small" class="promo-detail-img w-full md:hidden">
+      </div>
+
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12 py-12">
+        <div class="div-testo-news">
+          <h1 class="font-flamebold text-bk-brown text-[5rem] leading-[4.9rem] pb-4">Big King + Bibita Small + Snack Small</h1>
+          <div class="font-flame-sans text-[2rem] leading-[2.4rem] text-black/87 pt-4 pb-4 promo-description">
+            <p>Con soli 4,95€ potrai gustare un Big King Menu piccolo, composto da: 1 Crispy Chicken Wrap, patatine small e bibita small.&nbsp;</p>
+            <p>La combo è valida solo nei ristoranti aderenti indicati sul sito. Il menu Special King Combo è una combinazione di listino sempre disponibile.</p>
+            <p>Usa il coupon per il tuo ordine via app entrando nella sezione ordina e selezionando il coupon. Oppure scansiona il codice qui sotto al kiosk o al King Drive per ottenere corone.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-screen-xl mx-auto px-4 md:px-12 py-12">
+        <div class="div-app-banner rounded-xl overflow-hidden" style="background-color:#D62300;">
+          <div class="grid grid-cols-1 md:grid-cols-12 items-center">
+            <div class="md:col-span-4 flex justify-center p-6">
+              <img src="https://www.burgerking.it/assets/img/console/appUser/banner/331_desktop_it.png?v=1710414705" alt="SCARICA LA NOSTRA APP" class="w-[70%] max-w-xs">
+            </div>
+            <div class="md:col-span-5 text-center text-bk-avana p-6">
+              <div class="font-flamebold text-[3.5rem] leading-[3.4rem] pb-4">SCARICA LA NOSTRA APP</div>
+              <div class="font-flame text-[2.4rem] leading-[2.6rem] pb-4">E goditi dei vantaggi da vero King!</div>
+            </div>
+            <div class="md:col-span-3 hidden md:flex justify-center p-6">
+              <img src="https://www.burgerking.it/assets/img/console/appUser/banner/703_desktop_it.jpg?v=1779286122" alt="" class="max-w-[300px] rounded-lg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="bk-footer"></div>
+  <div id="bk-mobile-bar"></div>
+
+  <script>window.BK_BASE = '../../';</script>
+  <script src="../../js/components.js"></script>
+  <script src="../../js/page-shell.js"></script>
+  <script src="../../js/main.js"></script>
+</body>
+</html>

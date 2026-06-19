@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scopri la lista dei ristoranti Burger King® in Italia e trova il più vicino a te, ti aspettiamo!">
+  <title>BURGER KING® Italia - Ristoranti</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{'bk-brown':'#502314','bk-avana':'#F5EBDC','bk-orange':'#FF8732','bk-red':'#D62300','bk-dark':'#E8DFCF'},maxWidth:{'1600':'1600px'}}}};</script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="flex flex-col min-h-screen bg-bk-avana has-mobile-bar" data-page="store-locator">
+  <div id="bk-header"></div>
+  <main class="flex-grow">
+    <div class="container-store-locator max-w-1600 mx-auto px-4 md:px-6 xl:px-12 py-6">
+
+      <!-- Ricerca -->
+      <div class="locator-search flex items-center gap-3 mb-6 max-w-3xl mx-auto md:mx-0" id="input-group-ricerca-ristorante">
+        <button type="button" id="btn-gps" class="flex-shrink-0 border-0 bg-transparent cursor-pointer p-1" aria-label="Usa posizione attuale">
+          <img src="https://www.burgerking.it/assets/images/icon-gps-red.svg?v=1709305347" alt="" class="w-8 h-8">
+        </button>
+        <div class="buttonIn flex-grow relative">
+          <input type="text" id="input-ricerca-ristorante" class="form-control pr-20" placeholder="Inserisci il cap o l'indirizzo completo" autocomplete="off">
+          <button type="button" id="img-ricerca-reset" class="img-in-button absolute right-12 top-1/2 -translate-y-1/2 border-0 bg-transparent cursor-pointer hidden p-1" aria-label="Cancella">
+            <img src="https://www.burgerking.it/assets/images/icon-close-red.svg?v=1709305347" alt="" class="w-5 h-5">
+          </button>
+          <button type="button" id="img-ricerca-search" class="img-in-button absolute right-3 top-1/2 -translate-y-1/2 border-0 bg-transparent cursor-pointer p-1" aria-label="Cerca">
+            <img src="https://www.burgerking.it/assets/images/icon-search-red.svg?v=1709305347" alt="" class="w-5 h-5">
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-0 locator-grid">
+
+        <!-- Filtri desktop -->
+        <aside class="hidden md:block md:col-span-3 xl:col-span-2 sidebar-locator pr-4" id="sidebar-filtri">
+          <div class="title18 pb-5 flex items-center">
+            <img src="https://www.burgerking.it/assets/images/icon-filter.svg?v=1709305347" class="svg-brown w-5 h-5 mr-3" alt="">
+            Filtra per servizi
+          </div>
+          <button class="btn-tag-outline btn-filtro-serizio mb-2 mr-2" type="button" data-filter="h24" id="btn-h24"><img src="https://www.burgerking.it/assets/img/console/storeServicesGroup/11_immagine.svg?v=1709305466" class="inline w-4 h-4 mr-1 svg-brown" alt="">H24</button>
+          <button class="btn-tag-outline btn-filtro-serizio mb-2 mr-2" type="button" data-filter="KingDrive" id="btn-KingDrive"><img src="https://www.burgerking.it/assets/img/console/storeServicesGroup/12_immagine.svg?v=1709305466" class="inline w-4 h-4 mr-1 svg-brown" alt="">King Drive</button>
+          <button class="btn-tag-outline btn-filtro-serizio mb-2 mr-2" type="button" data-filter="Parking" id="btn-Parking"><img src="https://www.burgerking.it/assets/img/console/storeServicesGroup/13_immagine.svg?v=1709305466" class="inline w-4 h-4 mr-1 svg-brown" alt="">Parcheggio</button>
+          <button class="btn-tag-outline btn-filtro-serizio mb-2 mr-2" type="button" data-filter="PlayKing" id="btn-PlayKing"><img src="https://www.burgerking.it/assets/img/console/storeServicesGroup/14_immagine.svg?v=1709305467" class="inline w-4 h-4 mr-1 svg-brown" alt="">Play King</button>
+          <button class="btn-tag-outline btn-filtro-serizio mb-2 mr-2" type="button" data-filter="WIFI" id="btn-WIFI"><img src="https://www.burgerking.it/assets/img/console/storeServicesGroup/15_immagine.svg?v=1709305467" class="inline w-4 h-4 mr-1 svg-brown" alt="">Wifi</button>
+          <button class="btn-tag-outline btn-filtro-serizio mb-2 mr-2" type="button" data-filter="birthday" id="btn-birthday"><img src="https://www.burgerking.it/assets/img/console/storeServicesGroup/16_immagine.svg?v=1709305467" class="inline w-4 h-4 mr-1 svg-brown" alt="">Feste di Compleanno</button>
+          <button class="btn-tag-outline btn-filtro-serizio mb-2 mr-2" type="button" data-filter="Refill" id="btn-Refill"><img src="https://www.burgerking.it/assets/img/console/storeServicesGroup/17_immagine.svg?v=1709305467" class="inline w-4 h-4 mr-1 svg-brown" alt="">Refill</button>
+          <button class="btn-tag-outline btn-filtro-serizio mb-2 mr-2" type="button" data-filter="HomeDelivery" id="btn-HomeDelivery"><img src="https://www.burgerking.it/assets/img/console/storeServicesGroup/18_immagine.svg?v=1709305467" class="inline w-4 h-4 mr-1 svg-brown" alt="">Home Delivery</button>
+          <button class="btn-tag-outline btn-filtro-serizio mb-2 mr-2" type="button" data-filter="BkCafe" id="btn-BkCafe"><img src="https://www.burgerking.it/assets/img/console/storeServicesGroup/19_immagine.svg?v=1709305467" class="inline w-4 h-4 mr-1 svg-brown" alt="">BK Cafè</button>
+        </aside>
+
+        <!-- Lista ristoranti -->
+        <div class="md:col-span-4 xl:col-span-3 sidebar-locator order-2 md:order-none" id="sidebar-map">
+          <div class="flex items-center justify-between mb-4 md:mb-0">
+            <div class="title18 flex items-center">
+              <img src="https://www.burgerking.it/assets/images/icon-ristornati.svg?v=1709305347" class="svg-brown w-5 h-5 mr-3" alt="">
+              Lista dei ristoranti
+            </div>
+            <button type="button" id="btn-apri-filtri" class="md:hidden relative border-0 bg-transparent cursor-pointer p-2" aria-label="Filtra per servizi">
+              <img src="https://www.burgerking.it/assets/images/icon-filter-red.svg?v=1709305347" alt="" class="w-8 h-8">
+              <span class="filter-badge absolute -top-1 -right-1 bg-bk-red text-white text-[1rem] rounded-full w-5 h-5 items-center justify-center hidden">0</span>
+            </button>
+          </div>
+          <div id="lista-elementi-sidebar" class="scrollbar-custom mt-4 md:mt-5"></div>
+        </div>
+
+        <!-- Mappa + dettaglio -->
+        <div class="md:col-span-5 xl:col-span-7 order-1 md:order-none relative div-map-locator min-h-[280px] md:min-h-[520px]">
+          <iframe id="store-map-iframe" class="store-map-iframe w-full h-[280px] md:h-[520px] border-0 rounded-lg" title="Mappa ristoranti" src="https://www.openstreetmap.org/export/embed.html?bbox=6.6%2C35.5%2C18.5%2C47.1&layer=mapnik" loading="lazy"></iframe>
+          <button type="button" id="btn-apri-filtri-map" class="md:hidden absolute bottom-4 left-1/2 -translate-x-1/2 btn-main flex items-center gap-2 shadow-lg">
+            Filtra per servizi
+            <img src="https://www.burgerking.it/assets/images/icon-filter.svg?v=1709305347" class="w-4 h-4 svg-white" alt="">
+          </button>
+
+          <div id="dettagli-elemento-sidebar" class="dettagli-sidebar hidden">
+            <div id="dettagli-elemento-shop" class="dettagli-shop bg-bk-avana p-6 md:p-8 overflow-y-auto">
+              <div class="chiudi-sidebar-dettaglio pb-4">
+                <button type="button" id="chiudidettaglio" class="border-0 bg-transparent cursor-pointer font-flame-sans text-[1.4rem] text-bk-brown flex items-center gap-2 p-0">
+                  <img src="https://www.burgerking.it/assets/images/Arrow-left.svg?v=1709305347" class="w-4 h-4 svg-brown" alt=""> Torna al listato
+                </button>
+              </div>
+              <div id="dettagli-elemento-name" class="font-flamebold text-[3.5rem] leading-[3.3rem] text-bk-brown pb-4"></div>
+              <div id="dettagli-elemento-indirizzo" class="text-[1.5rem] pb-4 text-black/80"></div>
+              <div id="dettagli-elemento-indicazioni" class="pb-4"></div>
+              <div id="dettagli-elemento-phone" class="pb-5 text-[1.5rem]"></div>
+              <hr class="border-bk-brown/20">
+              <div class="dettagli-elemento-title font-flamebold text-[2rem] text-bk-brown pt-5">Servizi</div>
+              <div id="dettagli-elemento-servizi" class="pb-4 pt-2 flex flex-wrap"></div>
+              <hr class="border-bk-brown/20">
+              <div class="dettagli-elemento-title font-flamebold text-[2rem] text-bk-brown pt-5 pb-4">Orari</div>
+              <div id="dettagli-elemento-times"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ritira come vuoi -->
+      <section class="mt-12 max-w-4xl" id="dettagli-elemento-extra">
+        <div class="dettagli-elemento-title font-flamebold text-[2.4rem] text-bk-brown pb-3">Store locator - Ritira come vuoi</div>
+        <p class="text-[1.6rem] pb-6 text-black/80">Scegli tu dove vivere la tua esperienza da vero king!</p>
+        <div class="space-y-6">
+          <div class="flex gap-4 items-start"><img src="https://www.burgerking.it/assets/img/console/carousel/slides/233_desktop_it.svg?v=1709305476" class="w-12 h-12 svg-brown flex-shrink-0" alt=""><div><div class="font-flamebold text-[2rem] text-bk-brown pb-1">Mangia da noi</div><p class="text-[1.4rem]">Entra nel tuo ristorante preferito, ordina tramite kiosk o app e accomodati: il tuo ordine ti verrà portato direttamente al tavolo.</p></div></div>
+          <div class="flex gap-4 items-start"><img src="https://www.burgerking.it/assets/img/console/carousel/slides/234_desktop_it.svg?v=1709305477" class="w-12 h-12 svg-brown flex-shrink-0" alt=""><div><div class="font-flamebold text-[2rem] text-bk-brown pb-1">Take away</div><p class="text-[1.4rem]">Ordina dove vuoi tramite app, oppure direttamente in store al kiosk, ritira il tuo ordine e gustalo dove vuoi!</p></div></div>
+          <div class="flex gap-4 items-start"><img src="https://www.burgerking.it/assets/img/console/carousel/slides/235_desktop_it.svg?v=1709305477" class="w-12 h-12 svg-brown flex-shrink-0" alt=""><div><div class="font-flamebold text-[2rem] text-bk-brown pb-1">King Drive</div><p class="text-[1.4rem]">Sei di fretta? Passa al King Drive! Ordina in anticipo via app o direttamente alla colonnina, ritira il tuo ordine dall'auto e goditi il tuo tempo!</p></div></div>
+          <div class="flex gap-4 items-start"><img src="https://www.burgerking.it/assets/img/console/carousel/slides/236_desktop_it.svg?v=1709542204" class="w-12 h-12 svg-brown flex-shrink-0" alt=""><div><div class="font-flamebold text-[2rem] text-bk-brown pb-1">King Delivery</div><p class="text-[1.4rem]">Ordina direttamente in app e ricevi il tuo ordine a casa!</p></div></div>
+          <div class="flex gap-4 items-start"><img src="https://www.burgerking.it/assets/img/console/carousel/slides/237_desktop_it.svg?v=1709305477" class="w-12 h-12 svg-brown flex-shrink-0" alt=""><div><div class="font-flamebold text-[2rem] text-bk-brown pb-1">Delivery</div><p class="text-[1.4rem]">Ordina i tuoi burger preferiti dalle più famose piattaforme di Delivery!</p></div></div>
+        </div>
+      </section>
+    </div>
+    <div id="bk-app-banner"></div>
+  </main>
+
+  <!-- Modal filtri mobile -->
+  <div id="filter-modal" class="filter-modal hidden fixed inset-0 z-[8000] flex items-end md:items-center justify-center bg-black/40">
+    <div class="bg-bk-avana w-full max-w-lg rounded-t-2xl md:rounded-2xl p-6 max-h-[85vh] overflow-y-auto">
+      <div class="title18 pb-4 text-center flex items-center justify-center gap-2">
+        Filtra per servizi
+        <img src="https://www.burgerking.it/assets/images/icon-filter.svg?v=1709305347" class="svg-brown w-5 h-5" alt="">
+      </div>
+      <div class="flex flex-wrap justify-center gap-2 pb-6">
+        <button class="btn-tag-outline btn-filtro-mobile" type="button" data-filter="h24">H24</button>
+        <button class="btn-tag-outline btn-filtro-mobile" type="button" data-filter="KingDrive">King Drive</button>
+        <button class="btn-tag-outline btn-filtro-mobile" type="button" data-filter="Parking">Parcheggio</button>
+        <button class="btn-tag-outline btn-filtro-mobile" type="button" data-filter="PlayKing">Play King</button>
+        <button class="btn-tag-outline btn-filtro-mobile" type="button" data-filter="WIFI">Wifi</button>
+        <button class="btn-tag-outline btn-filtro-mobile" type="button" data-filter="birthday">Feste di Compleanno</button>
+        <button class="btn-tag-outline btn-filtro-mobile" type="button" data-filter="Refill">Refill</button>
+        <button class="btn-tag-outline btn-filtro-mobile" type="button" data-filter="HomeDelivery">Home Delivery</button>
+        <button class="btn-tag-outline btn-filtro-mobile" type="button" data-filter="BkCafe">BK Cafè</button>
+      </div>
+      <div class="flex justify-center gap-4">
+        <button class="btn-main-outline" type="button" id="btn-reset-filtri">Reset</button>
+        <button class="btn-main" type="button" id="btn-applica-filtri">Mostra risultati</button>
+      </div>
+      <button type="button" id="btn-chiudi-filtri" class="mt-4 w-full text-center text-[1.4rem] text-bk-brown border-0 bg-transparent cursor-pointer">Chiudi</button>
+    </div>
+  </div>
+
+  <div id="bk-footer"></div>
+  <div id="bk-mobile-bar"></div>
+  <script src="js/stores-data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/page-shell.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/store-locator.js"></script>
+</body>
+</html>

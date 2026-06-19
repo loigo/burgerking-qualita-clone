@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scopri tutto su Burger King® Italia: la nostra storia, le persone e le opportunità di carriera.">
+  <title>About Us | Burger King Italia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{'bk-brown':'#502314','bk-avana':'#F5EBDC','bk-orange':'#FF8732','bk-red':'#D62300','bk-dark':'#E8DFCF','bk-yellow':'#FFAA00'},maxWidth:{'1600':'1600px'}}}};</script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="flex flex-col min-h-screen bg-bk-avana has-mobile-bar" data-page="about">
+  <div id="bk-header"></div>
+  <main class="flex-grow container-about">
+    <section class="testata-promo mb-12 md:mx-6 xl:mx-12">
+      <div class="text-center">
+        <h1 class="font-flamebold text-[5rem] leading-[4.9rem] text-bk-orange uppercase">SIAMO BURGER KING,<br>MOLTO PIACERE.</h1>
+        <p class="text-[2.4rem] leading-[2.6rem] text-bk-avana mt-6">Scopri tutto su di noi</p>
+      </div>
+    </section>
+
+    <section class="py-8 px-6 md:px-[4.5rem]">
+      <div class="max-w-1600 mx-auto text-center mb-12">
+        <h2 class="font-flamebold text-[5rem] leading-[4.9rem] text-bk-orange py-3">UNA STORIA CHE NASCE GIÀ LEGGENDA.</h2>
+        <p class="text-[2rem] leading-[2.4rem]">Da una grande passione derivano grandi responsabilità.</p>
+      </div>
+      <div class="max-w-1600 mx-auto space-y-12">
+        <div class="about-banner grid grid-cols-1 md:grid-cols-12 items-center gap-6">
+          <div class="md:col-span-7"><img src="https://www.burgerking.it/assets/img/console/carousel/slides/270_desktop_it.png?v=1709740128" alt="Il primo ristorante" class="w-full rounded-xl"></div>
+          <div class="md:col-span-5 text-bk-brown px-4"><h3 class="font-flamebold text-[3.5rem] leading-[3.4rem] py-3">Il primo ristorante non si scorda mai. Amore al primo morso.</h3><p class="text-[1.5rem]">4 dicembre 1954. Primo ristorante Burger King, a Miami.</p></div>
+        </div>
+        <div class="about-banner grid grid-cols-1 md:grid-cols-12 items-center gap-6">
+          <div class="md:col-span-7 md:order-2"><img src="https://www.burgerking.it/assets/img/console/carousel/slides/271_desktop_it.png?v=1709740213" alt="WHOPPER" class="w-full rounded-xl"></div>
+          <div class="md:col-span-5 md:order-1 text-bk-brown px-4"><h3 class="font-flamebold text-[3.5rem] leading-[3.4rem] py-3">Arriva il big bang nella storia dei burger: WHOPPER!</h3><p class="text-[1.5rem]">1957. Inventiamo il WHOPPER, che entra subito nella leggenda.</p></div>
+        </div>
+        <div class="about-banner grid grid-cols-1 md:grid-cols-12 items-center gap-6">
+          <div class="md:col-span-7"><img src="https://www.burgerking.it/assets/img/console/carousel/slides/272_desktop_it.png?v=1709740260" alt="Conquistare il mondo" class="w-full rounded-xl"></div>
+          <div class="md:col-span-5 text-bk-brown px-4"><h3 class="font-flamebold text-[3.5rem] leading-[3.4rem] py-3">Conquistare il mondo è facile se lo fai con la griglia. Facile facile.</h3><p class="text-[1.5rem]">1963, Puerto Rico.<br>1969, Canada.<br>1975, Madrid.<br>Oggi: 20000 ristoranti in 100 Paesi nel mondo.</p></div>
+        </div>
+        <div class="about-banner grid grid-cols-1 md:grid-cols-12 items-center gap-6">
+          <div class="md:col-span-7 md:order-2"><img src="https://www.burgerking.it/assets/img/console/carousel/slides/273_desktop_it.png?v=1709740316" alt="La griglia diventa tricolore" class="w-full rounded-xl"></div>
+          <div class="md:col-span-5 md:order-1 text-bk-brown px-4"><h3 class="font-flamebold text-[3.5rem] leading-[3.4rem] py-3">La griglia diventa tricolore. E nascono capolavori di gusto.</h3><p class="text-[1.5rem]">1999, Milano.<br>Oggi: 280 ristoranti in 18 regioni.<br>1 milione di clienti, 25 milioni di ordini.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-8" data-carousel>
+      <div class="max-w-1600 mx-auto">
+        <div class="pl-6 md:pl-[4.5rem] pb-8 text-center md:text-left">
+          <h2 class="titolo-section py-3">PERSONE</h2>
+          <p class="text-[2rem] leading-[2.4rem]">ABBATTIAMO BARRIERE, COSTRUIAMO RISPETTO. SEMPRE A MODO NOSTRO.</p>
+        </div>
+        <div class="relative">
+          <div id="about-track" class="ingredients-track flex gap-4 md:gap-8 overflow-x-auto pl-6 md:pl-[4.5rem] pr-6 pb-4">
+            <article class="ingredient-slide flex-shrink-0 w-[85vw] md:w-[calc(50%-1rem)] overflow-hidden" style="background-color:#D62300;"><div class="flex flex-col md:flex-row"><div class="col-img w-full md:w-5/12" style="background-image:url('https://www.burgerking.it/assets/img/console/carousel/slides/274_desktop_it.png?v=1709741119')"></div><div class="w-full md:w-7/12 px-6 py-8 text-white"><h3 class="slider-title font-flamebold text-[3.5rem] py-3 uppercase">VERSO L'UGUAGLIANZA, SENZA PERDERE TEMPO.</h3><p class="slider-description text-[1.5rem]">Stiamo abbattendo le barriere di genere in tutti i livelli occupazionali. In tutto il gruppo, quasi il 70% delle persone impiegate sono donne.<br>Abbiamo adottato un sistema di segnalazione degli abusi con training periodico per tutti.</p></div></div></article>
+            <article class="ingredient-slide flex-shrink-0 w-[85vw] md:w-[calc(50%-1rem)] overflow-hidden" style="background-color:#FFAA00;"><div class="flex flex-col md:flex-row"><div class="col-img w-full md:w-5/12" style="background-image:url('https://www.burgerking.it/assets/img/console/carousel/slides/275_desktop_it.png?v=1709741152')"></div><div class="w-full md:w-7/12 px-6 py-8 text-white"><h3 class="slider-title font-flamebold text-[3.5rem] py-3 uppercase">SAVE THE DATE: ENTRO IL 2028 CANCELLIAMO IL GENDER GAP</h3><p class="slider-description text-[1.5rem]">Cancelleremo ogni differenza di retribuzione e nelle posizioni manageriali avremo il 50% di donne.</p></div></div></article>
+            <article class="ingredient-slide flex-shrink-0 w-[85vw] md:w-[calc(50%-1rem)] overflow-hidden" style="background-color:#502314;"><div class="flex flex-col md:flex-row"><div class="col-img w-full md:w-5/12" style="background-image:url('https://www.burgerking.it/assets/img/console/carousel/slides/276_desktop_it.png?v=1709741195')"></div><div class="w-full md:w-7/12 px-6 py-8 text-white"><h3 class="slider-title font-flamebold text-[3.5rem] py-3 uppercase">PIÙ INCLUSIONE, PIÙ CULTURE, PIÙ DIVERSITÀ. UNA PERSONA ALLA VOLTA.</h3><p class="slider-description text-[1.5rem]">Vogliamo vivere il nostro lavoro ispirati alla cultura della diversità. Vogliamo raggiungere quante più persone possibile grazie a pratiche di inclusione.</p></div></div></article>
+            <article class="ingredient-slide flex-shrink-0 w-[85vw] md:w-[calc(50%-1rem)] overflow-hidden" style="background-color:#D62300;"><div class="flex flex-col md:flex-row"><div class="col-img w-full md:w-5/12" style="background-image:url('https://www.burgerking.it/assets/img/console/carousel/slides/277_desktop_it.png?v=1709741230')"></div><div class="w-full md:w-7/12 px-6 py-8 text-white"><h3 class="slider-title font-flamebold text-[3.5rem] py-3 uppercase">SPINGIAMO IL TALENTO GLOBALE.</h3><p class="slider-description text-[1.5rem]">Ognuno di noi può dare molto con il suo talento. Stiamo creando un approccio che includa e valorizzi il talento di ognuno per renderlo globale, supportando i percorsi di crescita evitando la formazione che non c'entra con i compiti.</p></div></div></article>
+            <article class="ingredient-slide flex-shrink-0 w-[85vw] md:w-[calc(50%-1rem)] overflow-hidden" style="background-color:#FFAA00;"><div class="flex flex-col md:flex-row"><div class="col-img w-full md:w-5/12" style="background-image:url('https://www.burgerking.it/assets/img/console/carousel/slides/278_desktop_it.png?v=1709741289')"></div><div class="w-full md:w-7/12 px-6 py-8 text-white"><h3 class="slider-title font-flamebold text-[3.5rem] py-3 uppercase">UNITED FOR DIVERSITY</h3><p class="slider-description text-[1.5rem]">Stiamo creando rapporti di collaborazione e analisi con organizzazioni che lavorano sui temi Diversity&amp;Inclusion per creare un clima sensibile all'inclusione.</p></div></div></article>
+          </div>
+          <button id="about-prev" class="slider-nav-btn hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-10" aria-label="Precedente"><svg viewBox="0 0 16 16"><path fill="#fff" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg></button>
+          <button id="about-next" class="slider-nav-btn hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-10" aria-label="Successivo"><svg viewBox="0 0 16 16"><path fill="#fff" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12" style="background-color:#FFAA00;">
+      <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-6">
+        <img src="https://www.burgerking.it/assets/img/console/appUser/banner/321_desktop_it.png?v=1709742034" alt="Careers" class="w-[90%] mx-auto">
+        <div class="text-center md:text-left">
+          <p class="font-flame text-[1.5rem] pb-2">CAREERS</p>
+          <h2 class="font-flamebold text-bk-brown text-[5rem] leading-[4.9rem] pb-4">VOGLIA DI UN LAVORO DINAMICO?<br>TI ASPETTIAMO!</h2>
+          <p class="text-[2rem] leading-[2.4rem] pb-8">Entra nel nostro network e comincia come si deve la tua storia di successo.</p>
+          <a href="https://inrecruiting.intervieweb.it/burgerking/it/career" class="btn-main" target="_blank" rel="noopener">Scopri i profili professionali che cerchiamo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12">
+      <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-6">
+        <img src="https://www.burgerking.it/assets/img/console/appUser/banner/320_desktop_it.png?v=1709741934" alt="Franchising" class="w-[90%] mx-auto md:order-2">
+        <div class="text-center md:text-left md:order-1">
+          <h2 class="font-flamebold text-bk-brown text-[5rem] leading-[4.9rem] pb-4">HAI GUSTO PER IL SUCCESSO? APRI UN BURGER KING!</h2>
+          <p class="font-flame text-[2.4rem] leading-[2.6rem] text-bk-brown pb-4">FRANCHISING</p>
+          <p class="text-[2rem] leading-[2.4rem] pb-8">Il ristorante evoluto con prodotti unici e un'immagine moderna.</p>
+          <a href="franchising.html" class="btn-main">Scopri di più</a>
+        </div>
+      </div>
+    </section>
+    <div id="bk-app-banner"></div>
+  </main>
+  <div id="bk-footer"></div>
+  <div id="bk-mobile-bar"></div>
+  <script src="js/components.js"></script>
+  <script src="js/page-shell.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

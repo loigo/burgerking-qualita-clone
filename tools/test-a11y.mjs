@@ -1,0 +1,22 @@
+import { chromium } from 'playwright';
+
+const browser = await chromium.launch({ headless: true });
+const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+await page.goto('http://127.0.0.1:8080/franchising.html', { waitUntil: 'networkidle', timeout: 30000 });
+await page.waitForTimeout(2000);
+await page.locator('#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll').click({ timeout: 3000 }).catch(() => {});
+await page.waitForTimeout(1000);
+await page.click('#acsw-trigger');
+await page.waitForTimeout(500);
+const visible = await page.isVisible('#acsw-panel.is-open');
+const title = await page.textContent('#acsw-panel-title');
+const profiles = await page.$$eval('.acsw-profile', (els) => els.length);
+const panelBg = await page.$eval('.acsw-panel-dialog', (el) => getComputedStyle(el).backgroundColor).catch(() => null);
+const resetText = await page.textContent('#acsw-btn-reset span');
+const hideText = await page.textContent('#acsw-btn-hide span');
+await page.click('.acsw-profile-seizures');
+await page.waitForTimeout(300);
+const toggleActive = await page.$eval('.acsw-profile-seizures .acsw-toggle', (el) => getComputedStyle(el, '::after').backgroundColor).catch(() => null);
+await page.screenshot({ path: 'tools/accessibility-clone-panel.png' });
+await browser.close();
+console.log({ visible, title, profiles, panelBg, resetText, hideText, toggleActive });

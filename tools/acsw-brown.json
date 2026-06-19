@@ -1,0 +1,159 @@
+{
+  ".main": {
+    "class": "main ",
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "color": "rgb(31, 37, 51)",
+    "height": "825px"
+  },
+  ".header": {
+    "class": "header",
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "color": "rgb(31, 37, 51)",
+    "height": "26px"
+  },
+  ".hero": {
+    "class": "hero",
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "color": "rgb(31, 37, 51)",
+    "height": "87px"
+  },
+  ".search": {
+    "class": "search",
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "color": "rgb(31, 37, 51)",
+    "height": "41px"
+  },
+  ".title": {
+    "class": "title",
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "color": "rgb(255, 255, 255)",
+    "height": "auto"
+  },
+  ".actions": {
+    "class": "actions",
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "color": "rgb(31, 37, 51)",
+    "height": "63px"
+  },
+  ".main-options": {
+    "class": "main-options",
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "color": "rgb(31, 37, 51)",
+    "height": "2630.31px"
+  },
+  ".action-section": {
+    "class": "action-section",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": "none",
+    "color": "rgb(31, 37, 51)",
+    "height": "612.812px"
+  },
+  "footer": {
+    "class": "widget-footer",
+    "bg": "rgb(80, 35, 20)",
+    "bgImage": "none",
+    "color": "rgb(255, 255, 255)",
+    "height": "855px"
+  },
+  "[class*=\"footer\"]": {
+    "class": "widget-footer",
+    "bg": "rgb(80, 35, 20)",
+    "bgImage": "none",
+    "color": "rgb(255, 255, 255)",
+    "height": "855px"
+  },
+  ".main::before": {
+    "content": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+  },
+  ".hero::before": {
+    "content": "none",
+    "bg": "rgba(0, 0, 0, 0)"
+  },
+  "brownEls": [
+    {
+      "class": "trigger-button     size-medium position-x-right position-y-bottom  ",
+      "bg": "rgb(80, 35, 20)",
+      "h": "45px"
+    },
+    {
+      "class": "CybotCookiebotDialogBodyLevelButtonSlider",
+      "bg": "rgb(80, 35, 20)",
+      "h": "auto"
+    },
+    {
+      "class": "CybotCookiebotDialogBodyLevelButtonSlider",
+      "bg": "rgb(80, 35, 20)",
+      "h": "auto"
+    },
+    {
+      "class": "CybotCookiebotDialogBodyLevelButtonSlider",
+      "bg": "rgb(80, 35, 20)",
+      "h": "auto"
+    },
+    {
+      "class": "CybotCookiebotDialogBodyLevelButtonSlider",
+      "bg": "rgb(80, 35, 20)",
+      "h": "auto"
+    },
+    {
+      "class": "CybotCookiebotDialogBodyLevelButtonSlider",
+      "bg": "rgb(80, 35, 20)",
+      "h": "auto"
+    },
+    {
+      "class": "CybotCookiebotDialogBodyButton",
+      "bg": "rgb(80, 35, 20)",
+      "h": "auto"
+    },
+    {
+      "class": "row topbar",
+      "bg": "rgb(80, 35, 20)",
+      "h": "39px"
+    },
+    {
+      "class": "testata testata-bg mb-5",
+      "bg": "rgb(80, 35, 20)",
+      "h": "510px"
+    },
+    {
+      "class": "div-banner banner_type_2",
+      "bg": "rgb(80, 35, 20)",
+      "h": "153px"
+    },
+    {
+      "class": "row footer-content text-sm-start text-center",
+      "bg": "rgb(80, 35, 20)",
+      "h": "231.938px"
+    },
+    {
+      "class": "col-12 footer-tm text-center",
+      "bg": "rgb(80, 35, 20)",
+      "h": "36px"
+    },
+    {
+      "class": "acsb-trigger acsb-widget",
+      "bg": "rgb(80, 35, 20)",
+      "h": "95%"
+    },
+    {
+      "class": "loader-container",
+      "bg": "rgb(80, 35, 20)",
+      "h": "50px"
+    },
+    {
+      "class": "range__plus-button",
+      "bg": "rgb(80, 35, 20)",
+      "h": "33px"
+    }
+  ],
+  "mainTail": "c0-33.25-26.557-60.235-59.412-60.235-32.794 0-59.407 26.985-59.407 60.235v150.948c0 16.435-13.302 29.757-29.708 29.757s-29.706-13.323-29.706-29.757V60.235C476.673 26.985 450.116 0 417.262 0c-32.795 0-59.411 26.985-59.411 60.235v544.826L218.412 500.555c-32.616-24.335-77.532-18.733-103.375 13.011z\"></path></svg></div><span class=\"content__title\">Grande cursore nero</span></div></button><button data-test=\"bigWhiteCursor\" class=\"action-box action-box-bigWhiteCursor  action-box--hide-mobile\" role=\"switch\" aria-checked=\"false\" type=\"button\" style=\"order: 10;\"><div class=\"action__content\"><div class=\"content__icon\"><svg fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1075 1024\" class=\"icon\" data-testid=\"base-icon-svg\" style=\"display: inline-flex;\"><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M137.515 677.724c-64.041-60.938-70.258-161.853-14.531-230.235 42.284-51.847 109.458-71.627 170.386-54.971V152.08C293.37 69.286 360.039 0 444.877 0c82.253 0 147.256 65.014 151.306 144.232 41.631 2.44 78.264 21.592 103.956 50.535a152.3 152.3 0 0 1 29.23-2.81c45.363 0 85.478 19.774 113.019 50.8a152.3 152.3 0 0 1 29.23-2.81c84.951 0 151.506 69.354 151.506 152.08v287.935c0 188.851-151.542 344.038-341.171 344.038h-47.411c-104.812 0-199.704-49.746-261.507-122.327zm311.582 152.638c43.528 53.366 111.804 89.549 185.445 89.549h47.411c130.964 0 237.082-107.402 237.082-239.949V392.027c0-23.288-16.384-42.719-38.159-47.076a47 47 0 0 0-9.257-.913 46.77 46.77 0 0 0-24.412 6.846c-13.778 8.398-23.004 23.687-23.004 41.143v24.282c0 1.866-.215 3.681-.625 5.422a23.74 23.74 0 0 1-8.632 13.376 23.6 23.6 0 0 1-14.449 4.91c-6.011 0-11.5-2.236-15.677-5.922-4.925-4.344-8.033-10.702-8.033-17.785v-72.271q.001-2.274-.205-4.495c-1.556-16.969-11.837-31.383-26.276-38.581a46.7 46.7 0 0 0-11.674-4 47 47 0 0 0-9.262-.913c-24.673 0-44.969 19.109-47.206 43.494q-.209 2.221-.21 4.495v72.271c0 7.084-3.103 13.441-8.028 17.785-4.178 3.686-9.667 5.922-15.677 5.922s-11.5-2.236-15.677-5.922c-4.925-4.344-8.028-10.702-8.028-17.785V296.05c0-18.895-10.788-35.251-26.486-43.076a46.7 46.7 0 0 0-11.674-4 47 47 0 0 0-9.257-.913c-26.173 0-47.416 21.499-47.416 47.989v120.26c0 7.084-3.108 13.442-8.033 17.786a23.62 23.62 0 0 1-15.677 5.922 23.6 23.6 0 0 1-14.447-4.91c-5.631-4.335-9.26-11.143-9.26-18.798V152.082c0-26.49-21.195-47.989-47.415-47.989-26.173 0-47.416 21.499-47.416 47.989v434.062l-111.284-83.261c-26.032-19.387-61.878-14.924-82.504 10.367-21.432 26.296-18.966 65.695 5.595 89.068z\"></path></svg></div><span class=\"content__title\">Grande cursore bianco</span></div></button></div></div></div></div></div><footer class=\"widget-footer\"><div data-testid=\"custom-footer-content\"><a href=\"https://www.accessiway.com/it/home/\" target=\"_blank\">AccessiWay. The Web Accessibility Solution</a></div></footer><div class=\"overlay \" style=\"position: absolute; opacity: 0.5; background-color: rgb(51, 51, 51); z-index: 2147483646;\"></div><div><div role=\"dialog\" class=\"base-modal \"><div class=\"base-card\"></div></div></div>"
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manda l'application | Burger King Franchising</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{'bk-brown':'#502314','bk-avana':'#F5EBDC','bk-orange':'#FF8732','bk-red':'#D62300','bk-dark':'#E8DFCF'},maxWidth:{'1600':'1600px'}}}};</script>
+  <link rel="stylesheet" href="../../css/custom.css">
+</head>
+<body class="flex flex-col min-h-screen bg-bk-avana has-mobile-bar" data-page="franchising">
+  <div id="bk-header"></div>
+  <main class="flex-grow">
+    <div class="max-w-1600 mx-auto px-0 md:px-6 xl:px-12">
+      <div class="testata testata-bg testata-franchising mb-8" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/banner/393_desktop_it.png?v=1717766240')">
+        <div class="max-w-4xl text-center px-4">
+          <h1 class="testata-title font-flamebold text-white uppercase text-[5rem] leading-[4.9rem] pb-4">DIVENTA FRANCHISEE: MANDA ORA LA TUA APPLICATION</h1>
+        </div>
+      </div>
+    </div>
+    <section class="pb-12 px-6 md:px-[4.5rem]">
+      <div class="max-w-3xl mx-auto testo-pagina">
+        <form id="franchise-application-form" class="form-contatti space-y-8" novalidate>
+          <div>
+            <div class="filed-title font-flame text-bk-brown text-[2rem] pb-4">Dicci chi sei</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input class="form-control" name="name" type="text" placeholder="Nome*" required>
+              <input class="form-control" name="lastname" type="text" placeholder="Cognome*" required>
+            </div>
+            <div class="pt-4"><input class="form-control" name="email" type="email" placeholder="La tua mail*" required></div>
+            <div class="pt-4"><input class="form-control" name="city" type="text" placeholder="La tua città*" required></div>
+          </div>
+          <div>
+            <div class="filed-title font-flame text-bk-brown text-[2rem] pb-4">Rispondi ad alcune domande</div>
+            <p class="pb-2 text-[1.4rem]">In che modo hai intenzione di reperire i mezzi finanziari necessari per iniziare la tua avventura in Burger King?*</p>
+            <label class="label-container block py-2">Capitale proprio<input type="radio" name="finanza" value="Capitale proprio" required><span class="checkmark"></span></label>
+            <label class="label-container block py-2">Cordata di investitori<input type="radio" name="finanza" value="Cordata di investitori"><span class="checkmark"></span></label>
+            <label class="label-container block py-2">Finanziamenti terzi<input type="radio" name="finanza" value="Finanziamenti terzi"><span class="checkmark"></span></label>
+            <p class="pb-2 pt-4 text-[1.4rem]">Che disponibilità di capitale proprio hai da investire nel tuo ristorante Burger King?*</p>
+            <label class="label-container block py-2">0 € - 300.000 €<input type="radio" name="capitale" value="0-300k" required><span class="checkmark"></span></label>
+            <label class="label-container block py-2">300.000 € - 500.000 €<input type="radio" name="capitale" value="300-500k"><span class="checkmark"></span></label>
+            <label class="label-container block py-2">500.000 € - 700.000 €<input type="radio" name="capitale" value="500-700k"><span class="checkmark"></span></label>
+            <label class="label-container block py-2">&gt; 700.000 €<input type="radio" name="capitale" value="700k+"><span class="checkmark"></span></label>
+            <p class="pb-2 pt-4 text-[1.4rem]">Sei disposto ad intraprendere un percorso di sviluppo che ti porti ad aprire anche più di un ristorante Burger King?*</p>
+            <label class="label-container block py-2">Sì<input type="radio" name="sviluppo" value="si" required><span class="checkmark"></span></label>
+            <label class="label-container block py-2">No<input type="radio" name="sviluppo" value="no"><span class="checkmark"></span></label>
+            <p class="pb-2 pt-4 text-[1.4rem]">In quale area geografica vorresti sviluppare i tuoi ristoranti Burger King?*</p>
+            <select class="form-control" name="regioni" multiple size="6" required>
+              <option value="qualunque">Tutte le regioni</option>
+              <option value="abruzzo">Abruzzo</option>
+              <option value="basilicata">Basilicata</option>
+              <option value="calabria">Calabria</option>
+              <option value="campania">Campania</option>
+              <option value="emilia">Emilia-Romagna</option>
+              <option value="friuli">Friuli-Venezia Giulia</option>
+              <option value="lazio">Lazio</option>
+              <option value="liguria">Liguria</option>
+              <option value="lombardia">Lombardia</option>
+              <option value="marche">Marche</option>
+              <option value="molise">Molise</option>
+              <option value="piemonte">Piemonte</option>
+              <option value="puglia">Puglia</option>
+              <option value="sardegna">Sardegna</option>
+              <option value="sicilia">Sicilia</option>
+              <option value="toscana">Toscana</option>
+              <option value="trentino">Trentino-Alto Adige</option>
+              <option value="umbria">Umbria</option>
+              <option value="valledaosta">Valle d'Aosta</option>
+              <option value="veneto">Veneto</option>
+            </select>
+          </div>
+          <div>
+            <div class="filed-title font-flame text-bk-brown text-[2rem] pb-4">Allega curriculum</div>
+            <input class="form-control" name="fileupload_cv" type="file">
+          </div>
+          <div>
+            <div class="filed-title font-flame text-bk-brown text-[2rem] pb-4">Scrivici un messaggio</div>
+            <textarea class="form-control" name="msg" rows="5" placeholder="Scrivi qui il tuo messaggio*" required></textarea>
+          </div>
+          <div>
+            <label class="label-container block py-2">Ho letto e accetto la Privacy Policy *<input type="checkbox" name="privacy" value="1" required><span class="checkmark"></span></label>
+          </div>
+          <div class="g-recaptcha-mock text-center pb-4">
+            <div class="g-recaptcha-mock-inner"><span class="g-recaptcha-checkbox"></span><span class="g-recaptcha-label">Non sono un robot</span><span class="g-recaptcha-badge">reCAPTCHA</span></div>
+          </div>
+          <div class="div-contact-submit text-center">
+            <button type="submit" class="btn-main">Invia la tua candidatura</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div id="bk-app-banner"></div>
+  </main>
+  <div id="bk-footer"></div>
+  <div id="bk-mobile-bar"></div>
+  <script>window.BK_BASE = '../../';</script>
+  <script src="../../js/components.js"></script>
+  <script src="../../js/page-shell.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/franchising.js"></script>
+</body>
+</html>

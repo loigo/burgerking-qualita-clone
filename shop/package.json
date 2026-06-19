@@ -1,0 +1,38 @@
+{
+  "name": "bk-shop",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "seed:sql": "node ../database/seed-products.mjs",
+    "test:complete": "node scripts/test-complete.mjs",
+    "test:responsive": "node scripts/test-responsive.mjs",
+    "db:up": "docker compose -f ../docker-compose.yml up -d",
+    "db:init": "node ../database/init-local.mjs",
+    "satispay:setup": "node scripts/satispay-setup.mjs"
+  },
+  "dependencies": {
+    "@azure/storage-blob": "^12.26.0",
+    "@stripe/react-stripe-js": "^3.1.1",
+    "@stripe/stripe-js": "^5.6.0",
+    "mssql": "^11.0.1",
+    "next": "^14.2.28",
+    "next-auth": "^4.24.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "stripe": "^17.7.0",
+    "zod": "^3.24.2",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/mssql": "^9.1.11",
+    "@types/node": "^22.13.10",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "playwright": "^1.61.0",
+    "typescript": "^5.8.2"
+  }
+}

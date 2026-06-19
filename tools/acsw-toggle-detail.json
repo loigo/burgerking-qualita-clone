@@ -1,0 +1,71 @@
+{
+  "found": true,
+  "profile": {
+    "bg": "rgb(242, 247, 250)",
+    "color": "rgb(0, 0, 0)",
+    "width": 504,
+    "height": 152,
+    "left": 883,
+    "borderRadius": "10px",
+    "boxShadow": "none"
+  },
+  "toggle": {
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 0)",
+    "width": 113,
+    "height": 35,
+    "left": 890,
+    "borderRadius": "50px",
+    "boxShadow": "none"
+  },
+  "toggleBefore": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "width": 113,
+    "height": 35,
+    "left": 890,
+    "borderRadius": "0px",
+    "boxShadow": "none",
+    "content": "none"
+  },
+  "toggleAfter": {
+    "bg": "rgb(80, 35, 20)",
+    "color": "rgb(0, 0, 0)",
+    "width": 113,
+    "height": 35,
+    "left": 890,
+    "borderRadius": "50px",
+    "boxShadow": "rgba(60, 80, 170, 0.2) 0px 0px 30px 0px",
+    "content": "\"\""
+  },
+  "si": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "width": 56,
+    "height": 35,
+    "left": 946,
+    "borderRadius": "0px",
+    "boxShadow": "none"
+  },
+  "siBefore": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "width": 56,
+    "height": 35,
+    "left": 946,
+    "borderRadius": "0px",
+    "boxShadow": "none",
+    "content": "none"
+  },
+  "no": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(31, 37, 51)",
+    "width": 56,
+    "height": 35,
+    "left": 890,
+    "borderRadius": "0px",
+    "boxShadow": "none"
+  },
+  "toggleClass": "toggle toggle--active",
+  "toggleHtml": "<div class=\"toggle toggle--active\" aria-hidden=\"true\"><span class=\"toggle__option\">NO</span><span class=\"toggle__option toggle__option--on\">SÌ</span></div>"
+}

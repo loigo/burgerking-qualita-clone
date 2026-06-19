@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loyalty | Burger King Italia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{'bk-brown':'#502314','bk-avana':'#F5EBDC','bk-orange':'#FF8732','bk-red':'#D62300','bk-dark':'#E8DFCF'},maxWidth:{'1600':'1600px'}}}};</script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="flex flex-col min-h-screen bg-bk-avana has-mobile-bar" data-page="loyalty">
+  <div id="bk-header"></div>
+  <main class="flex-grow">
+    <section class="testata-bg mb-12 mx-0 md:mx-6 xl:mx-12 md:rounded-[25px]" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/banner/562_desktop_it.png?v=1756479023');">
+      <div class="w-full xl:w-1/2 text-center text-bk-avana px-4">
+        <h1 class="font-flamebold text-[5rem] leading-[4.9rem] text-bk-orange uppercase pb-8">LOYALTY</h1>
+      </div>
+    </section>
+    <section class="py-8" data-carousel>
+      <div class="max-w-1600 mx-auto">
+        <div class="pl-6 md:pl-[4.5rem] pb-8">
+          <h2 class="titolo-section py-3">ON FIRE CLUB</h2>
+          <p class="text-[2rem] leading-[2.4rem] text-black/87"><strong>Unisciti, accumula corone e guadagna vantaggi esclusivi.</strong></p>
+        </div>
+        <div class="relative">
+          <div id="ingredients-track" class="ingredients-track flex gap-4 md:gap-8 overflow-x-auto pl-6 md:pl-[4.5rem] pr-6 pb-4">
+            <article class="ingredient-slide flex-shrink-0 w-[85vw] md:w-[calc(50%-1rem)] overflow-hidden" style="background-color:#502314;"><div class="flex flex-col md:flex-row"><div class="col-img w-full md:w-5/12" style="background-image:url('https://www.burgerking.it/assets/img/console/carousel/slides/579_desktop_it.png?v=1756478287')"></div><div class="w-full md:w-7/12 px-6 py-8 text-white"><h3 class="slider-title font-flamebold text-[3.5rem] py-3">Accumula Corone</h3><p class="slider-description text-[1.5rem]">Piu' corone accumuli, piu' il tuo regno di vantaggi diventa ricco: ogni morso ti porta sempre più vicino alle tue ricompense da Re.</p></div></div></article>
+            <article class="ingredient-slide flex-shrink-0 w-[85vw] md:w-[calc(50%-1rem)] overflow-hidden" style="background-color:#502314;"><div class="flex flex-col md:flex-row"><div class="col-img w-full md:w-5/12" style="background-image:url('https://www.burgerking.it/assets/img/console/carousel/slides/580_desktop_it.png?v=1756478336')"></div><div class="w-full md:w-7/12 px-6 py-8 text-white"><h3 class="slider-title font-flamebold text-[3.5rem] py-3">Vantaggi Esclusivi</h3><p class="slider-description text-[1.5rem]">Entra nel nostro On Fire Club e accendi l'accesso a promozioni esclusive.</p></div></div></article>
+            <article class="ingredient-slide flex-shrink-0 w-[85vw] md:w-[calc(50%-1rem)] overflow-hidden" style="background-color:#502314;"><div class="flex flex-col md:flex-row"><div class="col-img w-full md:w-5/12" style="background-image:url('https://www.burgerking.it/assets/img/console/carousel/slides/581_desktop_it.png?v=1756478151')"></div><div class="w-full md:w-7/12 px-6 py-8 text-white"><h3 class="slider-title font-flamebold text-[3.5rem] py-3">Premi da Re</h3><p class="slider-description text-[1.5rem]">Preparati: l'On Fire Club sta per svelare il suo lato più esclusivo con premi sempre diversi e brandizzati Burger King.</p></div></div></article>
+          </div>
+          <button id="slider-prev" class="slider-nav-btn hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-10" aria-label="Precedente"><svg viewBox="0 0 16 16"><path fill="#fff" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg></button>
+          <button id="slider-next" class="slider-nav-btn hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-10" aria-label="Successivo"><svg viewBox="0 0 16 16"><path fill="#fff" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></button>
+        </div>
+      </div>
+    </section>
+    <section class="section-pari py-12">
+      <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-6">
+        <img src="https://www.burgerking.it/assets/img/console/appUser/banner/563_desktop_it.png?v=1756474848" alt="On Fire Club" class="w-[90%] mx-auto">
+        <div class="text-center md:text-left">
+          <h2 class="font-flamebold text-bk-brown text-[5rem] leading-[4.9rem] pb-4">NEW LOYALTY<br>NEW ON FIRE CLUB</h2>
+          <p class="font-flame text-[2.4rem] leading-[2.6rem] text-black/87">Abbiamo aggiornato la nostra loyalty. Unisciti e scopri il programma fedeltà per chi è On Fire come te. Accumula corone e guadagna vantaggi esclusivi. Un regno di privilegi da King ti sta aspettando.</p>
+        </div>
+      </div>
+    </section>
+    <div id="bk-app-banner"></div>
+  </main>
+  <div id="bk-footer"></div>
+  <div id="bk-mobile-bar"></div>
+  <script src="js/components.js"></script>
+  <script src="js/page-shell.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "found": true,
+  "profileBg": "rgb(242, 247, 250)",
+  "no": {
+    "text": "NO",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(31, 37, 51)",
+    "fontWeight": "700",
+    "boxShadow": "none",
+    "borderRadius": "0px"
+  },
+  "si": {
+    "text": "SÌ",
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "fontWeight": "700",
+    "boxShadow": "none",
+    "borderRadius": "0px"
+  },
+  "toggle": {
+    "text": "NOSÌ",
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 0)",
+    "fontWeight": "400",
+    "boxShadow": "none",
+    "borderRadius": "50px"
+  }
+}

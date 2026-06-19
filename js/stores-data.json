@@ -1,0 +1,365 @@
+[
+  {
+    "id": "0",
+    "name": "Affi",
+    "city": "",
+    "address": "Strada Provinciale 29b, 22, Affi, 37010",
+    "zip": "",
+    "phone": "045 6260522",
+    "services": [
+      "KingDrive",
+      "Parking",
+      "PlayKing",
+      "WIFI"
+    ]
+  },
+  {
+    "id": "1",
+    "name": "Afragola",
+    "city": "",
+    "address": "Via Santa Maria La Nova 1 Località Marziasepe  C/O centro commerciale le Porte di Napoli, Afragola, 80021",
+    "zip": "",
+    "phone": "",
+    "services": [
+      "birthday",
+      "BkCafe"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Agrate Brianza",
+    "city": "",
+    "address": "Viale delle Industrie, 3, Agrate Brianza, 20864",
+    "zip": "",
+    "phone": "",
+    "services": [
+      "KingDrive",
+      "Parking",
+      "PlayKing",
+      "WIFI",
+      "birthday",
+      "HomeDelivery"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "agrigento",
+    "city": "",
+    "address": "via fosse ardeatine, 1, agrigento, 92100",
+    "zip": "",
+    "phone": "3492320381",
+    "services": []
+  },
+  {
+    "id": "4",
+    "name": "agrigento",
+    "city": "",
+    "address": "via fosse ardeatine, 1, agrigento, 92100",
+    "zip": "",
+    "phone": "3492320381",
+    "services": []
+  },
+  {
+    "id": "5",
+    "name": "Agrigento CC Villaseta",
+    "city": "",
+    "address": "Via Fosse Ardeatine, Agrigento, 92100",
+    "zip": "",
+    "phone": "0922 511560",
+    "services": [
+      "Parking",
+      "WIFI",
+      "birthday",
+      "HomeDelivery"
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Agropoli",
+    "city": "",
+    "address": "Via della Libertà, snc, Agropoli, 84043",
+    "zip": "",
+    "phone": "09741848411",
+    "services": [
+      "KingDrive",
+      "Parking",
+      "PlayKing",
+      "WIFI",
+      "birthday",
+      "HomeDelivery"
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Alba",
+    "city": "",
+    "address": "Corso Asti, Alba, 12051",
+    "zip": "",
+    "phone": "0173 365004",
+    "services": [
+      "Parking",
+      "WIFI",
+      "birthday",
+      "HomeDelivery"
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Alessandria",
+    "city": "",
+    "address": "Via Giordano Bruno, 69/B, Alessandria, 15121",
+    "zip": "",
+    "phone": "0131 288475",
+    "services": [
+      "KingDrive",
+      "Parking",
+      "PlayKing",
+      "WIFI",
+      "birthday",
+      "Refill",
+      "HomeDelivery"
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Alessandria PAM",
+    "city": "",
+    "address": "Corso Giuseppe Romita, 38, Alessandria, 15121",
+    "zip": "",
+    "phone": "0131 1978056",
+    "services": [
+      "WIFI",
+      "birthday",
+      "HomeDelivery"
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Altavilla",
+    "city": "",
+    "address": "Via Tavernelle, 1D, Altavilla Vicentina, 36077",
+    "zip": "",
+    "phone": "0444 1270000",
+    "services": [
+      "KingDrive",
+      "Parking",
+      "PlayKing",
+      "WIFI",
+      "birthday",
+      "HomeDelivery",
+      "BkCafe"
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Ancona",
+    "city": "",
+    "address": "Via Albertini, Ancona, 60131",
+    "zip": "",
+    "phone": "071 9942260",
+    "services": [
+      "KingDrive",
+      "Parking",
+      "PlayKing",
+      "WIFI",
+      "birthday",
+      "Refill",
+      "HomeDelivery"
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Anzio",
+    "city": "",
+    "address": "Via Casal di Claudia, 2, Anzio, 00042",
+    "zip": "",
+    "phone": "06 97166847",
+    "services": [
+      "KingDrive",
+      "Parking",
+      "PlayKing",
+      "WIFI",
+      "birthday",
+      "HomeDelivery"
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Aprilia",
+    "city": "",
+    "address": "Via Riserva Nuova, 2, Aprilia, 04011",
+    "zip": "",
+    "phone": "06 92704090",
+    "services": [
+      "WIFI",
+      "birthday",
+      "HomeDelivery"
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Arezzo",
+    "city": "",
+    "address": "Via Mecenate, 81/A, Arezzo, 52100",
+    "zip": "",
+    "phone": "0575 371203",
+    "services": [
+      "KingDrive",
+      "Parking",
+      "PlayKing",
+      "WIFI",
+      "birthday",
+      "HomeDelivery"
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Ascoli Piceno",
+    "city": "",
+    "address": "Via del Commercio, 2, Ascoli, 63100",
+    "zip": "",
+    "phone": "0736 618089",
+    "services": [
+      "KingDrive",
+      "Parking",
+      "PlayKing",
+      "WIFI",
+      "birthday",
+      "HomeDelivery"
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Assago",
+    "city": "",
+    "address": "Viale Milano Fiori, Assago, 20089",
+    "zip": "",
+    "phone": "02 57701953",
+    "services": [
+      "Parking",
+      "HomeDelivery"
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Asti",
+    "city": "",
+    "address": "Corso Casale, 319, Asti (AT), 14100",
+    "zip": "",
+    "phone": "0141477268",
+    "services": [
+      "KingDrive",
+      "Parking",
+      "WIFI",
+      "birthday",
+      "HomeDelivery"
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Avellino",
+    "city": "",
+    "address": "Piazza Garibaldi ang. via Partenio, Avellino, 83100",
+    "zip": "",
+    "phone": "",
+    "services": [
+      "WIFI",
+      "birthday",
+      "HomeDelivery"
+    ]
+  },
+  {
+    "id": "19",
+    "name": "Avezzano",
+    "city": "",
+    "address": "Via Cassinelli, snc, Avezzano, 67051",
+    "zip": "",
+    "phone": "3487910956",
+    "services": [
+      "KingDrive",
+      "Parking",
+      "PlayKing",
+      "WIFI",
+      "birthday",
+      "HomeDelivery",
+      "BkCafe"
+    ]
+  },
+  {
+    "id": "20",
+    "name": "Bagno A Ripoli",
+    "city": "",
+    "address": "Via Chiantigiana, 20, Ponte a Ema, 50126",
+    "zip": "",
+    "phone": "055 642542",
+    "services": [
+      "KingDrive",
+      "Parking",
+      "PlayKing",
+      "WIFI",
+      "birthday",
+      "HomeDelivery"
+    ]
+  },
+  {
+    "id": "21",
+    "name": "Bari",
+    "city": "",
+    "address": "Piazza Aldo Moro, 8, Bari, 70121",
+    "zip": "",
+    "phone": "080 5210571",
+    "services": [
+      "WIFI",
+      "birthday",
+      "HomeDelivery"
+    ]
+  },
+  {
+    "id": "22",
+    "name": "Bari Amendola",
+    "city": "",
+    "address": "VIA GIOVANNI AMENDOLA 211/A, Bari, 00185",
+    "zip": "",
+    "phone": "",
+    "services": [
+      "KingDrive",
+      "Parking",
+      "WIFI",
+      "birthday",
+      "HomeDelivery",
+      "BkCafe"
+    ]
+  },
+  {
+    "id": "23",
+    "name": "Bari Santa Caterina",
+    "city": "",
+    "address": "TRAVERSA MARTIRI DELLE FOIBE, 6/2, Bari, ",
+    "zip": "",
+    "phone": "393921767548",
+    "services": [
+      "KingDrive",
+      "Parking",
+      "PlayKing",
+      "WIFI",
+      "birthday",
+      "HomeDelivery",
+      "BkCafe"
+    ]
+  },
+  {
+    "id": "24",
+    "name": "Bassano del Grappa",
+    "city": "",
+    "address": "Via Ca' Dolfin, 213, Bassano del Grappa, 36061",
+    "zip": "",
+    "phone": "0424 566141",
+    "services": [
+      "KingDrive",
+      "Parking",
+      "PlayKing",
+      "birthday",
+      "HomeDelivery"
+    ]
+  }
+]

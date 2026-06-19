@@ -1,0 +1,168 @@
+{
+  "prodottiPage": {
+    "categories": [
+      {
+        "cat": "best_seller",
+        "title": "Best Seller",
+        "img": "https://www.burgerking.it/assets/img/console/mo/category/94_image_it.png?v=1709305481",
+        "index": "0"
+      },
+      {
+        "cat": "tutti_i_burger",
+        "title": "Tutti i Burger",
+        "img": "https://www.burgerking.it/assets/img/console/mo/category/404_image_it.png?v=1709312929",
+        "index": "1"
+      },
+      {
+        "cat": "euroking",
+        "title": "Euroking",
+        "img": "https://www.burgerking.it/assets/img/console/mo/category/2443_image_it.png?v=1773679546",
+        "index": "2"
+      },
+      {
+        "cat": "italian_kings",
+        "title": "Italian Kings",
+        "img": "https://www.burgerking.it/assets/img/console/mo/category/63_image_it.png?v=1781526824",
+        "index": "3"
+      },
+      {
+        "cat": "plant-based*",
+        "title": "Plant-Based*",
+        "img": "https://www.burgerking.it/assets/img/console/mo/category/64_image_it.png?v=1709305480",
+        "index": "4"
+      },
+      {
+        "cat": "manzo",
+        "title": "Manzo",
+        "img": "https://www.burgerking.it/assets/img/console/mo/category/65_image_it.png?v=1709305480",
+        "index": "5"
+      },
+      {
+        "cat": "pollo",
+        "title": "Pollo",
+        "img": "https://www.burgerking.it/assets/img/console/mo/category/66_image_it.png?v=1709305480",
+        "index": "6"
+      },
+      {
+        "cat": "snack",
+        "title": "Snack",
+        "img": "https://www.burgerking.it/assets/img/console/mo/category/68_image_it.png?v=1709305481",
+        "index": "7"
+      },
+      {
+        "cat": "insalate_&_wrap",
+        "title": "Insalate & Wrap",
+        "img": "https://www.burgerking.it/assets/img/console/mo/category/69_image_it.png?v=1709305481",
+        "index": "8"
+      },
+      {
+        "cat": "dessert",
+        "title": "Dessert",
+        "img": "https://www.burgerking.it/assets/img/console/mo/category/70_image_it.png?v=1709305481",
+        "index": "9"
+      },
+      {
+        "cat": "king_junior_meal",
+        "title": "King Junior Meal",
+        "img": "https://www.burgerking.it/assets/img/console/mo/category/71_image_it.png?v=1709305481",
+        "index": "10"
+      },
+      {
+        "cat": "bk_cafe",
+        "title": "BK Café",
+        "img": "https://www.burgerking.it/assets/img/console/mo/category/2374_image_it.png?v=1751290031",
+        "index": "11"
+      },
+      {
+        "cat": "bevande_e_caffe",
+        "title": "Bevande e caffè",
+        "img": "https://www.burgerking.it/assets/img/console/mo/category/72_image_it.png?v=1779359481",
+        "index": "12"
+      },
+      {
+        "cat": "salse",
+        "title": "Salse",
+        "img": "https://www.burgerking.it/assets/img/console/mo/category/73_image_it.png?v=1709305481",
+        "index": "13"
+      }
+    ],
+    "filters": [],
+    "products": [
+      {
+        "id": "prodotto-italian_summer_king",
+        "href": "/prodotti/dettaglio/italian_summer_king",
+        "classes": "col-6 col-md-4 col-prodotto"
+      },
+      {
+        "id": "prodotto-the_parmigiano_reggiano_burger_",
+        "href": "/prodotti/dettaglio/the_parmigiano_reggiano_burger_",
+        "classes": "col-6 col-md-4 col-prodotto"
+      },
+      {
+        "id": "prodotto-bacon_king_compact",
+        "href": "/prodotti/dettaglio/bacon_king_compact",
+        "classes": "col-6 col-md-4 col-prodotto"
+      },
+      {
+        "id": "prodotto-baby_burgers",
+        "href": "/prodotti/dettaglio/baby_burgers",
+        "classes": "col-6 col-md-4 col-prodotto"
+      },
+      {
+        "id": "prodotto-chicken_krispper",
+        "href": "/prodotti/dettaglio/chicken_krispper",
+        "classes": "col-6 col-md-4 col-prodotto"
+      },
+      {
+        "id": "prodotto-crazy_cheese_chicken_bbq",
+        "href": "/prodotti/dettaglio/crazy_cheese_chicken_bbq",
+        "classes": "col-6 col-md-4 col-prodotto"
+      },
+      {
+        "id": "prodotto-crazy_cheese_bbq",
+        "href": "/prodotti/dettaglio/crazy_cheese_bbq",
+        "classes": "col-6 col-md-4 col-prodotto"
+      },
+      {
+        "id": "prodotto-bacon_king_3_0",
+        "href": "/prodotti/dettaglio/bacon_king_3_0",
+        "classes": "col-6 col-md-4 col-prodotto"
+      },
+      {
+        "id": "prodotto-bacon_king",
+        "href": "/prodotti/dettaglio/bacon_king",
+        "classes": "col-6 col-md-4 col-prodotto"
+      },
+      {
+        "id": "prodotto-chicken_bacon_king",
+        "href": "/prodotti/dettaglio/chicken_bacon_king",
+        "classes": "col-6 col-md-4 col-prodotto"
+      },
+      {
+        "id": "prodotto-whopper_-_gustalo_plant_based",
+        "href": "/prodotti/dettaglio/whopper_-_gustalo_plant_based",
+        "classes": "col-6 col-md-4 col-prodotto"
+      },
+      {
+        "id": "prodotto-bronx_steakhouse_-_gustalo_plant_based",
+        "href": "/prodotti/dettaglio/bronx_steakhouse_-_gustalo_plant_based",
+        "classes": "col-6 col-md-4 col-prodotto"
+      },
+      {
+        "id": "prodotto-crazy_cheese_bbq_provalo_plant_based",
+        "href": "/prodotti/dettaglio/crazy_cheese_bbq_provalo_plant_based",
+        "classes": "col-6 col-md-4 col-prodotto"
+      }
+    ],
+    "cards": [],
+    "cardCount": 0,
+    "novitaSection": [],
+    "bodyClasses": "d-flex flex-column"
+  },
+  "detail": {
+    "mainImg": "linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0))",
+    "ingredients": [],
+    "allergeni": [],
+    "allH": []
+  }
+}

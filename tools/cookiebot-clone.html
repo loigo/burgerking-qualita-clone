@@ -1,0 +1,42 @@
+<div id="cookie-banner" class="cybot-cookiebot-dialog fixed inset-x-0 bottom-0 z-[11000]" role="dialog" aria-modal="true" aria-labelledby="CybotCookiebotDialogTitle" aria-hidden="false" data-bound="1">
+      <div class="cybot-cookiebot-border flex h-[3px] w-full" aria-hidden="true">
+        <span class="flex-1 bg-bk-orange"></span>
+        <span class="flex-1 bg-bk-brown"></span>
+      </div>
+      <div class="bg-white shadow-[0_-4px_24px_rgba(0,0,0,0.15)]">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 py-5 grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-8 items-start relative pb-12 lg:pb-5">
+          <div class="lg:col-span-8 pr-0 lg:pr-4">
+            <h2 id="CybotCookiebotDialogTitle" class="cybot-cookie-title font-flame text-[2rem] leading-[2.4rem] text-[#141414] mb-3">Questo sito web utilizza i cookie</h2>
+            <p class="cybot-cookie-text text-[1.3rem] leading-[1.9rem] text-[#141414] mb-3">Utilizziamo i cookie per personalizzare contenuti ed annunci, per fornire funzionalità dei social media e per analizzare il nostro traffico. Condividiamo inoltre informazioni sul modo in cui utilizzi il nostro sito con i nostri partner che si occupano di analisi dei dati web, pubblicità e social media, i quali potrebbero combinarle con altre informazioni che hai fornito loro o che hanno raccolto dal tuo utilizzo dei loro servizi.</p>
+            <button type="button" id="CybotCookiebotDialogDetailToggle" class="cybot-details-toggle text-[1.3rem] text-[#141414] underline bg-transparent border-0 cursor-pointer p-0 font-flame-sans hover:text-bk-orange transition-colors" aria-expanded="false">Mostra dettagli</button>
+            <div id="CybotCookiebotDialogDetail" class="hidden mt-4 space-y-3">
+              <div class="cybot-cookie-row flex items-center justify-between gap-4 py-2 border-b border-gray-200">
+                <div><span class="font-flame text-[1.5rem] text-[#141414]">Necessari</span><p class="text-[1.2rem] text-gray-600 mt-1">I cookie necessari aiutano a rendere fruttifero un sito web abilitando funzioni di base come la navigazione della pagina e l'accesso alle aree protette del sito web.</p></div>
+                <label class="cybot-toggle is-on is-locked" aria-label="Necessari sempre attivi"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonNecessary" checked="" disabled="" class="sr-only"><span class="cybot-toggle-track"><span class="cybot-toggle-thumb"></span></span></label>
+              </div>
+              <div class="cybot-cookie-row flex items-center justify-between gap-4 py-2 border-b border-gray-200">
+                <div><span class="font-flame text-[1.5rem] text-[#141414]">Preferenze</span><p class="text-[1.2rem] text-gray-600 mt-1">I cookie di preferenza consentono a un sito web di ricordare informazioni che cambiano il modo in cui il sito web si comporta o si presenta.</p></div>
+                <label class="cybot-toggle" aria-label="Preferenze"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonPreferences" class="sr-only"><span class="cybot-toggle-track"><span class="cybot-toggle-thumb"></span></span></label>
+              </div>
+              <div class="cybot-cookie-row flex items-center justify-between gap-4 py-2 border-b border-gray-200">
+                <div><span class="font-flame text-[1.5rem] text-[#141414]">Statistiche</span><p class="text-[1.2rem] text-gray-600 mt-1">I cookie statistici aiutano i proprietari del sito web a capire come i visitatori interagiscono con i siti web raccogliendo e riportando informazioni in forma anonima.</p></div>
+                <label class="cybot-toggle" aria-label="Statistiche"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonStatistics" class="sr-only"><span class="cybot-toggle-track"><span class="cybot-toggle-thumb"></span></span></label>
+              </div>
+              <div class="cybot-cookie-row flex items-center justify-between gap-4 py-2">
+                <div><span class="font-flame text-[1.5rem] text-[#141414]">Marketing</span><p class="text-[1.2rem] text-gray-600 mt-1">I cookie di marketing vengono utilizzati per tracciare i visitatori sui siti web al fine di mostrare annunci pertinenti e coinvolgenti.</p></div>
+                <label class="cybot-toggle" aria-label="Marketing"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonMarketing" class="sr-only"><span class="cybot-toggle-track"><span class="cybot-toggle-thumb"></span></span></label>
+              </div>
+            </div>
+            <a href="https://www.cookiebot.com/it/" target="_blank" rel="noopener" class="cybot-brand absolute left-4 sm:left-6 bottom-3 flex items-center gap-2 no-underline text-[#141414] hover:opacity-80" aria-label="Cookiebot by Usercentrics">
+              <svg class="cybot-brand-icon w-[26px] h-[26px] flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#2A4EEF"></circle><path fill="#fff" d="M8.5 10.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm-2 4.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm5-2.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path></svg>
+              <span class="text-[1.1rem] leading-tight font-flame-sans"><span class="font-semibold">Cookiebot</span><span class="block text-[0.95rem] text-gray-600">by Usercentrics</span></span>
+            </a>
+          </div>
+          <div class="lg:col-span-4 flex flex-col gap-2 w-full lg:max-w-[280px] lg:ml-auto lg:mt-0 mt-2">
+            <button type="button" id="CybotCookiebotDialogBodyButtonAccept" class="cybot-btn cybot-btn-dark w-full">Accetta tutti</button>
+            <button type="button" id="CybotCookiebotDialogBodyButtonAcceptSelection" class="cybot-btn cybot-btn-dark w-full">Accetta selezionati</button>
+            <button type="button" id="CybotCookiebotDialogBodyButtonDecline" class="cybot-btn cybot-btn-outline w-full">Rifiuta</button>
+          </div>
+        </div>
+      </div>
+    </div>

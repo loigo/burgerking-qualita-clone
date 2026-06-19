@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Entra e scopri tutti i menu, gli hamburger, gli snack Burger King® e le promozioni che abbiamo pensato per te.">
+  <title>Burger King Italia | Hamburger e Fast Food</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { 'bk-brown':'#502314','bk-avana':'#F5EBDC','bk-orange':'#FF8732','bk-red':'#D62300','bk-green':'#198737','bk-dark':'#E8DFCF' }, maxWidth: { '1600':'1600px' } } } };
+  </script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="flex flex-col min-h-screen bg-bk-avana has-mobile-bar" data-page="home">
+
+  <div id="bk-header"></div>
+
+  <main class="flex-grow">
+    <!-- HERO SLIDER -->
+    <div class="max-w-1600 mx-auto px-0 md:px-6 xl:px-12 mb-8">
+      <div id="hero-slider" class="hero-slider">
+        <div class="hero-slide active">
+          <div class="grid grid-cols-1 md:grid-cols-2 items-center p-4 md:p-8 gap-4">
+            <div class="order-2 md:order-1 flex justify-center">
+              <img src="https://www.burgerking.it/assets/img/console/carousel/slides/775_desktop_it.png?v=1781593671" alt="Italian Summer King" class="slider-image">
+            </div>
+            <div class="order-1 md:order-2 text-center text-bk-avana px-4 py-6">
+              <p class="font-flame text-[1.5rem] pb-2">È arrivato il King dell'estate</p>
+              <h1 class="font-flamebold text-[5rem] leading-[4.9rem] pb-4">NUOVO ITALIAN<br>SUMMER KING</h1>
+              <p class="text-[2.4rem] leading-[2.6rem]">I momenti veri sanno d'estate, proprio come il nuovo burger che abbiamo messo a menù.<br>Vieni a provarlo, solo da Burger King.</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slide">
+          <div class="grid grid-cols-1 md:grid-cols-2 items-center p-4 md:p-8 gap-4">
+            <div class="order-2 md:order-1 flex justify-center">
+              <img src="https://www.burgerking.it/assets/img/console/carousel/slides/766_desktop_it.png?v=1780070141" alt="Bacon King" class="slider-image">
+            </div>
+            <div class="order-1 md:order-2 text-center text-bk-avana px-4 py-6">
+              <p class="font-flame text-[1.5rem] pb-2">Diverse sfumature di Bacon King.</p>
+              <h2 class="font-flamebold text-[5rem] leading-[4.9rem] pb-4">GAMMA MIA!</h2>
+              <p class="text-[2.4rem] leading-[2.6rem]">Una nuova variante di Bacon King è appena arrivata da Burger King. Vieni a provare il nuovo Bacon King Compact, con lo stesso gusto di sempre in un nuovo formato, o la versione di Bacon King che ti crea più fame.</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slide">
+          <div class="grid grid-cols-1 md:grid-cols-2 items-center p-4 md:p-8 gap-4">
+            <div class="order-2 md:order-1 flex justify-center">
+              <img src="https://www.burgerking.it/assets/img/console/carousel/slides/591_image_it.png?v=1756732233" alt="On Fire Club" class="slider-image">
+            </div>
+            <div class="order-1 md:order-2 text-center text-bk-avana px-4 py-6">
+              <p class="font-flame text-[1.5rem] pb-2"><strong>On Fire Club</strong></p>
+              <h2 class="font-flamebold text-[5rem] leading-[4.9rem] pb-4">Il programma fedeltà per chi è On Fire come te!</h2>
+              <p class="text-[2.4rem] leading-[2.6rem]">Unisciti, accumula corone e guadagna vantaggi esclusivi</p>
+            </div>
+          </div>
+        </div>
+        <button id="hero-prev" class="slider-nav-btn hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-10" aria-label="Precedente"><svg viewBox="0 0 16 16"><path fill="#fff" fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg></button>
+        <button id="hero-next" class="slider-nav-btn hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-10" aria-label="Successivo"><svg viewBox="0 0 16 16"><path fill="#fff" fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></button>
+        <div class="hero-dots md:hidden">
+          <button class="hero-dot active" aria-label="Slide 1"></button>
+          <button class="hero-dot" aria-label="Slide 2"></button>
+          <button class="hero-dot" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROMOZIONI -->
+    <section class="section-pari py-8" data-carousel>
+      <div class="max-w-1600 mx-auto">
+        <div class="div-titolo-section pl-6 md:pl-[4.5rem] pb-6 flex items-baseline flex-wrap">
+          <span class="titolo-section">Promozioni</span>
+          <a href="promo.html" class="link-view-all ps-2">Vedi tutti</a>
+        </div>
+        <div class="relative">
+          <div id="promo-track" class="h-track flex gap-4 overflow-x-auto pl-6 md:pl-[4.5rem] pr-6 pb-4">
+            <a href="promo/big_king__bibita_small__snack_small/" class="flex-shrink-0 w-[260px] no-underline"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/news/1633_thumb_it.png?v=1772624957')"></div><div class="div-content-news"><div class="news-title text-[2rem]">Big King + Bibita Small + Snack Small</div></div></div></a>
+            <a href="promo.html" class="flex-shrink-0 w-[260px] no-underline"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/news/1702_thumb_it.png?v=1772624482')"></div><div class="div-content-news"><div class="news-title text-[2rem]">Crispy Chicken Wrap + Bibita Small + Snack Small</div></div></div></a>
+            <a href="promo.html" class="flex-shrink-0 w-[260px] no-underline"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/news/1683_thumb_it.jpg?v=1769677701')"></div><div class="div-content-news"><div class="news-title text-[2rem]">3 menu medi a scelta tra 6</div></div></div></a>
+            <a href="promo.html" class="flex-shrink-0 w-[260px] no-underline"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/news/1682_thumb_it.jpg?v=1769677494')"></div><div class="div-content-news"><div class="news-title text-[2rem]">4 menu medi a scelta tra 6</div></div></div></a>
+            <a href="promo.html" class="flex-shrink-0 w-[260px] no-underline"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/news/1681_thumb_it.jpg?v=1769677033')"></div><div class="div-content-news"><div class="news-title text-[2rem]">2 menu medi a scelta tra 6</div></div></div></a>
+            <a href="promo.html" class="flex-shrink-0 w-[260px] no-underline"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/news/1676_thumb_it.png?v=1769612219')"></div><div class="div-content-news"><div class="news-title text-[2rem]">Chicken Stripes Menu Medio</div></div></div></a>
+          </div>
+          <button id="promo-prev" class="slider-nav-btn hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-10" aria-label="Precedente"><svg viewBox="0 0 16 16"><path fill="#fff" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg></button>
+          <button id="promo-next" class="slider-nav-btn hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-10" aria-label="Successivo"><svg viewBox="0 0 16 16"><path fill="#fff" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODOTTI -->
+    <section id="products-home-section" class="section-pari py-8">
+      <div class="max-w-1600 mx-auto">
+        <div class="div-titolo-section pl-6 md:pl-[4.5rem] pb-4 flex items-baseline flex-wrap">
+          <span class="titolo-section">I nostri prodotti</span>
+          <a href="prodotti.html" class="link-view-all ps-2">Vedi tutti</a>
+        </div>
+        <div id="carousel-categorie-home" class="element-section scrollbar-custom2 pl-6 md:pl-[4.5rem] pb-4">
+          <button class="btn-tag-outline btn-filtro-prod btn-filtro-categoria active" data-cat="best_seller" type="button" id="btn-best_seller">Best Seller</button>
+          <button class="btn-tag-outline btn-filtro-prod btn-filtro-categoria" data-cat="italian_kings" type="button" id="btn-italian_kings">Italian Kings</button>
+          <button class="btn-tag-outline btn-filtro-prod btn-filtro-categoria" data-cat="manzo" type="button" id="btn-manzo">Manzo</button>
+          <button class="btn-tag-outline btn-filtro-prod btn-filtro-categoria" data-cat="pollo" type="button" id="btn-pollo">Pollo</button>
+          <button class="btn-tag-outline btn-filtro-prod btn-filtro-categoria" data-cat="insalate_&_wrap" type="button" id="btn-insalate_&_wrap">Insalate &amp; Wrap</button>
+          <button class="btn-tag-outline btn-filtro-prod btn-filtro-categoria" data-cat="king_junior_meal" type="button" id="btn-king_junior_meal">King Junior Meal</button>
+        </div>
+        <div class="relative mt-2" data-carousel>
+          <div id="products-home-track" class="h-track carousel-home-prod flex gap-4 overflow-x-auto pl-6 md:pl-[4.5rem] pr-6 pb-4"></div>
+          <button id="prod-home-prev" class="slider-nav-btn hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-10" aria-label="Precedente"><svg viewBox="0 0 16 16"><path fill="#fff" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg></button>
+          <button id="prod-home-next" class="slider-nav-btn hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-10" aria-label="Successivo"><svg viewBox="0 0 16 16"><path fill="#fff" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOVITÀ -->
+    <section id="novita" class="section-dispari py-8" data-carousel>
+      <div class="max-w-1600 mx-auto">
+        <div class="div-titolo-section pl-6 md:pl-[4.5rem] pb-6 flex flex-wrap items-center justify-between gap-4 pr-6 md:pr-[4.5rem]">
+          <span class="titolo-section">Novità</span>
+          <a href="novita.html" class="btn-main-outline no-underline">Vedi tutte</a>
+        </div>
+        <div class="relative">
+          <div id="novita-track" class="h-track flex gap-4 overflow-x-auto pl-6 md:pl-[4.5rem] pr-6 pb-4">
+            <a href="novita.html" class="flex-shrink-0 w-[320px] no-underline"><div class="news-card"><div class="div-img-news aspect-video" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/news/1770_thumb_it.jpg?v=1781175501')"></div><div class="div-content-news"><div class="news-title text-[2rem]">Il sapore dell'estate in un burger!</div><div class="news-preview hidden md:block text-[1.5rem]">Arriva a menù il panino che racchiude tutto il gusto dell'estate in un morso: il nuovo Italian Summer King. Vieni a provarlo, solo da Burger King.</div></div></div></a>
+            <a href="novita.html" class="flex-shrink-0 w-[320px] no-underline"><div class="news-card"><div class="div-img-news aspect-video" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/news/1769_thumb_it.png?v=1781190756')"></div><div class="div-content-news"><div class="news-title text-[2rem]">PROMOssi a pieni voti.</div><div class="news-preview hidden md:block text-[1.5rem]">DA OGGI SI STUDIA IL RELAX. Nuovo programma didattico: amici, sole e cose buone. A partire da una promo squisita: un Bacon King Compact Menu Medio e un Sundae Pistacchio a soli €9,40.</div></div></div></a>
+            <a href="novita.html" class="flex-shrink-0 w-[320px] no-underline"><div class="news-card"><div class="div-img-news aspect-video" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/news/1766_thumb_it.jpg?v=1781260146')"></div><div class="div-content-news"><div class="news-title text-[2rem]">Catch the Baby Burgers</div><div class="news-preview hidden md:block text-[1.5rem]">Un nuovo gioco dedicato ai nostri amati Baby Burgers ti aspetta in APP!</div></div></div></a>
+            <a href="novita.html" class="flex-shrink-0 w-[320px] no-underline"><div class="news-card"><div class="div-img-news aspect-video" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/news/1762_thumb_it.png?v=1780491591')"></div><div class="div-content-news"><div class="news-title text-[2rem]">Mi è semblato di vedele una solplesa!</div><div class="news-preview hidden md:block text-[1.5rem]">Da Burger King sono arrivate le nuove sorprese Looney Tunes, una in ogni KJM. Vieni a scoprirle tutte.</div></div></div></a>
+            <a href="novita.html" class="flex-shrink-0 w-[320px] no-underline"><div class="news-card"><div class="div-img-news aspect-video" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/news/1761_thumb_it.png?v=1780048066')"></div><div class="div-content-news"><div class="news-title text-[2rem]">KING OF THE NIGHT</div><div class="news-preview hidden md:block text-[1.5rem]">La fame viene di notte...</div></div></div></a>
+          </div>
+          <button id="novita-prev" class="slider-nav-btn hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-10" aria-label="Precedente"><svg viewBox="0 0 16 16"><path fill="#fff" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg></button>
+          <button id="novita-next" class="slider-nav-btn hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-10" aria-label="Successivo"><svg viewBox="0 0 16 16"><path fill="#fff" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUALITÀ BK teaser -->
+    <section class="py-8 px-6 md:px-[4.5rem]">
+      <div class="max-w-1600 mx-auto rounded-xl overflow-hidden" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/banner/311_desktop_it.png?v=1709553877'); background-size:cover; background-position:center; box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.3); padding:8rem 2rem; border-radius:25px;">
+        <div class="text-center text-bk-avana max-w-xl mx-auto">
+          <p class="font-flame text-[1.5rem] pb-2">Qualità</p>
+          <h2 class="font-flamebold text-[4rem] leading-[3.9rem] text-bk-orange uppercase pb-4">Massima qualità, massimo gusto.</h2>
+          <p class="text-[2rem] pb-8">Usiamo solo il meglio per darti tutto il gusto che meriti.</p>
+          <a href="qualita-bk.html" class="btn-main">Scopri i nostri ingredienti</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORE LOCATOR -->
+    <section id="store-locator" class="py-8 px-6 md:px-[4.5rem]">
+      <div class="max-w-1600 mx-auto div-banner-storelocator grid grid-cols-1 md:grid-cols-3 items-center p-6 md:p-8" style="background-color:#502314;">
+        <div class="flex justify-center">
+          <img src="https://www.burgerking.it/assets/img/console/appUser/banner/301_desktop_it.png?v=1709305468" alt="" class="banner-image max-w-full">
+        </div>
+        <div class="text-center md:text-left text-bk-avana py-6">
+          <h2 class="font-flamebold text-bk-orange text-[3.5rem] leading-[3.4rem] pb-3">Vieni nel tuo regno da King</h2>
+          <p class="text-[1.5rem] pb-6">Trova il ristorante più vicino a te per venire a gustare subito i tuoi burger preferiti e vivere un'esperienza da vero king!</p>
+          <a href="trova-un-ristorante.html" class="btn-main">Trova il regno</a>
+        </div>
+        <div class="hidden xl:flex justify-center">
+          <img src="https://www.burgerking.it/assets/images/img_home_storelocator.png?v=1709305347" alt="" class="home-image-locator">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="bk-footer"></div>
+  <div id="bk-mobile-bar"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/page-shell.js"></script>
+  <script src="js/home-products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

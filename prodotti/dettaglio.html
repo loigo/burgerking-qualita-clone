@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Scopri ingredienti e allergeni del prodotto Burger King.">
+  <title>Dettaglio prodotto | Burger King Italia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { 'bk-brown':'#502314','bk-avana':'#F5EBDC','bk-orange':'#FF8732','bk-red':'#D62300','bk-green':'#198737','bk-dark':'#E8DFCF' }, maxWidth: { '1600':'1600px' } } } };
+  </script>
+  <link rel="stylesheet" href="/css/custom.css">
+  <script>window.BK_BASE = '/';</script>
+</head>
+<body class="flex flex-col min-h-screen bg-bk-avana has-mobile-bar" data-page="prodotto-dettaglio">
+
+  <div id="bk-header"></div>
+
+  <main id="product-detail-page" class="flex-grow">
+    <div class="max-w-1600 mx-auto px-6 md:px-12 pt-6">
+      <a href="/prodotti.html" class="breadcrumb-back no-underline">
+        <img src="https://www.burgerking.it/assets/images/Arrow-left.svg?v=1709305347" alt="" class="breadcrumb-arrow">
+        Torna alla lista prodotti
+      </a>
+    </div>
+
+    <div class="testata-scheda-wrap bg-bk-brown">
+      <div class="max-w-1600 mx-auto px-6 md:px-12 py-10 md:py-14">
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 items-center">
+          <div class="text-center xl:text-left order-2 xl:order-1">
+            <h1 id="product-title" class="testata-title font-flamebold text-bk-avana uppercase"></h1>
+          </div>
+          <div class="flex justify-center order-1 xl:order-2">
+            <img id="product-hero-img" src="" alt="" class="product-hero-img max-w-full">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-1600 mx-auto px-6 md:px-12 py-8 md:py-10">
+      <div id="product-description" class="testata-description text-center max-w-4xl mx-auto text-[2rem] leading-[2.4rem] text-black/90"></div>
+    </div>
+
+    <section class="section-ingredienti-prod py-6">
+      <div class="max-w-1600 mx-auto relative" data-carousel>
+        <div id="ingredienti-track" class="h-track flex gap-6 overflow-x-auto px-6 md:px-12 pb-4"></div>
+        <button id="ing-prev" class="slider-nav-btn hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 z-10" aria-label="Precedente"><svg viewBox="0 0 16 16"><path fill="#fff" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg></button>
+        <button id="ing-next" class="slider-nav-btn hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 z-10" aria-label="Successivo"><svg viewBox="0 0 16 16"><path fill="#fff" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></button>
+      </div>
+    </section>
+
+    <section id="allergeni-section" class="py-8 hidden">
+      <div class="max-w-1600 mx-auto px-6 md:px-12">
+        <h2 class="text-center font-flamebold text-[2.4rem] text-bk-brown pb-6">Allergeni</h2>
+        <div id="allergeni-grid" class="flex flex-wrap justify-center gap-6"></div>
+      </div>
+    </section>
+
+    <!-- APP BANNER -->
+    <div class="max-w-1600 mx-auto px-6 md:px-12 py-10">
+      <div class="div-app-banner rounded-[25px] overflow-hidden" style="background-color:#D62300">
+        <div class="grid grid-cols-1 md:grid-cols-12 items-center gap-6 p-6 md:p-10 text-bk-avana">
+          <div class="md:col-span-4 flex justify-center">
+            <img src="https://www.burgerking.it/assets/img/console/appUser/banner/331_desktop_it.png?v=1710414705" alt="" class="w-[70%] max-w-xs hidden md:block">
+            <img src="https://www.burgerking.it/assets/img/console/appUser/banner/331_desktop_it.png?v=1710414705" alt="" class="w-full max-w-xs md:hidden">
+          </div>
+          <div class="md:col-span-5 text-center md:text-left">
+            <div class="font-flamebold text-[3.5rem] leading-[3.4rem] pb-4">SCARICA LA NOSTRA APP</div>
+            <div class="font-flame text-[2.4rem] leading-[2.6rem]">E goditi dei vantaggi da vero King!</div>
+          </div>
+          <div class="md:col-span-3 hidden md:flex justify-center">
+            <img src="https://www.burgerking.it/assets/img/console/appUser/banner/703_desktop_it.jpg?v=1779286122" alt="" class="max-w-[300px] rounded-xl">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="bk-footer"></div>
+  <div id="bk-mobile-bar"></div>
+
+  <script src="/js/components.js"></script>
+  <script src="/js/page-shell.js"></script>
+  <script src="/js/prodotti-catalog.js"></script>
+  <script src="/js/product-detail.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

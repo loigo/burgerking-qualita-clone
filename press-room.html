@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="In questa pagina puoi trovare i comunicati stampa, le immagini e tutte le comunicazioni di Burger King®.">
+  <title>Comunicati Stampa, Press Release | Burger King Italia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{'bk-brown':'#502314','bk-avana':'#F5EBDC','bk-orange':'#FF8732','bk-red':'#D62300','bk-dark':'#E8DFCF'},maxWidth:{'1600':'1600px'}}}};</script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="flex flex-col min-h-screen bg-bk-avana has-mobile-bar" data-page="press">
+  <div id="bk-header"></div>
+  <main class="flex-grow container-pressroom">
+    <section class="testata-promo mb-12 md:mx-6 xl:mx-12">
+      <div class="text-center max-w-3xl mx-auto">
+        <h1 class="font-flamebold text-[5rem] leading-[4.9rem] text-bk-orange uppercase">PRESS ROOM</h1>
+        <p class="text-[2.4rem] leading-[2.6rem] text-bk-avana mt-6">Comunicati stampa</p>
+        <p class="text-[2rem] leading-[2.4rem] text-bk-avana mt-4">In questa pagina puoi trovare i comunicati stampa, le immagini e tutti i dati necessari su BURGER KING®.</p>
+      </div>
+    </section>
+
+    <section class="main-news main-pressroom">
+      <div class="max-w-1600 mx-auto px-6 md:px-[4.5rem]">
+        <div class="hidden md:block mb-8 max-w-xs">
+          <p class="title18 pb-4 text-bk-brown">Cerca per parola chiave</p>
+          <div class="buttonIn">
+            <input type="text" placeholder="Testo da cercare" id="input-search" class="form-control">
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="press-grid">
+          <article class="press-card" data-search="italian king prosciutto parma burger">
+            <a href="prodotti.html" class="no-underline block">
+              <div class="news-card press-card-inner">
+                <div class="press-card-header">
+                  <p class="font-flame text-[1.4rem] text-bk-orange pb-2">Prova il nuovo re del gusto!</p>
+                  <h2 class="news-title text-[2.4rem] text-bk-brown">ITALIAN KING - PROSCIUTTO DI PARMA BURGER</h2>
+                </div>
+                <p class="news-preview text-[1.5rem] mt-4 text-gray-700">C'è un nuovo arrivato fra gli italian kings: the prosciutto di parma burger, con autentico prosciutto crudo di parma, cipolle fritte e deliziosa scamorza bianca. Cosa aspetti ad assaggiarlo?</p>
+                <span class="btn-main-outline inline-block mt-6">Scopri il panino</span>
+              </div>
+            </a>
+          </article>
+          <article class="press-card" data-search="eolo kometa sponsorship cycling">
+            <div class="news-card press-card-inner">
+              <div class="press-card-header">
+                <p class="font-flame text-[1.4rem] text-bk-orange pb-2">BURGER KING® È IL NUOVO SPONSOR DELL'EOLO-KOMETA CYCLING TEAM</p>
+                <h2 class="news-title text-[2.4rem] text-bk-brown">CS_BK EOLO-KOMETA SPONSORSHIP</h2>
+              </div>
+              <p class="news-preview text-[1.5rem] mt-4 text-gray-700">L'azienda celebra questo importante accordo nel suo 230mo ristorante sul territorio Italiano.</p>
+              <a href="https://www.burgerking.it/assets/documents/1_document_it.pdf" class="btn-main-outline inline-block mt-6 no-underline" target="_blank" rel="noopener">Scarica comunicato (PDF)</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <div id="bk-app-banner"></div>
+  </main>
+  <div id="bk-footer"></div>
+  <div id="bk-mobile-bar"></div>
+  <script src="js/components.js"></script>
+  <script src="js/page-shell.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

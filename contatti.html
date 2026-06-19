@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Siamo qui per te! Contatta il servizio clienti di Burger King® su www.burgerking.it.">
+  <title>Contatti: Servizio Clienti BKItalia | Burger King Italia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{'bk-brown':'#502314','bk-avana':'#F5EBDC','bk-orange':'#FF8732','bk-red':'#D62300','bk-dark':'#E8DFCF'},maxWidth:{'1600':'1600px'}}}};</script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="flex flex-col min-h-screen bg-bk-avana has-mobile-bar" data-page="contatti">
+  <div id="bk-header"></div>
+  <main class="flex-grow container-contatti">
+    <div class="max-w-1600 mx-auto px-0">
+      <section class="testata-bg mb-8 md:mb-12 mx-0 md:mx-6 xl:mx-12" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/banner/310_desktop_it.png?v=1709305469');">
+        <div class="w-full xl:w-1/2 text-center text-bk-avana px-4">
+          <h1 class="font-flamebold text-[5rem] leading-[4.9rem] text-bk-orange uppercase pb-4">SIAMO QUI PER TE</h1>
+          <p class="text-[2.4rem] leading-[2.6rem] pb-5">Hai un reclamo, una domanda, una curiosità, qualcosa che vuoi dirci? Questo è il posto giusto per avere risposte.</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="main-contact max-w-1600 mx-auto px-4 md:px-6 xl:px-12 pb-16">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
+        <div class="hidden md:block md:col-span-1 xl:col-span-2"></div>
+        <div class="md:col-span-10 xl:col-span-8">
+          <form id="contact-form" action="" class="form-contatti" name="contact-form" method="post" enctype="multipart/form-data" data-colspacing="1" novalidate>
+            <div class="form-row grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+              <div class="md:col-span-5"><div class="filed-title">Come possiamo aiutarti?</div></div>
+              <div class="md:col-span-7">
+                <select id="option" class="form-control required chosen-select" name="option">
+                  <option value="1">Vorrei segnalare problemi con l'applicazione Burger King Italia</option>
+                  <option value="2">Vorrei esercitare i miei diritti privacy</option>
+                  <option value="3">Vorrei maggiori informazioni sui vostri prodotti</option>
+                  <option value="4">Vorrei maggiori informazioni sui vostri servizi</option>
+                  <option value="5">Vorrei fare una dichiarazione d'amore</option>
+                  <option value="6">Vorrei darvi un consiglio</option>
+                  <option value="7">Vorrei aprire un Burger King</option>
+                  <option value="8">Vorrei saperne di più sul Programma Fedeltà BE THE KING</option>
+                  <option value="9">Vorrei presentare una candidatura</option>
+                  <option value="10">Vorrei presentare un reclamo</option>
+                  <option value="11">Vorrei segnalare una location</option>
+                  <option value="12">Vorrei segnalare problemi con il servizio di King Delivery</option>
+                </select>
+                <input id="option_label" name="option_label" value="Vorrei segnalare problemi con l'applicazione Burger King Italia" type="hidden">
+              </div>
+            </div>
+
+            <div class="div-candidatura hidden">
+              <div class="form-row grid grid-cols-1 md:grid-cols-12 gap-4 items-start my-8">
+                <div class="md:col-span-5"><div class="filed-title">Unisciti alla famiglia BK</div></div>
+                <div class="md:col-span-7 text-[1.5rem] leading-[1.9rem]">
+                  Il nostro Network, giovane e dinamico sta aspettando proprio te. Mettiti alla prova in una realtà internazionale, mandaci subito la tua candidatura. La tua storia di successi in BURGER KING potrebbe cominciare da qui.<br>
+                  <a href="https://inrecruiting.intervieweb.it/burgerking/it/career" target="_blank" rel="noopener" id="button-careers" class="btn-main my-3 inline-block">Vai agli annunci</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="div-contact">
+              <div class="form-row store-div hidden grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+                <div class="md:col-span-5"><div class="filed-title">Di quale ristorante vuoi parlarci?</div></div>
+                <div class="md:col-span-7">
+                  <input id="store" class="form-control" name="store" type="text" placeholder="Digita la città del ristorante BK®" autocomplete="off">
+                  <input id="store_cod" name="store_cod" type="hidden">
+                </div>
+              </div>
+
+              <div class="form-row grid grid-cols-1 md:grid-cols-12 gap-4">
+                <div class="md:col-span-5"><div class="filed-title">Come possiamo contattarti per rispondere alle tue domande?</div></div>
+                <div class="md:col-span-7 space-y-4">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <input id="name" class="form-control required" name="name" type="text" maxlength="150" placeholder="Nome*" required>
+                    <input id="lastname" class="form-control required" name="lastname" type="text" maxlength="150" placeholder="Cognome*" required>
+                  </div>
+                  <input id="email" name="email" class="form-control required" type="email" maxlength="150" placeholder="La tua mail*" required>
+                  <input id="city" class="form-control required" name="city" type="text" maxlength="150" placeholder="La tua città*" required>
+                </div>
+              </div>
+
+              <div class="div-apribk hidden">
+                <div class="form-row grid grid-cols-1 md:grid-cols-12 gap-4">
+                  <div class="md:col-span-5"><div class="filed-title">Rispondi ad alcune domande</div></div>
+                  <div class="md:col-span-7 text-[1.5rem] leading-[1.9rem]">
+                    <p class="pb-2">Confermi di avere la disponibilità di circa € 500.000 di capitale proprio da investire in ogni ristorante Burger King?*</p>
+                    <input id="domanda_apribk1_label" name="domanda_apribk1_label" value="Confermi di avere la disponibilità di circa € 500.000 di capitale proprio da investire in ogni ristorante Burger King?" type="hidden">
+                    <label class="label-container">Si<input type="radio" name="domanda_apribk1" class="required" value="si"><span class="checkmark"></span></label>
+                    <label class="label-container">No<input type="radio" name="domanda_apribk1" value="no"><span class="checkmark"></span></label>
+                    <p class="pb-2 pt-3">Sei disposto ad impegnarti ad aprire almeno 3-5 ristoranti Burger King?*</p>
+                    <input id="domanda_apribk2_label" name="domanda_apribk2_label" value="Sei disposto ad impegnarti ad aprire almeno 3-5 ristoranti Burger King?" type="hidden">
+                    <label class="label-container">Si<input type="radio" name="domanda_apribk2" class="required" value="si"><span class="checkmark"></span></label>
+                    <label class="label-container">No<input type="radio" name="domanda_apribk2" value="no"><span class="checkmark"></span></label>
+                    <p class="pb-2 pt-3">Disponi di uno o più locali?*</p>
+                    <input id="domanda_apribk3_label" name="domanda_apribk3_label" value="Disponi di uno o più locali?" type="hidden">
+                    <label class="label-container">Si<input type="radio" name="domanda_apribk3" class="required" value="si"><span class="checkmark"></span></label>
+                    <label class="label-container">No<input type="radio" name="domanda_apribk3" value="no"><span class="checkmark"></span></label>
+                    <p class="pb-2 pt-3">In quale area geografica vorresti sviluppare i tuoi ristoranti Burger King?</p>
+                    <input id="domanda_apribk4_label" name="domanda_apribk4_label" value="In quale area geografica vorresti sviluppare i tuoi ristoranti Burger King?" type="hidden">
+                    <select class="js-multiple-select form-control" name="domanda_apribk4[]" multiple="multiple">
+                      <option value="qualunque">Tutte le regioni</option>
+                      <option value="abruzzo">Abruzzo</option>
+                      <option value="basilicata">Basilicata</option>
+                      <option value="calabria">Calabria</option>
+                      <option value="campania">Campania</option>
+                      <option value="emilia">Emilia-Romagna</option>
+                      <option value="friuli">Friuli-Venezia Giulia</option>
+                      <option value="lazio">Lazio</option>
+                      <option value="liguria">Liguria</option>
+                      <option value="lombardia">Lombardia</option>
+                      <option value="marche">Marche</option>
+                      <option value="molise">Molise</option>
+                      <option value="piemonte">Piemonte</option>
+                      <option value="puglia">Puglia</option>
+                      <option value="sardegna">Sardegna</option>
+                      <option value="sicilia">Sicilia</option>
+                      <option value="toscana">Toscana</option>
+                      <option value="trentino">Trentino-Alto Adige</option>
+                      <option value="umbria">Umbria</option>
+                      <option value="valledaosta">Valle d'Aosta</option>
+                      <option value="veneto">Veneto</option>
+                    </select>
+                    <p class="pb-2 pt-3">Allega curriculum</p>
+                    <input name="fileupload_cv" type="file" class="fileupload">
+                  </div>
+                </div>
+              </div>
+
+              <div class="div-location hidden">
+                <div class="form-row grid grid-cols-1 md:grid-cols-12 gap-4">
+                  <div class="md:col-span-5"><div class="filed-title">Rispondi ad alcune domande</div></div>
+                  <div class="md:col-span-7 text-[1.5rem] leading-[1.9rem]">
+                    <input type="tel" class="form-control required" id="phone" name="phone" maxlength="20" placeholder="Telefono*">
+                    <p class="pb-2 pt-3">Qual è il tuo ruolo?*</p>
+                    <input id="domanda_location1_label" name="domanda_location1_label" value="Qual è il tuo ruolo?" type="hidden">
+                    <label class="label-container">Visitatore<input type="radio" name="domanda_location1" class="required" value="Visitatore"><span class="checkmark"></span></label>
+                    <label class="label-container">Proprietario<input type="radio" name="domanda_location1" value="Proprietario"><span class="checkmark"></span></label>
+                    <p class="pb-2 pt-3">Allega JPG/PNG/PDF</p>
+                    <input name="fileupload_location" type="file" class="fileupload">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row grid grid-cols-1 md:grid-cols-12 gap-4">
+                <div class="md:col-span-5"><div class="filed-title">Scrivici le tue domande e la tua esperienza con noi</div></div>
+                <div class="md:col-span-7">
+                  <textarea id="msg" class="form-control required" name="msg" placeholder="Scrivi qui il tuo messaggio*" rows="5" required></textarea>
+                </div>
+              </div>
+
+              <div class="form-row grid grid-cols-1 md:grid-cols-12 gap-4">
+                <div class="md:col-span-5 hidden md:block"></div>
+                <div class="md:col-span-7">
+                  <div class="filed-title py-3">Privacy Policy</div>
+                  <label class="label-container">Ho letto e accetto la Privacy Policy *<input type="checkbox" id="privacy" class="required" name="privacy" value="1" required><span class="checkmark"></span></label>
+                </div>
+              </div>
+
+              <div class="form-row grid grid-cols-1 md:grid-cols-12 gap-4 my-8">
+                <div class="md:col-span-5 text-[1.5rem]">* Campi obbligatori</div>
+                <div class="md:col-span-7 div-contact-submit">
+                  <div class="g-recaptcha-mock text-center mb-4" aria-hidden="true">
+                    <div class="g-recaptcha-mock-inner">
+                      <span class="g-recaptcha-checkbox"></span>
+                      <span class="g-recaptcha-label">Non sono un robot</span>
+                      <span class="g-recaptcha-badge">reCAPTCHA</span>
+                    </div>
+                  </div>
+                  <button class="btn-main" id="submitbtn" type="submit"><span class="loader hidden"></span>Invia il tuo messaggio</button>
+                  <div class="pt-5 testo-pagina text-[1.5rem]">
+                    Oppure mandaci una mail a: <a href="mailto:reclami_complimenti@burgerking.it">reclami_complimenti@burgerking.it</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="hidden md:block md:col-span-1 xl:col-span-2"></div>
+      </div>
+    </div>
+  </main>
+  <div id="bk-footer"></div>
+  <div id="bk-mobile-bar"></div>
+  <script src="js/components.js"></script>
+  <script src="js/page-shell.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

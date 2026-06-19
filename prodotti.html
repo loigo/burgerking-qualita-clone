@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Hamburger 100% carne di manzo, verdure fresche e partner controllati per assicurarti prodotti sani e gustosi. Entra e scopri di più.">
+  <title>Prodotti Burger King: Hamburger e Snack | Burger King Italia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { 'bk-brown':'#502314','bk-avana':'#F5EBDC','bk-orange':'#FF8732','bk-red':'#D62300','bk-green':'#198737','bk-dark':'#E8DFCF' }, maxWidth: { '1600':'1600px' } } } };
+  </script>
+  <link rel="stylesheet" href="/css/custom.css">
+  <script>window.BK_BASE = '/';</script>
+</head>
+<body class="flex flex-col min-h-screen bg-bk-avana has-mobile-bar" data-page="prodotti">
+
+  <div id="bk-header"></div>
+
+  <main id="prodotti-page" class="flex-grow">
+    <!-- HERO SLIDER -->
+    <div class="max-w-1600 mx-auto px-0 md:px-6 xl:px-12 pt-4 mb-2">
+      <div id="prodotti-hero-slider" class="prodotti-hero-slider rounded-[25px] overflow-hidden"></div>
+    </div>
+
+    <!-- CAROUSEL CATEGORIE -->
+    <section id="section-categorie-prod" class="section-carousel-categorie-prod py-4" data-carousel>
+      <div class="max-w-1600 mx-auto relative">
+        <div id="categories-track" class="h-track flex gap-4 overflow-x-auto px-6 md:px-12 pb-4"></div>
+        <button id="cat-prev" class="slider-nav-btn hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 z-10" aria-label="Precedente"><svg viewBox="0 0 16 16"><path fill="#fff" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg></button>
+        <button id="cat-next" class="slider-nav-btn hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 z-10" aria-label="Successivo"><svg viewBox="0 0 16 16"><path fill="#fff" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></button>
+      </div>
+    </section>
+
+    <!-- FILTRO MOBILE -->
+    <div class="div-product-filter md:hidden text-center pb-4">
+      <button id="btn-open-filtri-mobile" type="button" class="btn-tag-outline inline-flex items-center gap-2">
+        <img src="https://www.burgerking.it/assets/images/icon-filter.svg?v=1709305347" class="svg-brown w-5 h-5" alt="">
+        Filtra per ingrediente
+        <span class="filter-badge-count hidden">0</span>
+      </button>
+    </div>
+
+    <!-- GRID + SIDEBAR -->
+    <div class="max-w-1600 mx-auto px-6 md:px-12">
+      <div class="flex gap-8">
+        <aside id="sidebar-filtri-prod" class="sidebar-prodotti hidden md:block w-56 xl:w-64 flex-shrink-0">
+          <div class="sidebar-filtri-title">Filtra per ingrediente</div>
+          <div class="sidebar-filtri-buttons"></div>
+        </aside>
+
+        <section class="main-prodotti flex-grow min-w-0">
+          <div id="riga-desc-categoria" class="riga-desc-categoria hidden text-center pb-6">
+            <div id="col-desc-categoria" class="col-desc-categoria text-[1.4rem] text-black/80"></div>
+          </div>
+
+          <div id="product-grid" class="product-grid-prodotti"></div>
+
+          <div class="card-actions text-center pt-10 pb-6">
+            <button id="load-more" type="button" class="btn-main-outline">Carica altri</button>
+            <span class="sr-only"><span id="card-count">0</span> di <span id="card-total">0</span> prodotti</span>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- APP BANNER -->
+    <div class="max-w-1600 mx-auto px-6 md:px-12 py-10">
+      <div class="div-app-banner rounded-[25px] overflow-hidden" style="background-color:#D62300">
+        <div class="grid grid-cols-1 md:grid-cols-12 items-center gap-6 p-6 md:p-10 text-bk-avana">
+          <div class="md:col-span-4 flex justify-center">
+            <img src="https://www.burgerking.it/assets/img/console/appUser/banner/331_desktop_it.png?v=1710414705" alt="" class="w-[70%] max-w-xs hidden md:block">
+            <img src="https://www.burgerking.it/assets/img/console/appUser/banner/331_desktop_it.png?v=1710414705" alt="" class="w-full max-w-xs md:hidden">
+          </div>
+          <div class="md:col-span-5 text-center md:text-left">
+            <div class="font-flamebold text-[3.5rem] leading-[3.4rem] pb-4">SCARICA LA NOSTRA APP</div>
+            <div class="font-flame text-[2.4rem] leading-[2.6rem] pb-4">E goditi dei vantaggi da vero King!</div>
+            <div class="flex flex-wrap justify-center md:justify-start gap-3 md:hidden">
+              <a href="https://play.google.com/store/apps/details?id=it.burgerking.android" target="_blank" rel="noopener"><img src="https://www.burgerking.it/assets/images/store_google@2x.png" alt="Google Play" class="h-10"></a>
+              <a href="https://itunes.apple.com/it/app/burger-king-italia/id680599060?mt=8" target="_blank" rel="noopener"><img src="https://www.burgerking.it/assets/images/store_appstore@2x.png" alt="App Store" class="h-10"></a>
+              <a href="https://appgallery5.huawei.com/#/app/C102387701" target="_blank" rel="noopener"><img src="https://www.burgerking.it/assets/images/store_appgallery@2x.png" alt="AppGallery" class="h-10"></a>
+            </div>
+          </div>
+          <div class="md:col-span-3 hidden md:flex justify-center">
+            <img src="https://www.burgerking.it/assets/img/console/appUser/banner/703_desktop_it.jpg?v=1779286122" alt="" class="max-w-[300px] rounded-xl">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODAL FILTRI MOBILE -->
+  <div id="modal-filtri" class="modal-filtri-prodotti hidden" aria-hidden="true">
+    <div class="modal-filtri-backdrop" id="btn-close-filtri-mobile"></div>
+    <div class="modal-filtri-panel">
+      <button type="button" id="btn-close-filtri-mobile-x" class="modal-filtri-close" aria-label="Chiudi">&times;</button>
+      <div class="text-center text-[1.8rem] font-flamebold text-bk-brown pb-6">
+        Filtra per ingrediente
+        <img src="https://www.burgerking.it/assets/images/icon-filter.svg?v=1709305347" class="svg-brown inline-block w-6 h-6 ml-2" alt="">
+      </div>
+      <div id="modal-filtri-body" class="modal-filtri-body"></div>
+    </div>
+  </div>
+
+  <div id="bk-footer"></div>
+  <div id="bk-mobile-bar"></div>
+
+  <script src="/js/components.js"></script>
+  <script src="/js/page-shell.js"></script>
+  <script src="/js/prodotti-catalog.js"></script>
+  <script src="/js/prodotti-page.js"></script>
+  <script src="/js/main.js"></script>
+  <script>
+    document.getElementById('btn-close-filtri-mobile-x')?.addEventListener('click', function () {
+      document.getElementById('modal-filtri')?.classList.add('hidden');
+    });
+  </script>
+</body>
+</html>

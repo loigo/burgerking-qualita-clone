@@ -1,0 +1,130 @@
+{
+  "before": [
+    {
+      "tag": "HTML",
+      "id": "",
+      "class": "",
+      "text": "Aprire un Franchising Burger King | Burger King Franchising \n\n\n\n\n        \n\n\n\n\n\n\n",
+      "role": null
+    },
+    {
+      "tag": "BODY",
+      "id": "",
+      "class": "d-flex flex-column body-franchising",
+      "text": "Per la modalità screen-reader - fai clic sul primo pulsante del sito webGuida al",
+      "role": null
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "class": "acsb-sr-only",
+      "text": "Guida all'accessibilità per lettori dello schermo, feedback e segnalazione dei p",
+      "role": null
+    },
+    {
+      "tag": "FOOTER",
+      "id": "",
+      "class": "mt-auto",
+      "text": "FLAME GRILLING SINCE 1954\n                Burger King Restaurants Italia S.p.A. ",
+      "role": null
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "class": "footer-container container-fluid container-1600",
+      "text": "FLAME GRILLING SINCE 1954\n                Burger King Restaurants Italia S.p.A. ",
+      "role": null
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "class": "row footer-content text-sm-start text-center",
+      "text": "FLAME GRILLING SINCE 1954\n                Burger King Restaurants Italia S.p.A. ",
+      "role": null
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "class": "col-12 col-sm-5 col-xl-6 order-3 order-sm-2",
+      "text": "Modello D.lgs 231 e Codici Etici\n                                \n              ",
+      "role": null
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "class": "row",
+      "text": "Modello D.lgs 231 e Codici Etici\n                                \n              ",
+      "role": null
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "class": "col-12 col-xl",
+      "text": "Allergeni\n                                \n                                     ",
+      "role": null
+    },
+    {
+      "tag": "UL",
+      "id": "",
+      "class": "footer-menu",
+      "text": "Allergeni\n                                \n                                     ",
+      "role": null
+    },
+    {
+      "tag": "LI",
+      "id": "",
+      "class": "",
+      "text": "Accessibilità",
+      "role": null
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "class": "footer-menu-item",
+      "text": "Accessibilità",
+      "role": null
+    },
+    {
+      "tag": "SCRIPT",
+      "id": "",
+      "class": "",
+      "text": "//AccessiWay old before 20260615\n    /* (function () {\n    var s = document.crea",
+      "role": null
+    }
+  ],
+  "clicked": {
+    "ok": false,
+    "count": 0,
+    "sample": []
+  },
+  "after": {
+    "styles": null,
+    "htmlParts": [
+      {
+        "tag": "HTML",
+        "id": "",
+        "class": "",
+        "text": "Aprire un Franchising Burger King | Burger King Franchising \n\n\n\n\n        \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.cookieconsent-optin-prefer"
+      },
+      {
+        "tag": "BODY",
+        "id": "",
+        "class": "d-flex flex-column body-franchising",
+        "text": "Per la modalità screen-reader - fai clic sul primo pulsante del sito webGuida all'accessibilità per lettori dello scherm"
+      },
+      {
+        "tag": "SCRIPT",
+        "id": "",
+        "class": "",
+        "text": "//AccessiWay old before 20260615\n    /* (function () {\n    var s = document.createElement(\"script\"),\n    e = !document.b"
+      }
+    ],
+    "shadowHosts": [
+      "ACCESS-WIDGET-UI#.notranslate",
+      "ACCESS-WIDGET-UI#.notranslate",
+      "ACCESS-WIDGET-UI#.notranslate",
+      "ACCESS-WIDGET-UI#.notranslate"
+    ],
+    "bodySnippet": "                                   <a href=\"/terms-and-conditions\" class=\"footer-menu-item\">Terms and conditions</a>\n                                </li>\n                                                            <li>\n                                    <a href=\"/regolamenti\" class=\"footer-menu-item\">Regolamenti</a>\n                                </li>\n                                                            <li>\n                                    <a href=\"/regolamento-premi-onfire\" class=\"footer-menu-item\">Regolamento Premi On Fire Club</a>\n                                </li>\n                                                        </ul>\n                        </div>\n                                            <div class=\"col-12 col-xl\">\n                            <ul class=\"footer-menu\">\n                                                            <li>\n                                    <a href=\"/allergeni\" class=\"footer-menu-item\">Allergeni</a>\n                                </li>\n                                                            <li>\n                                    <a href=\"/accessibilita\" class=\"footer-menu-item\">Accessibilità</a>\n                                </li>\n                                                        </ul>\n                        </div>\n                                                    </div>\n            </div>\n                    </div>\n        <div class=\"row\">\n            <div class=\"col-12 footer-tm text-center\">\n                TM &amp; ©2025 Burger King Company LLC, Utilizzato in conformità o licenza. Tutti i diritti riservati.\n            </div>\n        </div>\n\n    </div>\n</footer>\n\n\n<div id=\"mobile-bar\" class=\"d-none d-md-none\">\n    <div class=\"div-button-filter d-md-none div-product-filter\">\n        <a class=\"button-filtri\" type=\"button\" onclick=\"apri_filtri();\">\n                <img src=\"/assets/images/icon-filter-red.svg?v=1709305347\">\n                <span class=\"button__badge\">0</span>\n        </a>\n    </div>\n    <div class=\"row riga-icone d-none\">\n        <div class=\"col-1\"></div>\n                    <div class=\"col colonna-item\">\n                <a href=\"/prodotti\" class=\"mobile-bar-item no-decoration\">\n                    <div class=\"image-item\"><img src=\"/assets/images/icon-product.svg?v=1709305347\" class=\"icon-item-img svg-brown\"></div>\n                    <div class=\"title-item\">Prodotti</div>\n                </a>\n            </div>\n                    <div class=\"col colonna-item\">\n                <a href=\"/promo\" class=\"mobile-bar-item no-decoration\">\n                    <div class=\"image-item\"><img src=\"/assets/images/icon-promo.svg?v=1709305347\" class=\"icon-item-img svg-brown\"></div>\n                    <div class=\"title-item\">Promo</div>\n                </a>\n            </div>\n                    <div class=\"col colonna-item\">\n                <a href=\"/trova-un-ristorante\" class=\"mobile-bar-item no-decoration\">\n                    <div class=\"image-item\"><img src=\"/assets/images/icon-store-locator.svg?v=1709305347\" class=\"icon-item-img svg-brown\"></div>\n                    <div class=\"title-item\">Store Locator</div>\n                </a>\n            </div>\n                <div class=\"col-1\"></div>\n    </div>\n</div>\n\n<div id=\"cookie-banner\" style=\"\">\n    Questo sito utilizza i cookie per migliorare l'esperienza utente.\n    <div class=\"py-3\">\n    <button id=\"accept-necessary\" class=\"btn-tag-outline active\">Accetta solo i necessari</button>\n    <button id=\"accept-all\" class=\"btn-tag-outline active\">Accetta tutti i cookie</button>\n    <button id=\"reject-all\" class=\"btn-tag-outline\">Rifiuta i cookie di tracciamento</button>\n    </div>\n    <div>\n        <a href=\"/cookie-policy\" style=\"text-decoration:underline;\">Leggi di più</a>\n    </div>\n</div>\n\n<!-- Footer assets -->\n    <script src=\"/assets/js/jquery.min.js?v=1709305347\" data-cookieconsent=\"ignore\"></script><iframe class=\"CybotCookiebotHiddenIframe\" name=\"__uspapiLocator\" tabindex=\"-1\" role=\"presentation\" aria-hidden=\"true\" title=\"Blank\"></iframe><iframe class=\"CybotCookiebotOffscreenIframe\" tabindex=\"-1\" role=\"presentation\" aria-hidden=\"true\" title=\"Blank\" src=\"https://consentcdn.cookiebot.com/sdk/bc-v4.min.html\"></iframe>\n    <script src=\"/assets/js/bootstrap.min.js?v=1709305347\" data-cookieconsent=\"ignore\"></script>\n    <script src=\"/assets/js/swiffy-slider.min.js?v=1709305347\" data-cookieconsent=\"ignore\"></script>\n    <script src=\"/assets/js/swiffy-slider-extensions.min.js?v=1709305347\" data-cookieconsent=\"ignore\"></script>\n    <script src=\"/assets/js/flickity.pkgd.min.js?v=1709305347\" data-cookieconsent=\"ignore\"></script>\n    <script src=\"/assets/js/select2.min.js?v=1709305347\" data-cookieconsent=\"ignore\"></script>\n    <script src=\"/assets/js/jquery.easy-autocomplete.min.js?v=1709305347\" data-cookieconsent=\"ignore\"></script>\n    <script src=\"/assets/sweetalert2-11.10.3/package/dist/sweetalert2.all.min.js?v=1722847488\" data-cookieconsent=\"ignore\"></script>\n    <script src=\"/assets/site.js?v=1731948552\" data-cookieconsent=\"ignore\"></script>\n\n\n\n\n        <script type=\"text/javascript\">\n    //AccessiWay old before 20260615\n    /* (function () {\n    var s = document.createElement(\"script\"),\n    e = !document.body ? document.querySelector(\"head\") : document.body;\n    s.src = \"https://eu.acsbapp.com/apps/app/dist/js/app.js\";\n    s.async = true;\n    s.onload = function () {\n    acsbJS.init({\n    statementLink: \"\",\n    footerHtml: '<a href=\"https://www.accessiway.com/it/home/\" target=\"_blank\">AccessiWay. The Web Accessibility Solution</a>',\n    hideMobile: false,\n    hideTrigger: false,\n    language: \"it\",\n    position: \"right\",\n    leadColor: \"#502314\",\n    triggerColor: \"#502314\",\n    triggerRadius: \"50%\",\n    triggerPositionX: \"right\",\n    triggerPositionY: \"bottom\",\n    triggerIcon: \"people\",\n    triggerSize: \"medium\",\n    triggerOffsetX: 20,\n    triggerOffsetY: 20,\n    mobile: {\n    triggerSize: \"medium\",\n    triggerPositionX: \"left\",\n    triggerPositionY: \"bottom\",\n    triggerOffsetX: 10,\n    triggerOffsetY: 10,\n    triggerRadius: \"50%\",\n    },\n    });\n    };\n    e.appendChild(s);\n    })(); */\n\n    (function(){\n        const e=document.createElement(\"script\"),\n        n=document.querySelector(\"head\")||document.body;e.src=\"https://eu.acsbapp.com/apps/app/dist/js/app.js\",\n        e.async=!0,e.onload=function(){\n            acsbJS.init({\n                statementLink: \"\",\n                footerHtml: '<a href=\"https://www.accessiway.com/it/home/\" target=\"_blank\">AccessiWay. The Web Accessibility Solution</a>',\n                hideMobile: false,\n                hideTrigger: false,\n                language: \"it\",\n                position: \"right\",\n                leadColor: \"#502314\",\n                triggerColor: \"#502314\",\n                triggerRadius: \"50%\",\n                triggerPositionX: \"right\",\n                triggerPositionY: \"bottom\",\n                triggerIcon: \"people\",\n                triggerSize: \"medium\",\n                triggerOffsetX: 20,\n                triggerOffsetY: 20,\n                mobile: {\n                    triggerSize: \"medium\",\n                    triggerPositionX: \"left\",\n                    triggerPositionY: \"bottom\",\n                    triggerOffsetX: 10,\n                    triggerOffsetY: 10,\n                    triggerRadius: \"50%\",\n                },\n            },\n        )},\n        n.appendChild(e);\n        const t=document.createElement(\"script\");\n        t.src=\"https://embeds.acswapp.com/accessibility/check.js?site=\"+encodeURIComponent(window.location.hostname),\n        t.async=!0,\n        n.appendChild(t)\n    })();\n</script>\n\n    \n        <iframe role=\"presentation\" srcdoc=\"<html lang=&quot;en&quot;><head><title>apiSanitizer</title></head></body></html>\" style=\"visibility: hidden; pointer-events: none; position: fixed;\"></iframe><style>.container:focus, .container:hover {transform: scale(1) !important;}</style><div class=\"acsb-trigger acsb-widget\" tabindex=\"0\" role=\"button\"></div>"
+  }
+}

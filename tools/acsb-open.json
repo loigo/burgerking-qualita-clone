@@ -1,0 +1,20 @@
+{
+  "methods": [
+    "init",
+    "restart",
+    "destroy",
+    "map",
+    "enable",
+    "disable"
+  ],
+  "titleFound": false,
+  "html": [
+    "class=\"acsb-sr-only\"",
+    "class=\"acsb-trigger acsb-widget\""
+  ],
+  "textHits": [
+    "Aprire un Franchising Burger King | Burger King Franchising \n\n\n\n\n        \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "Guida all'accessibilità per lettori dello schermo, feedback e segnalazione dei problemi | Nuova fine",
+    "//AccessiWay old before 20260615\n    /* (function () {\n    var s = document.createElement(\"script\"),"
+  ]
+}

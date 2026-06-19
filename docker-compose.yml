@@ -1,0 +1,24 @@
+# SQL Server local para desenvolvimento / demo da apresentação
+# Uso: docker compose up -d
+# Depois: node database/init-local.mjs
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: bk-shop-sql
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "BkShop@2026!Strong"
+    ports:
+      - "1433:1433"
+    volumes:
+      - bk_sqldata:/var/opt/mssql
+    healthcheck:
+      test: /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "BkShop@2026!Strong" -C -Q "SELECT 1" || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+volumes:
+  bk_sqldata:

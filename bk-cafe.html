@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Un buon caffè caldo per iniziare la giornata, o concedersi un break e fare il pieno d'energia? Lo trovi da Burger King®!">
+  <title>Caffè Burger King: Il Break a Modo Tuo | Burger King Italia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{'bk-brown':'#502314','bk-avana':'#F5EBDC','bk-orange':'#FF8732','bk-red':'#D62300','bk-dark':'#E8DFCF'},maxWidth:{'1600':'1600px'}}}};</script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="flex flex-col min-h-screen bg-bk-avana has-mobile-bar" data-page="bkcafe">
+  <div id="bk-header"></div>
+  <main class="flex-grow">
+    <section class="testata-bg mb-12 mx-0 md:mx-6 xl:mx-12" style="background-image:url('https://www.burgerking.it/assets/img/console/appUser/banner/326_desktop_it.png?v=1709913191');">
+      <div class="w-full xl:w-1/2 text-center text-bk-avana px-4">
+        <p class="font-flame text-[1.5rem] pb-2">BK CAFÉ</p>
+        <h1 class="font-flamebold text-[5rem] leading-[4.9rem] text-bk-orange uppercase pb-8">TRADIZIONE ITALIANA E TOCCO AMERICANO</h1>
+      </div>
+    </section>
+
+    <section class="py-8" data-carousel>
+      <div class="max-w-1600 mx-auto">
+        <div class="pl-6 md:pl-[4.5rem] pb-8">
+          <h2 class="titolo-section py-3">BK CAFÉ: QUI SI FANNO COLAZIONI DA URLO (MA NON SOLO)</h2>
+          <p class="text-[2rem] leading-[2.4rem] text-black/87">Ingredienti di qualità, servizio gentile e puntuale, ambienti confortevoli e accoglienti.</p>
+        </div>
+        <div class="relative">
+          <div id="ingredients-track" class="ingredients-track flex gap-4 md:gap-8 overflow-x-auto pl-6 md:pl-[4.5rem] pr-6 pb-4">
+            <article class="ingredient-slide flex-shrink-0 w-[85vw] md:w-[calc(50%-1rem)] overflow-hidden" style="background-color:#502314;"><div class="flex flex-col md:flex-row"><div class="col-img w-full md:w-5/12" style="background-image:url('https://www.burgerking.it/assets/img/console/carousel/slides/297_desktop_it.png?v=1709912860')"></div><div class="w-full md:w-7/12 px-6 py-8 text-white"><h3 class="slider-title font-flamebold text-[3.5rem] py-3">CAFFÈ LAVAZZA</h3><p class="slider-description text-[1.5rem]">Pochissime cose sono buone come il caffè italiano. E il nostro è Lavazza, perché in ogni tazza c'è un'esperienza unica di gusto. Ma sempre a modo tuo.</p></div></div></article>
+            <article class="ingredient-slide flex-shrink-0 w-[85vw] md:w-[calc(50%-1rem)] overflow-hidden" style="background-color:#502314;"><div class="flex flex-col md:flex-row"><div class="col-img w-full md:w-5/12" style="background-image:url('https://www.burgerking.it/assets/img/console/carousel/slides/298_desktop_it.png?v=1709912907')"></div><div class="w-full md:w-7/12 px-6 py-8 text-white"><h3 class="slider-title font-flamebold text-[3.5rem] py-3">USIAMO LA MACCHINA DA CAFFÈ ALL'ITALIANA</h3><p class="slider-description text-[1.5rem]">Non esiste un buon caffè se non hai la giusta macchina: noi usiamo macchine all'italiana. Giusta pressione, giusto tempo d'infusione, giuste dosi per creare il perfetto caffè.</p></div></div></article>
+            <article class="ingredient-slide flex-shrink-0 w-[85vw] md:w-[calc(50%-1rem)] overflow-hidden" style="background-color:#502314;"><div class="flex flex-col md:flex-row"><div class="col-img w-full md:w-5/12" style="background-image:url('https://www.burgerking.it/assets/img/console/carousel/slides/299_desktop_it.png?v=1709913082')"></div><div class="w-full md:w-7/12 px-6 py-8 text-white"><h3 class="slider-title font-flamebold text-[3.5rem] py-3">LA PASTICCERIA È FANTASTICA</h3><p class="slider-description text-[1.5rem]">Abbiamo il cornetto più buono della colazione italiana. E realizziamo le ricette americane con la sapienza tutta italiana per il gusto: pancakes, donuts glassati, muffin, torte e piccola pasticceria.</p></div></div></article>
+          </div>
+          <button id="slider-prev" class="slider-nav-btn hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-10" aria-label="Precedente"><svg viewBox="0 0 16 16"><path fill="#fff" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg></button>
+          <button id="slider-next" class="slider-nav-btn hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-10" aria-label="Successivo"><svg viewBox="0 0 16 16"><path fill="#fff" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pari py-12">
+      <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-6">
+        <img src="https://www.burgerking.it/assets/img/console/appUser/banner/325_desktop_it.png?v=1709912752" alt="Al BK Café sei sempre benvenuto" class="w-[90%] mx-auto">
+        <div class="text-center md:text-left">
+          <h2 class="font-flamebold text-bk-brown text-[5rem] leading-[4.9rem] pb-4">AL BK CAFÉ SEI SEMPRE BENVENUTO</h2>
+          <p class="font-flame text-[2.4rem] leading-[2.6rem] text-black/87 pb-4">Entra in un ambiente rilassante, dalle tonalità calde e accoglienti: sarai sempre benvenuto in ogni momento della giornata.</p>
+          <ul class="text-[2rem] leading-[2.4rem] text-black/87 list-disc pl-6 space-y-2">
+            <li>Hai fretta e hai bisogno di un break veloce? Vieni al bancone e prenditi una pausa di gusto.</li>
+            <li>Vuoi fare una colazione come si deve? Ordina quello che vuoi e goditelo al tavolo.</li>
+            <li>Devi fare una sessione di lavoro? Accomodati e prenditi tutto il tempo che vuoi.</li>
+            <li>Voglia di un aperitivo informale? Scopri le snack box, ordina dal menu e scegli tra quattro varietà di birra alla spina Heineken.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-6" data-carousel>
+      <div class="max-w-1600 mx-auto relative">
+        <div id="categories-track" class="h-track flex gap-6 overflow-x-auto px-6 md:px-12 pb-4 justify-center">
+          <a href="bk-cafe.html" class="category-item flex-shrink-0 text-center no-underline"><img src="https://www.burgerking.it/assets/img/console/mo/category/425_image_it.png?v=1711030436" class="img-carousel-prod" alt=""><div class="title">Bevande</div></a>
+          <a href="bk-cafe.html" class="category-item flex-shrink-0 text-center no-underline"><img src="https://www.burgerking.it/assets/img/console/mo/category/426_image_it.png?v=1711030413" class="img-carousel-prod" alt=""><div class="title">Brioches, donuts &amp; muffins</div></a>
+          <a href="bk-cafe.html" class="category-item flex-shrink-0 text-center no-underline"><img src="https://www.burgerking.it/assets/img/console/mo/category/427_image_it.png?v=1711030354" class="img-carousel-prod" alt=""><div class="title">Dolci</div></a>
+        </div>
+        <button id="cat-prev" class="slider-nav-btn hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 z-10" aria-label="Precedente"><svg viewBox="0 0 16 16"><path fill="#fff" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg></button>
+        <button id="cat-next" class="slider-nav-btn hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 z-10" aria-label="Successivo"><svg viewBox="0 0 16 16"><path fill="#fff" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></button>
+      </div>
+    </section>
+
+    <section class="main-prodotti">
+      <div class="flex flex-wrap justify-center gap-2 mb-8">
+        <button class="btn-tag-outline btn-filtro-categoria active" data-cat="all" type="button">Tutti</button>
+        <button class="btn-tag-outline btn-filtro-categoria" data-cat="bevande" type="button">Bevande</button>
+        <button class="btn-tag-outline btn-filtro-categoria" data-cat="brioches" type="button">Brioches, donuts &amp; muffins</button>
+        <button class="btn-tag-outline btn-filtro-categoria" data-cat="dolci" type="button">Dolci</button>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4" id="product-grid">
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/464_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Espresso</div></div></div></div>
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/466_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Espresso Macchiato</div></div></div></div>
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/472_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Marocchino</div></div></div></div>
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/469_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Cappuccino</div></div></div></div>
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/485_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Latte Macchiato</div></div></div></div>
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/465_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Espresso Decaffeinato</div></div></div></div>
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/467_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Espresso Macchiato Decaffeinato</div></div></div></div>
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/473_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Marocchino Decaffeinato</div></div></div></div>
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/470_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Cappuccino Decaffeinato</div></div></div></div>
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/486_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Latte Macchiato Decaffeinato</div></div></div></div>
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/479_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Ginseng</div></div></div></div>
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/480_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Ginseng In Tazza Grande</div></div></div></div>
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/481_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Ginseng Macchiato</div></div></div></div>
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/475_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Marocchino Ginseng</div></div></div></div>
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/488_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Latte Macchiato Ginseng</div></div></div></div>
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/476_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Orzo</div></div></div></div>
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/477_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Orzo In Tazza Grande</div></div></div></div>
+        <div class="product-card" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/478_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Orzo Macchiato</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/471_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Cappuccino Orzo</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/487_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Latte Macchiato Orzo</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/482_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Caffè Americano</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/483_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Caffè Americano Decaffeinato</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/489_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Cioccolata Calda</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/456_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Acqua Naturale</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/457_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Acqua Frizzante</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/484_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Latte Caldo</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/490_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Tea Caldo</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="bevande"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/463_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Spremuta D'Arance Fresche</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="brioches"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/557_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Brioche Vuota</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="brioches"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/559_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Brioche Crema</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="brioches"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/558_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Brioche Cioccolato</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="brioches"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/560_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Brioche Albicocca</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="brioches"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/562_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Brioche Integrale Al Miele</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="brioches"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/561_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Brioche Multicereali Mirtillo</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="dolci"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/545_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Torta Alle Fragole</div></div></div></div>
+        <div class="product-card hidden-load" data-cat="dolci"><div class="news-card"><div class="div-img-news aspect-square" style="background-image:url('https://www.burgerking.it/assets/img/console/mo/products/550_image_it.png')"></div><div class="div-content-news"><div class="news-title text-[1.5rem] text-center">Brownie</div></div></div></div>
+      </div>
+      <div class="text-center pt-12"><button id="load-more" class="btn-main-outline" type="button">Carica altri</button></div>
+    </section>
+    <div id="bk-app-banner"></div>
+  </main>
+  <div id="bk-footer"></div>
+  <div id="bk-mobile-bar"></div>
+  <script src="js/components.js"></script>
+  <script src="js/page-shell.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
