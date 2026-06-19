@@ -6,6 +6,7 @@
     { "source": "/promo", "destination": "/promo.html" },
     { "source": "/novita", "destination": "/novita.html" },
     { "source": "/prodotti", "destination": "/prodotti.html" },
+    { "source": "/prodotti/:cat.html", "destination": "/prodotti.html" },
     { "source": "/bk-cafe", "destination": "/bk-cafe.html" },
     { "source": "/loyalty", "destination": "/loyalty.html" },
     { "source": "/about-us", "destination": "/about-us.html" },

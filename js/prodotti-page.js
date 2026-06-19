@@ -122,7 +122,7 @@
       link.classList.toggle('is-active', item && item.dataset.cat === cat);
     });
     if (cat) {
-      const track = document.getElementById('categories-track');
+      const track = document.getElementById('carousel-categorie-prod');
       const active = document.querySelector('#carousel-categorie-prod [data-cat="' + cat + '"]');
       if (track && active) {
         const link = active.closest('.category-carousel-item');
@@ -133,7 +133,7 @@
   }
 
   function renderCategoryCarousel() {
-    const track = document.getElementById('categories-track');
+    const track = document.getElementById('carousel-categorie-prod');
     if (!track) return;
     track.innerHTML = catalog.categories.map(function (cat, index) {
       const href = cat.key === 'bk_cafe' ? '/bk-cafe.html' : '/prodotti/' + cat.key + '.html';

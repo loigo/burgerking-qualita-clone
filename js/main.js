@@ -302,7 +302,7 @@
     initHorizontalCarousel('promo-track', 'promo-prev', 'promo-next');
     initHorizontalCarousel('products-home-track', 'prod-home-prev', 'prod-home-next');
     initHorizontalCarousel('novita-track', 'novita-prev', 'novita-next');
-    initHorizontalCarousel('categories-track', 'cat-prev', 'cat-next');
+    initHorizontalCarousel('carousel-categorie-prod', 'cat-prev', 'cat-next');
     initHorizontalCarousel('ingredienti-track', 'ing-prev', 'ing-next');
   }
 

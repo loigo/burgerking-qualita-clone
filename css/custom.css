@@ -635,13 +635,21 @@ a.active .svg-brown {
 
 /* Grid de produtos (burgerking.it/prodotti) */
 .main-prodotti {
-  padding: 1rem 0 2rem;
+  padding: 0.5rem 0 2rem;
+  min-width: 0;
 }
 
 .product-grid-prodotti {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .product-grid-prodotti {
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -649,46 +657,113 @@ a.active .svg-brown {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.25rem;
   }
+
+  .main-prodotti {
+    padding: 1rem 0 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-grid-prodotti {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1400px) {
+  .product-grid-prodotti {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+.col-prodotto {
+  display: flex;
+  min-width: 0;
 }
 
 .col-prodotto a {
-  display: block;
+  display: flex;
+  width: 100%;
   height: 100%;
 }
 
 .card-prod {
   background: #fff;
   border-radius: 20px;
-  padding: 1.25rem 1rem 1.5rem;
+  padding: 1rem 0.75rem 1.25rem;
+  width: 100%;
   height: 100%;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-prod:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(80, 35, 20, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 32px rgba(80, 35, 20, 0.14);
 }
 
 .div-img-card-prod {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   overflow: hidden;
+  flex-shrink: 0;
+  min-height: 110px;
 }
 
 .img-card-prod {
   width: 100%;
-  max-height: 180px;
+  max-height: 140px;
   object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+.card-prod:hover .img-card-prod {
+  transform: scale(1.03);
 }
 
 .card-prod-title {
   font-family: 'Flame', sans-serif;
-  font-size: 2.2rem;
-  line-height: 2.4rem;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
   color: #1a1a1a;
   padding: 0 0.25rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 3.6rem;
+}
+
+@media (min-width: 768px) {
+  .div-img-card-prod {
+    min-height: 150px;
+    margin-bottom: 0.75rem;
+  }
+
+  .img-card-prod {
+    max-height: 180px;
+  }
+
+  .card-prod {
+    padding: 1.25rem 1rem 1.5rem;
+  }
+
+  .card-prod-title {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    min-height: 4.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-prod-title {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
 }
 
 .sidebar-prodotti .sidebar-filtri-title {
@@ -734,15 +809,47 @@ a.active .svg-brown {
 }
 
 .img-carousel-prod {
-  width: 100px;
+  width: 72px;
   height: auto;
   margin: 0 auto;
   display: block;
 }
 
+.section-carousel-categorie-prod .categories-track {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.section-carousel-categorie-prod .categories-track::-webkit-scrollbar {
+  display: none;
+}
+
+.category-carousel-item {
+  flex: 0 0 auto;
+  width: 88px;
+}
+
+@media (min-width: 768px) {
+  .img-carousel-prod {
+    width: 100px;
+  }
+
+  .category-carousel-item {
+    width: 110px;
+  }
+}
+
 .prodotti-hero-slider {
   position: relative;
-  min-height: 120px;
+  min-height: 100px;
+  border-radius: 0;
+}
+
+@media (min-width: 768px) {
+  .prodotti-hero-slider {
+    border-radius: 25px;
+    min-height: 120px;
+  }
 }
 
 .prodotti-hero-slide {
@@ -1034,6 +1141,24 @@ body.has-mobile-bar {
   #hero-slider .order-1 p:not(.font-flame) {
     font-size: 1.6rem !important;
     line-height: 1.8rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #prodotti-page .div-app-banner .font-flamebold {
+    font-size: 2.4rem !important;
+    line-height: 2.3rem !important;
+  }
+
+  #prodotti-page .div-app-banner .font-flame {
+    font-size: 1.6rem !important;
+    line-height: 1.8rem !important;
+  }
+
+  .col-desc-categoria {
+    font-size: 1.3rem !important;
+    line-height: 1.6rem !important;
+    padding: 0 0.5rem;
   }
 }
 
