@@ -129,6 +129,9 @@
       dots.forEach(function (d, i) {
         d.classList.toggle('active', i === current);
       });
+      if (typeof window.BK_loadSlideImage === 'function') {
+        window.BK_loadSlideImage(slides[current]);
+      }
     }
 
     function next() { goTo(current + 1); }

@@ -57,6 +57,7 @@
     updateCounts();
     updateLoadMore();
     updateCategoryDescription();
+    if (typeof window.BK_optimizeImages === 'function') window.BK_optimizeImages();
   }
 
   function cardHtml(product) {
@@ -65,7 +66,7 @@
         '<a href="' + productHref(product.slug) + '" class="no-decoration">' +
           '<div class="card-prod text-center" data-prod="' + product.slug + '">' +
             '<div class="div-img-card-prod aspect-square">' +
-              '<img src="' + product.thumb + '" alt="' + product.title + '" class="img-card-prod" loading="lazy">' +
+              '<img src="' + product.thumb + '" alt="' + product.title + '" class="img-card-prod" loading="lazy" decoding="async">' +
             '</div>' +
             '<div class="card-prod-title">' + product.title + '</div>' +
           '</div>' +
@@ -187,10 +188,15 @@
 
     const slides = catalog.slider;
     slider.innerHTML = slides.map(function (slide, i) {
+      var active = i === 0;
+      var desktop = slide.desktop;
+      var mobile = slide.mobile || slide.desktop;
+      var desktopAttr = active ? ' src="' + desktop + '" fetchpriority="high" loading="eager"' : ' data-src="' + desktop + '"';
+      var mobileAttr = active ? ' src="' + mobile + '" fetchpriority="high" loading="eager"' : ' data-src="' + mobile + '"';
       return (
-        '<div class="prodotti-hero-slide' + (i === 0 ? ' active' : '') + '">' +
-          '<img src="' + slide.desktop + '" alt="' + (slide.title || '') + '" class="hidden md:block w-full rounded-[25px]">' +
-          '<img src="' + (slide.mobile || slide.desktop) + '" alt="' + (slide.title || '') + '" class="md:hidden w-full rounded-[25px]">' +
+        '<div class="prodotti-hero-slide' + (active ? ' active' : '') + '">' +
+          '<img' + desktopAttr + ' alt="' + (slide.title || '') + '" class="hidden md:block w-full rounded-[25px]" decoding="async">' +
+          '<img' + mobileAttr + ' alt="' + (slide.title || '') + '" class="md:hidden w-full rounded-[25px]" decoding="async">' +
         '</div>'
       );
     }).join('');
@@ -201,6 +207,9 @@
       idx = (idx + 1) % slides.length;
       slider.querySelectorAll('.prodotti-hero-slide').forEach(function (el, i) {
         el.classList.toggle('active', i === idx);
+        if (i === idx && typeof window.BK_loadSlideImage === 'function') {
+          window.BK_loadSlideImage(el);
+        }
       });
     }, 8000);
   }
@@ -216,12 +225,14 @@
     bindFilters();
     initHeroSlider();
     setActiveCategory(selectedCategory);
+    if (typeof window.BK_optimizeImages === 'function') window.BK_optimizeImages();
 
     document.getElementById('load-more')?.addEventListener('click', function () {
       currentPage += 1;
       renderGrid(true);
       updateCounts();
       updateLoadMore();
+      if (typeof window.BK_optimizeImages === 'function') window.BK_optimizeImages();
     });
 
     document.getElementById('btn-open-filtri-mobile')?.addEventListener('click', function () {

@@ -481,6 +481,24 @@ a.active .svg-brown {
   color: #555;
 }
 
+/* Placeholder enquanto background lazy carrega */
+.bk-lazy-bg {
+  background-color: #E8DFCF;
+}
+
+.bk-lazy-bg.div-img-news {
+  background-color: #f0f0f0;
+}
+
+/* Conteúdo abaixo da dobra — renderização mais rápida */
+.section-pari,
+.section-dispari,
+#products-home-section,
+.main-prodotti {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 480px;
+}
+
 /* --------------------------------------------------------------------------
    Hero slider (home)
    -------------------------------------------------------------------------- */

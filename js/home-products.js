@@ -99,6 +99,7 @@
     track.innerHTML = items.map(function (p) { return productCardHtml(cat, p); }).join('');
     track.scrollLeft = 0;
     track.dispatchEvent(new Event('scroll'));
+    if (typeof window.BK_optimizeImages === 'function') window.BK_optimizeImages();
   }
 
   function initHomeProducts() {
