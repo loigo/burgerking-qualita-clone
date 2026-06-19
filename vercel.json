@@ -14,8 +14,10 @@
     { "source": "/trova-un-ristorante", "destination": "/trova-un-ristorante.html" },
     { "source": "/accessibilita", "destination": "/accessibilita.html" },
     { "source": "/franchising", "destination": "/franchising.html" },
+    { "source": "/prodotti/dettaglio/:slug/", "destination": "/prodotti/dettaglio.html" },
     { "source": "/prodotti/dettaglio/:slug", "destination": "/prodotti/dettaglio.html" },
     { "source": "/prodotti/dettaglio/:slug.html", "destination": "/prodotti/dettaglio.html" },
+    { "source": "/prodotti/:cat/:slug/", "destination": "/prodotti/dettaglio.html" },
     { "source": "/prodotti/:cat/:slug", "destination": "/prodotti/dettaglio.html" },
     { "source": "/prodotti/:cat/:slug.html", "destination": "/prodotti/dettaglio.html" }
   ],
