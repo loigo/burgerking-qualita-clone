@@ -1,0 +1,31 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "rewrites": [
+    { "source": "/qualita", "destination": "/qualita-bk.html" },
+    { "source": "/promo", "destination": "/promo.html" },
+    { "source": "/novita", "destination": "/novita.html" },
+    { "source": "/prodotti", "destination": "/prodotti.html" },
+    { "source": "/bk-cafe", "destination": "/bk-cafe.html" },
+    { "source": "/loyalty", "destination": "/loyalty.html" },
+    { "source": "/about-us", "destination": "/about-us.html" },
+    { "source": "/press-room", "destination": "/press-room.html" },
+    { "source": "/contatti", "destination": "/contatti.html" },
+    { "source": "/trova-un-ristorante", "destination": "/trova-un-ristorante.html" },
+    { "source": "/accessibilita", "destination": "/accessibilita.html" },
+    { "source": "/franchising", "destination": "/franchising.html" },
+    { "source": "/prodotti/:cat/:slug", "destination": "/prodotti/dettaglio.html" },
+    { "source": "/prodotti/:slug", "destination": "/prodotti/dettaglio.html" }
+  ],
+  "headers": [
+    {
+      "source": "/css/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    }
+  ]
+}

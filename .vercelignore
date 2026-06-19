@@ -1,0 +1,13 @@
+shop/node_modules
+shop/.next
+shop/.vercel
+node_modules
+.git
+tools/*.png
+tools/*.html
+source-*.html
+docs
+database
+infra
+docker-compose.yml
+*.md
