@@ -3,26 +3,16 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { useCart } from '@/store/cart';
 
 const A = 'https://www.burgerking.it';
 
-function isActive(pathname: string, key: string) {
-  const map: Record<string, string> = {
-    qualita: '/qualita',
-    prodotti: '/prodotti',
-    novita: '/novita',
-    promo: '/promo',
-    carrello: '/carrello',
-  };
-  const href = map[key];
-  if (!href) return false;
+function isActive(pathname: string, href: string) {
+  if (href === '/') return pathname === '/';
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
 export function BkSiteHeader() {
   const pathname = usePathname() || '/';
-  const itemCount = useCart((s) => s.itemCount());
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
@@ -34,8 +24,11 @@ export function BkSiteHeader() {
     };
   }, [menuOpen]);
 
-  const navClass = (key: string) =>
-    `nav-link${isActive(pathname, key) ? ' active' : ''}`;
+  const navLink = (href: string, label: string) => (
+    <Link href={href} className={`nav-link${isActive(pathname, href) ? ' active' : ''}`}>
+      {label}
+    </Link>
+  );
 
   return (
     <>
@@ -47,8 +40,8 @@ export function BkSiteHeader() {
           <div className="flex items-center py-2">
             <div className="header-col1 flex items-center w-[46%]">
               <Link
-                href="/prodotti"
-                className="flex items-center hover:text-bk-orange transition-colors no-underline text-bk-brown"
+                href="/#store-locator"
+                className={`flex items-center hover:text-bk-orange transition-colors no-underline text-bk-brown${pathname === '/' ? '' : ''}`}
               >
                 <img
                   src={`${A}/assets/images/icon-store-locator.svg?v=1709305347`}
@@ -59,6 +52,15 @@ export function BkSiteHeader() {
                 <span className="hidden sm:inline">Trova un ristorante</span>
                 <span className="sm:hidden">Trova</span>
               </Link>
+              <span className="hidden xl:flex items-center text-bk-brown opacity-60 ml-6 text-[1.4rem]">
+                <img
+                  src={`${A}/assets/images/icon-ristornati.svg?v=1709305347`}
+                  alt=""
+                  className="svg-brown w-5 h-5 mr-2.5"
+                  aria-hidden
+                />
+                <span>Diventa Franchisee</span>
+              </span>
             </div>
             <div className="w-[8%] flex justify-center py-4">
               <Link href="/" className="block" aria-label="Burger King Italia">
@@ -69,40 +71,15 @@ export function BkSiteHeader() {
                 />
               </Link>
             </div>
-            <div className="w-[46%] flex justify-end items-center gap-3">
-              <Link
-                href="/carrello"
-                className="hidden sm:inline-flex items-center gap-1 text-bk-brown no-underline hover:text-bk-orange font-flame-sans text-[1.2rem]"
-              >
-                Carrello
-                {itemCount > 0 && (
-                  <span className="inline-flex items-center justify-center min-w-[20px] h-5 px-1 rounded-full bg-bk-red text-white text-[0.9rem]">
-                    {itemCount}
-                  </span>
-                )}
-              </Link>
+            <div className="w-[46%] flex justify-end items-center">
               <nav className="hidden xl:flex items-center" aria-label="Menu principale">
                 <ul className="flex items-center gap-3 2xl:gap-6 list-none m-0 p-0">
-                  <li>
-                    <Link href="/qualita" className={navClass('qualita')}>
-                      Qualità BK
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/prodotti" className={navClass('prodotti')}>
-                      Prodotti
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/novita" className={navClass('novita')}>
-                      Novità
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/promo" className={navClass('promo')}>
-                      Promo
-                    </Link>
-                  </li>
+                  <li>{navLink('/qualita', 'Qualità BK')}</li>
+                  <li>{navLink('/prodotti', 'Prodotti')}</li>
+                  <li>{navLink('/novita', 'Novità')}</li>
+                  <li>{navLink('/promo', 'Promo')}</li>
+                  <li>{navLink('/novita', 'BK Café')}</li>
+                  <li>{navLink('/novita', 'Loyalty')}</li>
                   <li className="relative">
                     <button
                       type="button"
@@ -116,12 +93,25 @@ export function BkSiteHeader() {
                       className={`dropdown-menu ${dropdownOpen ? '' : 'hidden'} absolute right-0 top-full mt-1 list-none m-0 p-0 z-50`}
                     >
                       <li>
-                        <span className="dropdown-item opacity-60">About us</span>
+                        <span className="dropdown-item">About us</span>
                       </li>
                       <li>
-                        <span className="dropdown-item opacity-60">Press room</span>
+                        <span className="dropdown-item">Press room</span>
+                      </li>
+                      <li>
+                        <a
+                          href="https://careers.qsrp.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="dropdown-item"
+                        >
+                          Careers
+                        </a>
                       </li>
                     </ul>
+                  </li>
+                  <li>
+                    <span className="nav-link">Contatti</span>
                   </li>
                 </ul>
               </nav>
@@ -132,8 +122,12 @@ export function BkSiteHeader() {
                 onClick={() => setMenuOpen(true)}
               >
                 <span
-                  className="block w-[2.6rem] h-[1.9rem] bg-no-repeat bg-center bg-contain svg-brown"
-                  style={{ backgroundImage: `url('${A}/assets/images/menu.svg')` }}
+                  className="block w-[2.6rem] h-[1.9rem] bg-no-repeat bg-center bg-contain"
+                  style={{
+                    backgroundImage: `url('${A}/assets/images/menu.svg')`,
+                    filter:
+                      'invert(15%) sepia(16%) saturate(3503%) hue-rotate(338deg) brightness(96%) contrast(93%)',
+                  }}
                 />
               </button>
             </div>
@@ -172,20 +166,22 @@ export function BkSiteHeader() {
         <nav className="font-flame" aria-label="Menu mobile">
           <ul className="list-none m-0 p-0">
             {[
-              ['Qualità BK', '/qualita', 'qualita'],
-              ['Prodotti', '/prodotti', 'prodotti'],
-              ['Novità', '/novita', 'novita'],
-              ['Promo', '/promo', 'promo'],
-              ['Carrello', '/carrello', 'carrello'],
-            ].map(([label, href, key]) => (
+              ['Trova un ristorante', '/#store-locator'],
+              ['Qualità BK', '/qualita'],
+              ['Prodotti', '/prodotti'],
+              ['Novità', '/novita'],
+              ['Promo', '/promo'],
+              ['BK Café', '/novita'],
+              ['Loyalty', '/novita'],
+              ['Carrello', '/carrello'],
+            ].map(([label, href]) => (
               <li key={href} className="nav-item">
                 <Link
                   href={href}
-                  className={`nav-link block px-12 py-4 text-bk-avana no-underline${isActive(pathname, key) ? ' !text-bk-orange' : ''}`}
+                  className={`nav-link block px-12 py-4 text-bk-avana no-underline${isActive(pathname, href.replace('/#store-locator', '/')) ? ' !text-bk-orange' : ''}`}
                   onClick={() => setMenuOpen(false)}
                 >
                   {label}
-                  {key === 'carrello' && itemCount > 0 ? ` (${itemCount})` : ''}
                 </Link>
               </li>
             ))}
@@ -216,6 +212,19 @@ export function BkSiteHeader() {
               </Link>
             </li>
           </ul>
+          <div className="offcanvas-banner">
+            <img
+              src={`${A}/assets/img/console/appUser/banner/332_desktop_it.png?v=1710414846`}
+              alt=""
+              className="offcanvas-banner-img"
+            />
+            <div className="p-4 text-bk-avana">
+              <div className="text-[1.6rem] font-flame">SCARICA LA NOSTRA APP</div>
+              <div className="text-[1.2rem] font-flame-sans">
+                E goditi dei vantaggi da vero King!
+              </div>
+            </div>
+          </div>
         </nav>
       </aside>
     </>

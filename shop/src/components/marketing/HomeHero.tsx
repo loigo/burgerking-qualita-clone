@@ -24,10 +24,20 @@ export function HomeHero() {
                 <img src={slide.src} alt={slide.alt} className="slider-image" />
               </div>
               <div className="order-1 md:order-2 text-center text-bk-avana px-4 py-6">
-                <p className="font-flame text-[1.5rem] pb-2">{slide.eyebrow}</p>
-                <h1 className="font-flamebold text-[5rem] leading-[4.9rem] pb-4 whitespace-pre-line">
-                  {slide.title}
-                </h1>
+                <p className="font-flame text-[1.5rem] pb-2">
+                  {i === 2 ? <strong>{slide.eyebrow}</strong> : slide.eyebrow}
+                </p>
+                {i === 0 ? (
+                  <h1 className="font-flamebold text-[5rem] leading-[4.9rem] pb-4">
+                    NUOVO ITALIAN
+                    <br />
+                    SUMMER KING
+                  </h1>
+                ) : (
+                  <h2 className="font-flamebold text-[5rem] leading-[4.9rem] pb-4 whitespace-pre-line">
+                    {slide.title}
+                  </h2>
+                )}
                 <p className="text-[2.4rem] leading-[2.6rem] whitespace-pre-line">
                   {slide.description}
                 </p>

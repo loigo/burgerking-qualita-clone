@@ -35,7 +35,7 @@ export function BkMobileBar() {
           />
           <span className="text-[0.8rem] leading-[1rem] font-flame-sans">Promo</span>
         </Link>
-        <Link href="/prodotti" className={itemClass('/trova')}>
+        <Link href="/#store-locator" className={itemClass('/store')}>
           <img
             src={`${A}/assets/images/icon-store-locator.svg?v=1709305347`}
             className="svg-brown w-5 h-5 mb-1"

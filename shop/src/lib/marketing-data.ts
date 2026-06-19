@@ -90,7 +90,7 @@ export const HOME_SLIDES = [
     alt: 'Italian Summer King',
     src: 'https://www.burgerking.it/assets/img/console/carousel/slides/775_desktop_it.png?v=1781593671',
     eyebrow: 'È arrivato il King dell\'estate',
-    title: 'NUOVO ITALIAN\nSUMMER KING',
+    title: 'NUOVO ITALIAN SUMMER KING',
     description:
       'I momenti veri sanno d\'estate, proprio come il nuovo burger che abbiamo messo a menù.\nVieni a provarlo, solo da Burger King.',
   },

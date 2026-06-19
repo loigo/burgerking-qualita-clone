@@ -11,3 +11,4 @@ Thumbs.db
 *.tsbuildinfo
 coverage/
 .playwright/
+.vercel
