@@ -1,0 +1,2401 @@
+/* ==========================================================================
+   Burger King Italia — Qualità BK
+   Estilos customizados para complementar o Tailwind e replicar o site original
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Fontes Flame (tipografia oficial BK)
+   -------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'Flame';
+  src: url('https://www.burgerking.it/assets/fonts/Flame-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Flame-Bold';
+  src: url('https://www.burgerking.it/assets/fonts/Flame-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Flame-Sans';
+  src: url('https://www.burgerking.it/assets/fonts/FlameSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --------------------------------------------------------------------------
+   Base — espelha o reset tipográfico do site original (html 62.5%)
+   -------------------------------------------------------------------------- */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Flame-Sans', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  background-color: #F5EBDC;
+  color: #000000;
+  min-height: 100vh;
+}
+
+/* Famílias tipográficas BK */
+.font-flame {
+  font-family: 'Flame', sans-serif;
+}
+
+.font-flamebold {
+  font-family: 'Flame-Bold', sans-serif;
+}
+
+/* Filtros SVG para ícones (replicam .svg-brown / .svg-orange / .svg-avana) */
+.svg-brown {
+  filter: invert(15%) sepia(16%) saturate(3503%) hue-rotate(338deg) brightness(96%) contrast(93%);
+}
+
+a:hover .svg-brown,
+a.active .svg-brown {
+  filter: invert(54%) sepia(95%) saturate(569%) hue-rotate(336deg) brightness(101%) contrast(101%);
+}
+
+.svg-orange {
+  filter: invert(54%) sepia(95%) saturate(569%) hue-rotate(336deg) brightness(101%) contrast(101%);
+}
+
+.svg-avana {
+  filter: invert(88%) sepia(2%) saturate(4008%) hue-rotate(324deg) brightness(112%) contrast(92%);
+}
+
+/* --------------------------------------------------------------------------
+   Header
+   -------------------------------------------------------------------------- */
+#header {
+  font-family: 'Flame', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  z-index: 5000;
+}
+
+.header-col1 a {
+  padding-left: 1.5rem;
+  border-left: 1px solid #502314;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #502314;
+  transition: color 0.2s ease;
+}
+
+.header-col1 a:first-child {
+  padding-left: 0;
+  border-left: 0;
+  margin-left: 0;
+}
+
+.header-col1 a:hover {
+  color: #FF8732;
+}
+
+.nav-link {
+  color: #502314;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #FF8732;
+}
+
+/* Dropdown "Tutto su di noi" */
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0;
+  content: url('https://www.burgerking.it/assets/images/icon_open-menu.svg');
+  border: 0;
+}
+
+.dropdown-toggle:hover::after,
+.dropdown-toggle.show::after {
+  content: url('https://www.burgerking.it/assets/images/icon_open-menu-active.svg');
+}
+
+.dropdown-menu {
+  background: #F8F1E7;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16);
+  padding-bottom: 20px;
+  border-radius: 0;
+  min-width: 200px;
+}
+
+.dropdown-item {
+  font-family: 'Flame-Sans', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  padding: 1rem 2.5rem;
+  border-bottom: 1px solid rgba(215, 215, 215, 0.62);
+  text-align: center;
+  color: #502314;
+  text-decoration: none;
+  display: block;
+  transition: color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  color: #502314;
+  background: transparent;
+}
+
+/* --------------------------------------------------------------------------
+   Menu mobile (offcanvas)
+   -------------------------------------------------------------------------- */
+#mobile-menu {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+#mobile-menu.open {
+  transform: translateX(0);
+}
+
+#mobile-menu .nav-link {
+  color: #F5EBDC;
+}
+
+#mobile-menu .nav-item {
+  padding: 1rem 3rem;
+  border-bottom: 1px solid rgba(245, 235, 220, 0.23);
+}
+
+#mobile-menu .nav-item:last-child {
+  border-bottom: 0;
+}
+
+#mobile-menu .dropdown-item {
+  text-align: left;
+  border-bottom: 0;
+  color: #FF8732;
+  padding: 1rem 0;
+}
+
+.offcanvas-banner {
+  display: flex;
+  align-items: center;
+  background-color: #D62300;
+  border-radius: 12px;
+  margin: 3.5rem 1rem 1rem;
+}
+
+.offcanvas-banner-img {
+  z-index: 20;
+  margin-top: -30px;
+  position: relative;
+  max-width: 150px;
+}
+
+/* --------------------------------------------------------------------------
+   Hero / Testata
+   -------------------------------------------------------------------------- */
+.testata-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15rem 4rem;
+  border-radius: 25px;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  min-height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------------------------------------------------------------------------
+   Carousel de ingredientes
+   -------------------------------------------------------------------------- */
+.ingredients-track {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.ingredients-track::-webkit-scrollbar {
+  display: none;
+}
+
+.ingredient-slide {
+  scroll-snap-align: start;
+  border-radius: 22px;
+  min-height: 200px;
+}
+
+.ingredient-slide .col-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 22px 0 0 22px;
+  min-height: 200px;
+}
+
+/* Botões de navegação do carousel (estilo swiffy-slider) */
+.slider-nav-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #D62300;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.1));
+  transition: opacity 0.2s ease;
+}
+
+.slider-nav-btn:hover {
+  opacity: 0.8;
+}
+
+.slider-nav-btn:disabled {
+  background-color: #C9C9C9;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.slider-nav-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+}
+
+.slider-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #C9C9C9;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.slider-indicator.active {
+  background-color: #D62300;
+}
+
+/* --------------------------------------------------------------------------
+   Seção paixão pelo panino
+   -------------------------------------------------------------------------- */
+.section-pari {
+  background-color: #E8DFCF;
+}
+
+.btn-main {
+  border-radius: 19px;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  padding: 9px 24px;
+  color: #fff;
+  background-color: #D62300;
+  border: 2px solid #D62300;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Flame-Sans', sans-serif;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-main:hover {
+  background-color: #951800;
+  border-color: #951800;
+  color: #fff;
+}
+
+.btn-main.btn-xl {
+  border-radius: 25px;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  padding: 14px 26px;
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+.footer-line-1 {
+  height: 29px;
+  background-color: #FF8732;
+}
+
+.footer-line-2 {
+  height: 29px;
+  background-color: #D62300;
+}
+
+.footer-content {
+  background-color: #502314;
+  color: #F5EBDC;
+}
+
+.footer-menu-item {
+  color: #F5EBDC;
+  font-size: 1.3rem;
+  line-height: 1.4rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-menu-item:hover {
+  color: #FF8732;
+}
+
+.icon-social-img {
+  margin-right: 15px;
+  transition: opacity 0.2s ease;
+}
+
+.icon-social:hover .icon-social-img {
+  opacity: 0.8;
+}
+
+/* --------------------------------------------------------------------------
+   Responsividade — breakpoints do site original
+   -------------------------------------------------------------------------- */
+@media (max-width: 1400px) {
+  #header {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .testata-title {
+    font-size: 3.5rem !important;
+    line-height: 3.4rem !important;
+  }
+
+  .titolo-section {
+    font-size: 2.2rem !important;
+    line-height: 2.1rem !important;
+  }
+
+  .testata-subtitle {
+    font-size: 1.6rem !important;
+    line-height: 1.7rem !important;
+  }
+
+  .banner-title {
+    font-size: 3.5rem !important;
+    line-height: 3.4rem !important;
+  }
+
+  .banner-description {
+    font-size: 1.4rem !important;
+    line-height: 1.7rem !important;
+  }
+
+  .slider-title {
+    font-size: 1.8rem !important;
+    line-height: 1.9rem !important;
+  }
+
+  .slider-description {
+    font-size: 1.2rem !important;
+    line-height: 1.4rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .testata-bg {
+    padding: 10rem 2rem;
+    border-radius: 0;
+  }
+
+  .ingredient-slide .col-img {
+    border-radius: 22px 22px 0 0;
+    min-height: 160px;
+  }
+
+  .footer-tm {
+    padding-bottom: 6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #mobile-menu {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .navbar-toggler {
+    display: none !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Cards de notícias / produtos / promo
+   -------------------------------------------------------------------------- */
+.news-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.div-img-news {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 12px 12px 0 0;
+}
+
+.div-content-news {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0 0 12px 12px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.news-title {
+  font-family: 'Flame', sans-serif;
+}
+
+.news-preview {
+  padding-top: 0.5rem;
+  color: #555;
+}
+
+/* --------------------------------------------------------------------------
+   Hero slider (home)
+   -------------------------------------------------------------------------- */
+.hero-slider {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.hero-slide {
+  display: none;
+  background-color: #502314;
+  border-radius: 25px;
+}
+
+.hero-slide.active {
+  display: block;
+}
+
+.hero-slider .slider-image {
+  width: 100%;
+  max-height: 550px;
+  height: auto;
+  border-radius: 22px;
+}
+
+.hero-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 1rem 0;
+}
+
+.hero-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #C9C9C9;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-dot.active {
+  background: #D62300;
+}
+
+/* --------------------------------------------------------------------------
+   Seções home / prodotti / promo
+   -------------------------------------------------------------------------- */
+.section-pari {
+  background-color: #E8DFCF;
+}
+
+.section-dispari {
+  background-color: #F5EBDC;
+}
+
+.titolo-section {
+  font-family: 'Flame-Bold', sans-serif;
+  color: #FF8732;
+  font-size: 4rem;
+  line-height: 3.9rem;
+}
+
+.link-view-all {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #502314;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.link-view-all:hover {
+  color: #FF8732;
+}
+
+.btn-tag-outline {
+  border-radius: 18px;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  padding: 6px 16px;
+  color: #502314;
+  background-color: transparent;
+  border: 2px solid #502314;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  font-family: 'Flame-Sans', sans-serif;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-tag-outline:hover,
+.btn-tag-outline.active {
+  background-color: #502314;
+  color: #F5EBDC;
+}
+
+.element-section.scrollbar-custom2 {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 0;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #502314 transparent;
+}
+
+.scrollbar-custom2::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollbar-custom2::-webkit-scrollbar-thumb {
+  background: rgba(80, 35, 20, 0.35);
+  border-radius: 10px;
+}
+
+.carousel-home-prod .news-title {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+.btn-main-outline {
+  border-radius: 19px;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  padding: 9px 24px;
+  color: #D62300;
+  background-color: transparent;
+  border: 2px solid #D62300;
+  cursor: pointer;
+  font-family: 'Flame-Sans', sans-serif;
+  transition: all 0.2s ease;
+}
+
+.btn-main-outline:hover {
+  border-color: #951800;
+  color: #951800;
+}
+
+/* Testata marrom (promo) */
+.testata-promo {
+  background-color: #502314;
+  min-height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  color: #F5EBDC;
+  border-radius: 25px;
+}
+
+/* Grid de produtos (burgerking.it/prodotti) */
+.main-prodotti {
+  padding: 1rem 0 2rem;
+}
+
+.product-grid-prodotti {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .product-grid-prodotti {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+.col-prodotto a {
+  display: block;
+  height: 100%;
+}
+
+.card-prod {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.25rem 1rem 1.5rem;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-prod:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(80, 35, 20, 0.12);
+}
+
+.div-img-card-prod {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+
+.img-card-prod {
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+}
+
+.card-prod-title {
+  font-family: 'Flame', sans-serif;
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  color: #1a1a1a;
+  padding: 0 0.25rem;
+}
+
+.sidebar-prodotti .sidebar-filtri-title {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #502314;
+  font-family: 'Flame-Bold', sans-serif;
+  padding-bottom: 1.25rem;
+}
+
+.sidebar-prodotti .btn-tag-outline {
+  margin-bottom: 0.75rem;
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-ing-icon {
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+}
+
+.link-categoria-prod .title,
+.category-item .title,
+.category-carousel-item .title {
+  font-family: 'Flame', sans-serif;
+  font-size: 1.1rem;
+  color: #502314;
+  margin-top: 0.5rem;
+}
+
+.link-categoria-prod:hover .title,
+.category-item:hover .title,
+.category-carousel-item:hover .title {
+  color: #FF8732;
+}
+
+.link-categoria-prod.is-active .title {
+  color: #FF8732;
+  font-family: 'Flame-Bold', sans-serif;
+}
+
+.img-carousel-prod {
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.prodotti-hero-slider {
+  position: relative;
+  min-height: 120px;
+}
+
+.prodotti-hero-slide {
+  display: none;
+}
+
+.prodotti-hero-slide.active {
+  display: block;
+}
+
+.product-card {
+  padding: 1rem;
+}
+
+.product-card .news-card {
+  cursor: pointer;
+}
+
+/* Dettaglio prodotto */
+.breadcrumb-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #502314;
+  font-family: 'Flame-Sans', sans-serif;
+}
+
+.breadcrumb-back:hover {
+  color: #FF8732;
+}
+
+.breadcrumb-arrow {
+  width: 16px;
+  height: auto;
+}
+
+.testata-scheda-wrap {
+  margin-top: 1rem;
+}
+
+.testata-title {
+  font-size: 5rem;
+  line-height: 4.9rem;
+}
+
+.product-hero-img {
+  max-height: 420px;
+  object-fit: contain;
+}
+
+.testata-description p {
+  margin-bottom: 1rem;
+}
+
+.ingrediente-item {
+  padding: 1rem 0.5rem;
+}
+
+.img-carousel-ingredienti {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 0.75rem;
+  display: block;
+  object-fit: contain;
+}
+
+.ingrediente-placeholder {
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 0.75rem;
+}
+
+.ingrediente-title {
+  font-family: 'Flame', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  color: #502314;
+  max-width: 120px;
+}
+
+.allergene-img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  margin: 0 auto 0.5rem;
+  display: block;
+}
+
+.allergene-label {
+  font-size: 1.2rem;
+  color: #502314;
+  font-family: 'Flame-Sans', sans-serif;
+}
+
+.modal-filtri-prodotti {
+  position: fixed;
+  inset: 0;
+  z-index: 99990;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.modal-filtri-prodotti.hidden {
+  display: none;
+}
+
+.modal-filtri-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.modal-filtri-panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: #F5EBDC;
+  border-radius: 20px 20px 0 0;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.modal-filtri-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: 0;
+  background: transparent;
+  font-size: 2rem;
+  line-height: 1;
+  color: #502314;
+  cursor: pointer;
+}
+
+.modal-filtri-body .btn-tag-outline {
+  margin: 0.35rem;
+}
+
+.filter-badge-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 999px;
+  background: #D62300;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0 0.35rem;
+}
+
+/* Carousel tracks genéricos */
+.h-track {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.h-track::-webkit-scrollbar {
+  display: none;
+}
+
+.h-track > * {
+  scroll-snap-align: start;
+}
+
+/* Load more — cards ocultos até clicar */
+.promo-card.hidden-load,
+.product-card.hidden-load,
+.main-news-card.hidden-load {
+  display: none;
+}
+
+.main-news {
+  padding: 2rem 4.5rem;
+}
+
+.main-news-card .news-card {
+  padding: 2rem 1rem;
+}
+
+.container-news {
+  width: 100%;
+}
+
+.div-app-banner {
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 2rem;
+}
+
+/* Store locator banner */
+.div-banner-storelocator {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.div-banner-storelocator .banner-image {
+  border-radius: 10px;
+}
+
+.home-image-locator {
+  padding: 1rem 0 0 4rem;
+  border-left: 1px solid #F5EBDC;
+  max-width: 300px;
+}
+
+/* Mobile bar padding */
+body.has-mobile-bar {
+  padding-bottom: 70px;
+}
+
+@media (max-width: 1024px) {
+  .titolo-section {
+    font-size: 2.2rem !important;
+    line-height: 2.1rem !important;
+  }
+
+  .main-prodotti,
+  .main-news {
+    padding: 2rem 1.5rem;
+  }
+
+  .hero-slider .slider-image {
+    max-height: 350px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Página de detalhe promo
+   -------------------------------------------------------------------------- */
+.breadcrumb-link {
+  font-family: 'Flame-Sans', sans-serif;
+}
+
+.breadcrumb-arrow {
+  height: 12px;
+  margin-right: 5px;
+}
+
+.promo-detail-img {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+
+.promo-price {
+  letter-spacing: -0.02em;
+}
+
+.promo-description p {
+  margin-bottom: 1.5rem;
+}
+
+.div-testo-news {
+  max-width: 900px;
+}
+
+/* Banner promo su Qualità BK */
+.promo-teaser-card {
+  border-radius: 22px;
+  overflow: hidden;
+  background-color: #502314;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.promo-teaser-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(80, 35, 20, 0.25);
+}
+
+@media (max-width: 768px) {
+  .hero-slider,
+  .hero-slide {
+    border-radius: 0;
+  }
+
+  .hero-slider .slider-image {
+    max-height: 250px;
+  }
+
+  .testata-promo {
+    border-radius: 0;
+    padding: 6rem 2rem;
+  }
+
+  .promo-teaser-card h3 {
+    font-size: 2.2rem !important;
+    line-height: 2.1rem !important;
+  }
+
+  .promo-teaser-card .promo-price {
+    font-size: 2.8rem !important;
+    line-height: 2.7rem !important;
+  }
+
+  .div-testo-news h1 {
+    font-size: 3.5rem !important;
+    line-height: 3.4rem !important;
+  }
+
+  .promo-price {
+    font-size: 3rem !important;
+    line-height: 2.9rem !important;
+  }
+
+  .testata-bg {
+    padding: 8rem 2rem;
+    border-radius: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   About us
+   -------------------------------------------------------------------------- */
+.container-about .about-banner img {
+  border-radius: 12px;
+}
+
+/* --------------------------------------------------------------------------
+   Press room
+   -------------------------------------------------------------------------- */
+.press-card-inner {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  height: 100%;
+  transition: box-shadow 0.2s ease;
+}
+
+.press-card-inner:hover {
+  box-shadow: 0 4px 20px rgba(80, 35, 20, 0.12);
+}
+
+.title18 {
+  font-family: 'Flame', sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #502314;
+}
+
+/* --------------------------------------------------------------------------
+   Formulário contatti — fiel a burgerking.it/contatti
+   -------------------------------------------------------------------------- */
+.container-contatti {
+  width: 100%;
+}
+
+.main-contact {
+  padding-bottom: 4rem;
+}
+
+.form-contatti .form-row {
+  margin-bottom: 2rem;
+}
+
+.form-contatti .div-contact > .form-row + .form-row {
+  margin-top: 0;
+}
+
+.filed-title {
+  font-family: 'Flame', sans-serif;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #502314;
+}
+
+.form-control {
+  width: 100%;
+  font-family: 'Flame-Sans', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  padding: 12px 16px;
+  border: 1px solid #C9C9C9;
+  border-radius: 8px;
+  background: #fff;
+  color: #000;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #FF8732;
+}
+
+select.form-control {
+  appearance: auto;
+  cursor: pointer;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.label-container {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  padding-left: 32px;
+  margin-right: 1.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  user-select: none;
+}
+
+.label-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: #fff;
+  border: 2px solid #502314;
+  border-radius: 4px;
+}
+
+.label-container input:checked ~ .checkmark {
+  background-color: #D62300;
+  border-color: #D62300;
+}
+
+.label-container input[type="radio"] ~ .checkmark {
+  border-radius: 50%;
+}
+
+.buttonIn {
+  position: relative;
+}
+
+.buttonIn .form-control {
+  padding-right: 40px;
+}
+
+select.js-multiple-select.form-control {
+  min-height: 140px;
+  padding: 8px;
+}
+
+.fileupload {
+  font-family: 'Flame-Sans', sans-serif;
+  font-size: 1.4rem;
+  width: 100%;
+  padding: 8px 0;
+}
+
+.div-contact-submit .btn-main {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.testo-pagina a {
+  color: #D62300;
+  text-decoration: underline;
+}
+
+.testo-pagina a:hover {
+  color: #951800;
+}
+
+/* Mock reCAPTCHA (clone front-end, sem API Google) */
+.g-recaptcha-mock {
+  display: inline-block;
+}
+
+.g-recaptcha-mock-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: #f9f9f9;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  min-width: 280px;
+}
+
+.g-recaptcha-checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #c1c1c1;
+  border-radius: 2px;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.g-recaptcha-label {
+  font-family: Roboto, 'Flame-Sans', sans-serif;
+  font-size: 1.4rem;
+  color: #000;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.g-recaptcha-badge {
+  font-size: 1rem;
+  color: #555;
+  text-align: right;
+  line-height: 1.2;
+}
+
+/* Store locator — trova-un-ristorante */
+.container-store-locator {
+  position: relative;
+}
+
+.locator-search {
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .locator-search {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 400px;
+    max-width: calc(100% - 4rem);
+    z-index: 200;
+  }
+}
+
+.sidebar-locator {
+  padding: 2rem 1rem 2rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .sidebar-locator {
+    padding: 4rem 1rem 4rem 3rem;
+  }
+}
+
+#sidebar-map {
+  background-color: #fff;
+}
+
+#sidebar-filtri {
+  background-color: #E8DFCF;
+}
+
+#sidebar-filtri .btn-filtro-serizio {
+  display: inline-flex;
+  align-items: center;
+  text-transform: none;
+}
+
+.btn-filtro-serizio img,
+.btn-filtro-mobile img {
+  max-width: 21px;
+  margin-right: 7px;
+}
+
+.btn-filtro-serizio.active,
+.btn-filtro-mobile.active {
+  border-color: #FF8732;
+  background-color: #FF8732;
+  color: #502314;
+}
+
+#lista-elementi-sidebar {
+  max-height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #F5EBDC;
+}
+
+.elemento-sidebar-map {
+  padding: 1em 0;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #F5EBDC;
+}
+
+.elemento-sidebar-map:first-child {
+  padding-top: 0;
+}
+
+.elemento-sidebar-map:hover,
+.elemento-sidebar-map.active {
+  background-color: rgba(255, 135, 50, 0.08);
+}
+
+.titolo-elemento-sidebar-map {
+  font-family: 'Flame', sans-serif;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.sottotitolo-elemento-sidebar-map {
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.div-map-locator {
+  position: relative;
+}
+
+.store-map-iframe {
+  display: block;
+}
+
+.dettagli-sidebar {
+  position: absolute;
+  inset: 0;
+  z-index: 300;
+  overflow: hidden;
+}
+
+.dettagli-shop {
+  background-color: #fff;
+  height: 100%;
+  max-height: 100%;
+}
+
+.container-store-locator.detail-open .locator-search,
+.container-store-locator.detail-open #btn-apri-filtri-map {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .container-store-locator.detail-open #sidebar-map {
+    display: none;
+  }
+
+  .dettagli-sidebar {
+    position: fixed;
+    inset: 0;
+    z-index: 7500;
+    background: #F5EBDC;
+  }
+
+  .dettagli-shop {
+    height: 100vh;
+    padding-bottom: 5rem;
+  }
+}
+
+.filter-badge {
+  display: inline-flex;
+}
+
+.filter-modal.hidden {
+  display: none !important;
+}
+
+.chiudi-sidebar-dettaglio img {
+  height: 12px;
+}
+
+.dettagli-icon {
+  height: 14px;
+}
+
+/* Franchising */
+.testata-franchising {
+  border-radius: 0;
+}
+
+@media (min-width: 768px) {
+  .testata-franchising {
+    border-radius: 25px;
+  }
+}
+
+.franchise-list li {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+@media (max-width: 768px) {
+  .testata-franchising {
+    background-image: url('https://www.burgerking.it/assets/img/console/appUser/banner/352_desktop_it.png?v=1716370610') !important;
+  }
+}
+
+.franchise-acc-item {
+  border-bottom: 1px solid rgba(80, 35, 20, 0.15);
+}
+
+.franchise-acc-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.2rem 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: 'Flame', sans-serif;
+  font-size: 3rem;
+  line-height: 2.9rem;
+  color: #502314;
+  text-align: left;
+}
+
+.franchise-acc-body {
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.franchise-acc-arrow {
+  width: 16px;
+  transition: transform 0.2s ease;
+}
+
+.franchise-acc-item.is-open .franchise-acc-arrow {
+  transform: rotate(180deg);
+}
+
+/* Cookie consent — Cookiebot Edge (burgerking.it clone) */
+#CybotCookiebotDialog.cookie-banner-hidden {
+  display: none !important;
+}
+
+#CybotCookiebotDialog {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2147483631;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #141414;
+  background: #fff;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.3);
+  padding: 24px;
+}
+
+.CybotCookiebotDialogEdgeBorder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 3px;
+}
+
+.CybotCookiebotDialogEdgeBorder span:first-child {
+  flex: 1;
+  background: #FF8732;
+}
+
+.CybotCookiebotDialogEdgeBorder span:last-child {
+  flex: 1;
+  background: #141414;
+}
+
+.CybotCookiebotDialogContentWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#CybotCookiebotDialogHeader {
+  flex: 0 0 210px;
+  display: flex;
+  align-self: stretch;
+  min-width: 0;
+}
+
+#CybotCookiebotDialogHeaderLogosWrapper {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  min-height: 100%;
+  padding-bottom: 2px;
+}
+
+#CybotCookiebotDialogPoweredbyCybot {
+  display: flex;
+  margin: 0;
+  text-decoration: none;
+}
+
+#CybotCookiebotDialogPoweredbyCybot img {
+  display: block;
+  width: 175px;
+  height: auto;
+}
+
+#CybotCookiebotDialogTabContent {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 14px;
+  min-width: 0;
+  position: relative;
+}
+
+.CybotCookiebotDialogMainRow {
+  display: block;
+  position: relative;
+  min-height: 145px;
+  padding-right: 300px;
+}
+
+#CybotCookiebotDialogBodyContent {
+  padding-right: 10px;
+}
+
+#CybotCookiebotDialogBodyContentTitle,
+.CybotCookiebotDialogBodyContentHeading {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 5px;
+  line-height: 1.35;
+}
+
+#CybotCookiebotDialogBodyContentText {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#CybotCookiebotDialogFooter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 286px;
+}
+
+#CybotCookiebotDialogBodyButtonsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.CybotCookiebotDialogBodyButton {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: sans-serif;
+  line-height: 1.2;
+  padding: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.CybotCookiebotDialogBodyButtonAccept {
+  background: #502314;
+  color: #fff;
+  border: 2px solid #fff;
+  margin: 0 5px 0 0;
+}
+
+.CybotCookiebotDialogBodyButtonAccept:hover {
+  background: #3d1a0f;
+}
+
+.CybotCookiebotDialogBodyButtonSelection,
+.CybotCookiebotDialogBodyButtonDecline {
+  background: #fff;
+  color: #141414;
+  border: 2px solid #502314;
+  margin-top: 5px;
+}
+
+.CybotCookiebotDialogBodyButtonSelection:hover,
+.CybotCookiebotDialogBodyButtonDecline:hover {
+  background: #faf7f4;
+}
+
+.CybotCookiebotDialogBodyBottomWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-top: 14px;
+  padding: 9px 0 0 4px;
+  width: 100%;
+}
+
+#CybotCookiebotDialogBodyLevelWrapper {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+#CybotCookiebotDialogBodyFieldsetInnerContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 20px;
+}
+
+.CybotCookiebotDialogBodyLevelButtonWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.CybotCookiebotDialogBodyLevelButtonLabel {
+  margin: 0;
+  cursor: pointer;
+}
+
+.CybotCookiebotDialogBodyLevelButtonDescription {
+  font-size: 15px;
+  font-weight: 700;
+  color: #141414;
+}
+
+.CybotCookiebotDialogBodyLevelButtonSliderWrapper {
+  position: relative;
+  width: 57px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.CybotCookiebotDialogBodyLevelButton {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.CybotCookiebotDialogBodyLevelButton:disabled {
+  cursor: not-allowed;
+}
+
+.CybotCookiebotDialogBodyLevelButtonSlider {
+  position: absolute;
+  inset: 0;
+  background: #141414;
+  border-radius: 32px;
+  transition: background-color 0.2s ease;
+}
+
+.CybotCookiebotDialogBodyLevelButtonSlider::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.CybotCookiebotDialogBodyLevelButton:checked + .CybotCookiebotDialogBodyLevelButtonSlider {
+  background: #502314;
+}
+
+.CybotCookiebotDialogBodyLevelButton:checked + .CybotCookiebotDialogBodyLevelButtonSlider::before {
+  transform: translateX(25px);
+}
+
+.CybotCookiebotDialogBodyLevelButtonSliderWrapperDisabled .CybotCookiebotDialogBodyLevelButtonSlider {
+  background: #502314;
+  opacity: 0.85;
+}
+
+.CybotCookiebotDialogBodyLevelButtonSliderWrapperDisabled .CybotCookiebotDialogBodyLevelButtonSlider::before {
+  transform: translateX(25px);
+}
+
+#CybotCookiebotDialogBodyEdgeMoreDetails {
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+#CybotCookiebotDialogBodyEdgeMoreDetailsLink {
+  color: #502314;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#CybotCookiebotDialogBodyEdgeMoreDetailsLink::after {
+  content: ' ›';
+}
+
+#CybotCookiebotDialogBodyEdgeMoreDetailsLink:hover {
+  text-decoration: underline;
+}
+
+#CybotCookiebotDialogDetailExpanded {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e5e5e5;
+}
+
+#CybotCookiebotDialogDetailExpanded.CybotCookiebotDialogHide {
+  display: none;
+}
+
+.CybotCookiebotDialogDetailText {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #141414;
+}
+
+.CybotCookiebotDialogHide {
+  display: none !important;
+}
+
+@media (max-width: 1023px) {
+  #CybotCookiebotDialog {
+    padding: 16px;
+  }
+
+  .CybotCookiebotDialogContentWrapper {
+    flex-direction: column;
+  }
+
+  #CybotCookiebotDialogHeader {
+    flex: 0 0 auto;
+    order: 2;
+    margin-top: 12px;
+  }
+
+  #CybotCookiebotDialogHeaderLogosWrapper {
+    min-height: 0;
+    align-items: flex-start;
+  }
+
+  #CybotCookiebotDialogTabContent {
+    margin-left: 0;
+  }
+
+  .CybotCookiebotDialogMainRow {
+    padding-right: 0;
+    min-height: 0;
+  }
+
+  #CybotCookiebotDialogFooter {
+    position: static;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  #CybotCookiebotDialogBodyButtonsWrapper {
+    max-width: 100%;
+  }
+
+  .CybotCookiebotDialogBodyBottomWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  #CybotCookiebotDialogBodyEdgeMoreDetails {
+    margin-left: 0;
+    align-self: flex-end;
+  }
+
+  #CybotCookiebotDialogBodyFieldsetInnerContainer {
+    gap: 10px 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  body.has-mobile-bar #CybotCookiebotDialog {
+    padding-bottom: calc(16px + 4.5rem);
+  }
+}
+
+.franchise-banner-bg {
+  background-size: cover;
+  background-position: center;
+  min-height: 280px;
+  border-radius: 12px;
+}
+
+/* AccessiWay widget — Regolazioni per l'accessibilità (fiel ao burgerking.it) */
+#acsw-root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Acima do Cookiebot (2147483631) — botão de acessibilidade deve permanecer clicável */
+.acsw-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(51, 51, 51, 0.45);
+  z-index: 2147483646;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.acsw-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.acsw-trigger {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2147483647;
+  width: 45px;
+  height: 45px;
+  border: 0;
+  border-radius: 50%;
+  background: #502314;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  padding: 0;
+}
+
+.acsw-trigger-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 28px;
+}
+
+.acsw-trigger-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.acsw-trigger:hover {
+  background: #3d1a0f;
+  transform: scale(1.04);
+}
+
+.acsw-trigger.is-hidden {
+  display: none;
+}
+
+.acsw-widget-container {
+  position: fixed;
+  top: 23px;
+  right: 30px;
+  bottom: 23px;
+  width: 550px;
+  max-width: calc(100vw - 30px);
+  z-index: 2147483647;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(24px);
+  transition: opacity 0.28s ease, visibility 0.28s ease, transform 0.28s ease;
+}
+
+.acsw-widget-container.is-open {
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.acsw-panel-dialog {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 855px;
+  background: #f2f3f8;
+  color: #1f2533;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+}
+
+.acsw-panel-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.acsw-top {
+  flex-shrink: 0;
+  background: #502314;
+  padding-bottom: 14px;
+}
+
+.acsw-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px 0;
+  min-height: 26px;
+}
+
+.acsw-close-button {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.acsw-close-button svg {
+  width: 13px;
+  height: 13px;
+}
+
+.acsw-header-right {
+  margin-left: auto;
+}
+
+.acsw-language-selector {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.3px;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.acsw-language-flag img {
+  width: 22px;
+  height: 14px;
+  display: block;
+  border-radius: 2px;
+}
+
+.acsw-language-chevron svg {
+  width: 10px;
+  height: 10px;
+  opacity: 0.85;
+}
+
+.acsw-hero {
+  padding: 8px 15px 0;
+  text-align: center;
+}
+
+.acsw-title {
+  display: block;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 6px;
+}
+
+.acsw-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  padding-top: 30px;
+}
+
+.acsw-hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 156px;
+  height: 33px;
+  padding: 9px 3px;
+  border: 0;
+  border-radius: 50px;
+  background: #fff;
+  color: #502314;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.acsw-hero-button svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.acsw-hero-button span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.acsw-search {
+  padding: 12px 15px 0;
+}
+
+.acsw-search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.acsw-search-prepended,
+.acsw-search-appended {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.acsw-search-prepended {
+  left: 16px;
+}
+
+.acsw-search-prepended svg {
+  width: 14px;
+  height: 14px;
+  opacity: 0.9;
+}
+
+.acsw-search-appended {
+  right: 16px;
+}
+
+.acsw-search-appended svg {
+  width: 11px;
+  height: 11px;
+  opacity: 0.85;
+}
+
+.acsw-search-input {
+  width: 100%;
+  height: 41px;
+  border: 0;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 0 50px;
+  outline: none;
+}
+
+.acsw-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.acsw-search-input:focus {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.acsw-main-options {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 14px 15px 10px;
+  background: #f2f3f8;
+}
+
+.acsw-action-section {
+  background: #fff;
+  border-radius: 16px;
+  padding: 15px;
+  margin-bottom: 12px;
+}
+
+.acsw-action-section--stub {
+  min-height: 56px;
+}
+
+.acsw-action-section__title {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  color: #1f2533;
+  line-height: 22.5px;
+}
+
+.acsw-action-section__header {
+  margin-bottom: 12px;
+}
+
+.acsw-action-section--stub .acsw-action-section__header {
+  margin-bottom: 0;
+}
+
+.acsw-profiles {
+  display: flex;
+  flex-direction: column;
+}
+
+.acsw-profile {
+  display: grid;
+  grid-template-columns: 113px 1fr;
+  align-items: center;
+  gap: 8px;
+  width: calc(100% + 14px);
+  margin: 0 -7px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  padding: 18px 7px;
+  min-height: 78px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.acsw-profile:hover {
+  background: rgba(242, 247, 250, 0.65);
+}
+
+.acsw-profile.is-active {
+  background: #f2f7fa;
+}
+
+.acsw-profile.is-filtered-out {
+  display: none;
+}
+
+.acsw-profile-toggle {
+  flex-shrink: 0;
+}
+
+.acsw-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: stretch;
+  width: 113px;
+  height: 35px;
+  background: #f2f7fa;
+  border-radius: 50px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.acsw-toggle::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  border-radius: 50px;
+  background: transparent;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  z-index: 0;
+}
+
+.acsw-profile.is-active .acsw-toggle,
+.acsw-toggle.acsw-toggle--active {
+  background: #fff;
+}
+
+.acsw-profile.is-active .acsw-toggle::after,
+.acsw-toggle.acsw-toggle--active::after {
+  background: #502314;
+  box-shadow: 0 0 30px rgba(60, 80, 170, 0.2);
+}
+
+.acsw-toggle__option {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 11px;
+  color: #1f2533;
+  transition: color 0.15s ease;
+}
+
+.acsw-profile.is-active .acsw-toggle__option--on,
+.acsw-toggle.acsw-toggle--active .acsw-toggle__option--on {
+  color: #fff;
+}
+
+.acsw-profile-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 50px 0 0;
+  min-width: 0;
+}
+
+.acsw-profile-content__name {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1f2533;
+  line-height: 1.2;
+}
+
+.acsw-profile-content__text {
+  font-size: 14px;
+  color: #3e465d;
+  line-height: 1.25;
+}
+
+.acsw-profile-content__icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f2f7fa;
+  color: #1f2533;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.acsw-profile-content__icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.acsw-profile-seizures .acsw-profile-content__icon {
+  color: #e8a317;
+}
+
+.acsw-profile-senior .acsw-profile-content__icon svg {
+  width: 16px;
+  height: 13px;
+}
+
+.acsw-widget-footer {
+  flex-shrink: 0;
+  background: #502314;
+  padding: 8px 15px;
+  text-align: center;
+}
+
+.acsw-widget-footer a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  text-decoration: none;
+}
+
+.acsw-widget-footer a:hover {
+  text-decoration: underline;
+}
+
+body.acsw-panel-open {
+  overflow: hidden;
+}
+
+body.a11y-epilepsy * {
+  animation: none !important;
+  transition: none !important;
+}
+
+body.a11y-lowvision {
+  filter: contrast(1.25) saturate(1.1);
+}
+
+body.a11y-adhd *:not(#acsw-root):not(#acsw-root *) {
+  scroll-behavior: auto !important;
+}
+
+body.a11y-cognitive main p,
+body.a11y-cognitive main li {
+  line-height: 1.8 !important;
+}
+
+body.a11y-keyboard :focus-visible {
+  outline: 3px solid #FF8732 !important;
+  outline-offset: 2px;
+}
+
+body.a11y-elderly {
+  font-size: 106%;
+}
+
+body.a11y-elderly .font-flame,
+body.a11y-elderly .font-flamebold,
+body.a11y-elderly .font-flame-sans {
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+  .acsw-widget-container {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .acsw-panel-dialog {
+    max-height: none;
+    border-radius: 0;
+  }
+
+  .acsw-hero-button {
+    font-size: 12px;
+    padding: 9px 8px;
+  }
+
+  body.has-mobile-bar .acsw-trigger {
+    bottom: calc(4.5rem + 12px);
+  }
+}

@@ -89,13 +89,24 @@ export const HOME_SLIDES = [
   {
     alt: 'Italian Summer King',
     src: 'https://www.burgerking.it/assets/img/console/carousel/slides/775_desktop_it.png?v=1781593671',
+    eyebrow: 'È arrivato il King dell\'estate',
+    title: 'NUOVO ITALIAN\nSUMMER KING',
+    description:
+      'I momenti veri sanno d\'estate, proprio come il nuovo burger che abbiamo messo a menù.\nVieni a provarlo, solo da Burger King.',
   },
   {
     alt: 'Bacon King',
     src: 'https://www.burgerking.it/assets/img/console/carousel/slides/766_desktop_it.png?v=1780070141',
+    eyebrow: 'Diverse sfumature di Bacon King.',
+    title: 'GAMMA MIA!',
+    description:
+      'Una nuova variante di Bacon King è appena arrivata da Burger King. Vieni a provare il nuovo Bacon King Compact, con lo stesso gusto di sempre in un nuovo formato, o la versione di Bacon King che ti crea più fame.',
   },
   {
     alt: 'On Fire Club',
     src: 'https://www.burgerking.it/assets/img/console/carousel/slides/591_image_it.png?v=1756732233',
+    eyebrow: 'On Fire Club',
+    title: 'Il programma fedeltà per chi è On Fire come te!',
+    description: 'Unisciti, accumula corone e guadagna vantaggi esclusivi',
   },
 ];
